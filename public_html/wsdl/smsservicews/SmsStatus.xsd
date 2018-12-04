@@ -1,0 +1,30 @@
+<schema 
+	targetNamespace="http://airmovil.com/SmsStatus" 
+	elementFormDefault="qualified" 
+	xmlns="http://www.w3.org/2001/XMLSchema" 
+	xmlns:tns="http://airmovil.com/SmsStatus" 
+	xmlns:head="http://airmovil.com/SmsHeader">
+	<import namespace="http://airmovil.com/SmsHeader" schemaLocation="Common/SmsHeader.xsd"/>
+	<element name="StatusSmsRequest">
+		<complexType>
+			<sequence>
+				<element name="headerRequest" type="head:headerRequest"/>
+				<element name="idMessage" type="string"/>
+			</sequence>
+		</complexType>
+	</element>
+	<element name="StatusSmsResponse">
+		<complexType>
+			<sequence>
+				<element name="headerResponse" type="head:headerResponse"/>
+				<element name="status" type="int"/>
+				<element name="description" type="string"/>
+				<element name="operator" type="string"/>
+				<element name="pais" type="string"/>
+				<element name="estado" type="string"/>
+				<element name="municipio" type="string"/>
+				<element name="poblacion" type="string"/>
+			</sequence>
+		</complexType>
+	</element>
+</schema>

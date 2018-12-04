@@ -1,0 +1,28 @@
+<schema 
+	targetNamespace="http://airmovil.com/SmsBalance" 
+	elementFormDefault="qualified" 
+	xmlns="http://www.w3.org/2001/XMLSchema" 
+	xmlns:tns="http://airmovil.com/SmsBalance" 
+	xmlns:head="http://airmovil.com/SmsHeader">
+	<import namespace="http://airmovil.com/SmsHeader" schemaLocation="Common/SmsHeader.xsd"/>
+	<element name="BalanceSmsRequest">
+		<complexType>
+			<sequence>
+				<element name="headerRequest" type="head:headerRequest"/>
+			</sequence>
+		</complexType>
+	</element>
+	<element name="BalanceSmsResponse">
+		<complexType>
+			<sequence>
+				<element name="headerResponse" type="head:headerResponse"/>
+				<element name="netBalance" type="double"/>
+				<element name="usedBalance" type="string"/>
+				<element name="balance" type="double"/>
+				<element name="dateQuery" type="string"/>
+				<element name="description" type="string"/>
+				<element name="code" type="string"/>
+			</sequence>
+		</complexType>
+	</element>
+</schema>

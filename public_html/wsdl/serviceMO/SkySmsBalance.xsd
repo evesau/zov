@@ -1,0 +1,21 @@
+<schema targetNamespace="http://www.sky.com/SkySmsBalance" elementFormDefault="qualified" xmlns="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://www.sky.com/SkySmsBalance" xmlns:head="http://www.sky.com/SkySmsHeader">
+	<import namespace="http://www.sky.com/SkySmsHeader" schemaLocation="Common/SkySmsHeader.xsd"/>
+	<element name="BalanceSmsRequest">
+		<complexType>
+			<sequence>
+				<element name="headerRequest" type="head:headerRequest"/>
+			</sequence>
+		</complexType>
+	</element>
+	<element name="BalanceSmsResponse">
+		<complexType>
+			<sequence>
+				<element name="headerResponse" type="head:headerResponse"/>
+				<element name="msisdn" type="string"/>
+				<element name="source" type="string"/>
+				<element name="content" type="string"/>
+				<element name="date" type="string"/>
+			</sequence>
+		</complexType>
+	</element>
+</schema>

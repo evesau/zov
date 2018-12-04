@@ -1,0 +1,21 @@
+<schema targetNamespace="http://www.sky.com/EndPointClient" elementFormDefault="qualified" xmlns="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://www.sky.com/EndPointClient">
+	<element name="EndPointClientRequest">
+		<complexType>
+			<sequence>
+				<element name="msisdn" type="string" />
+				<element name="source" type="string" minOccurs="0" />
+				<element name="content" type="string" minOccurs="0" />
+				<element name="customerId" type="string" minOccurs="0" />
+				<element name="date" type="string" />
+			</sequence>
+		</complexType>
+	</element>
+	<element name="EndPointClientResponse">
+		<complexType>
+			<sequence>
+				<element name="status" type="string"/>
+				<element name="description" type="string"/>
+			</sequence>
+		</complexType>
+	</element>
+</schema>

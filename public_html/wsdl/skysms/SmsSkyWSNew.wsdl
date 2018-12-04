@@ -1,0 +1,148 @@
+<?xml version="1.0"?>
+<wsdl:definitions 	name="SmsSkyWs" 
+					targetNamespace="http://www.sky.com/SmsSkyWs/" 
+					xmlns="http://www.sky.com/SmsSkyWs/" 
+					xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" 
+					xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" 
+					xmlns:p="http://www.w3.org/2001/XMLSchema" 
+					xmlns:xsd="http://www.sky.com/SkySmsSend" 
+					xmlns:xsd1="http://www.sky.com/SkySmsStatus" 
+					xmlns:xsd2="http://www.sky.com/SkySmsIncoming" 
+					xmlns:xsd3="http://www.sky.com/SkySmsBalance" 
+					xmlns:xsd4="http://www.sky.com/SkySmsExchange" 
+					xmlns:xsd5="http://www.sky.com/SkySmsChangePassword">
+	<wsdl:types>
+		<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+			<xsd:import namespace="http://www.sky.com/SkySmsSend" schemaLocation="xsd/SkySmsSend.xsd"/>
+			<xsd:import namespace="http://www.sky.com/SkySmsStatus" schemaLocation="xsd/SkySmsStatus.xsd"/>
+			<xsd:import namespace="http://www.sky.com/SkySmsIncoming" schemaLocation="xsd/SkySmsIncoming.xsd"/>
+			<xsd:import namespace="http://www.sky.com/SkySmsBalance" schemaLocation="xsd/SkySmsBalance.xsd"/>
+			<xsd:import namespace="http://www.sky.com/SkySmsExchange" schemaLocation="xsd/SkySmsExchange.xsd"/>
+			<xsd:import namespace="http://www.sky.com/SkySmsChangePassword" schemaLocation="xsd/SkySmsChangePassword.xsd"/>
+		</xsd:schema>
+	</wsdl:types>
+	<wsdl:message name="sendSmsRequest">
+		<wsdl:part name="parameters" element="xsd:SendSmsRequest"/>
+	</wsdl:message>
+	<wsdl:message name="sendSmsResponse">
+		<wsdl:part name="parameters" element="xsd:SendSmsResponse"/>
+	</wsdl:message>
+	<wsdl:message name="statusSmsRequest">
+		<wsdl:part name="parameters" element="xsd1:StatusSmsRequest"/>
+	</wsdl:message>
+	<wsdl:message name="statusSmsResponse">
+		<wsdl:part name="parameters" element="xsd1:StatusSmsResponse"/>
+	</wsdl:message>
+	<wsdl:message name="incomingSmsRequest">
+		<wsdl:part name="parameters" element="xsd2:IncomingSmsRequest"/>
+	</wsdl:message>
+	<wsdl:message name="incomingSmsResponse">
+		<wsdl:part name="parameters" element="xsd2:IncomingSmsResponse"/>
+	</wsdl:message>
+	<wsdl:message name="balanceSmsRequest">
+		<wsdl:part name="parameters" element="xsd3:BalanceSmsRequest"/>
+	</wsdl:message>
+	<wsdl:message name="balanceSmsResponse">
+		<wsdl:part name="parameters" element="xsd3:BalanceSmsResponse"/>
+	</wsdl:message>
+	<wsdl:message name="exchangeSmsRequest">
+		<wsdl:part name="parameters" element="xsd4:ExchangeSmsRequest"/>
+	</wsdl:message>
+	<wsdl:message name="exchangeSmsResponse">
+		<wsdl:part name="parameters" element="xsd4:ExchangeSmsResponse"/>
+	</wsdl:message>
+	<wsdl:message name="changePasswordSmsRequest">
+		<wsdl:part name="parameters" element="xsd5:ChangePasswordSmsRequest"/>
+	</wsdl:message>
+	<wsdl:message name="changePasswordSmsResponse">
+		<wsdl:part name="parameters" element="xsd5:ChangePasswordSmsResponse"/>
+	</wsdl:message>
+	<wsdl:portType name="SmsSkyWs">
+		<wsdl:operation name="sendSms">
+			<wsdl:input message="sendSmsRequest"/>
+			<wsdl:output message="sendSmsResponse"/>
+		</wsdl:operation>
+		<wsdl:operation name="statusSms">
+			<wsdl:input message="statusSmsRequest"/>
+			<wsdl:output message="statusSmsResponse"/>
+		</wsdl:operation>
+		<wsdl:operation name="incomingSms">
+			<wsdl:input message="incomingSmsRequest"/>
+			<wsdl:output message="incomingSmsResponse"/>
+		</wsdl:operation>
+		<wsdl:operation name="balanceSms">
+			<wsdl:input message="balanceSmsRequest"/>
+			<wsdl:output message="balanceSmsResponse"/>
+		</wsdl:operation>
+		<wsdl:operation name="exchangeSms">
+			<wsdl:input message="exchangeSmsRequest"/>
+			<wsdl:output message="exchangeSmsResponse"/>
+		</wsdl:operation>
+		<wsdl:operation name="changePasswordSms">
+			<wsdl:input message="changePasswordSmsRequest"/>
+			<wsdl:output message="changePasswordSmsResponse"/>
+		</wsdl:operation>
+	</wsdl:portType>
+	<wsdl:binding name="SmsSkyWsSOAP" type="SmsSkyWs">
+		<soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+		<wsdl:operation name="sendSms">
+			<soap:operation soapAction="http://www.sky.com/SmsSkyWs/sendSms"/>
+			<wsdl:input>
+				<soap:body use="literal"/>
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body use="literal"/>
+			</wsdl:output>
+		</wsdl:operation>
+		<wsdl:operation name="statusSms">
+			<soap:operation soapAction="http://www.sky.com/SmsSkyWs/statusSms"/>
+			<wsdl:input>
+				<soap:body use="literal"/>
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body use="literal"/>
+			</wsdl:output>
+		</wsdl:operation>
+		<wsdl:operation name="incomingSms">
+			<soap:operation soapAction="http://www.sky.com/SmsSkyWs/incomingSms"/>
+			<wsdl:input>
+				<soap:body use="literal"/>
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body use="literal"/>
+			</wsdl:output>
+		</wsdl:operation>
+		<wsdl:operation name="balanceSms">
+			<soap:operation soapAction="http://www.sky.com/SmsSkyWs/balanceSms"/>
+			<wsdl:input>
+				<soap:body use="literal"/>
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body use="literal"/>
+			</wsdl:output>
+		</wsdl:operation>
+		<wsdl:operation name="exchangeSms">
+			<soap:operation soapAction="http://www.sky.com/SmsSkyWs/exchangeSms"/>
+			<wsdl:input>
+				<soap:body use="literal"/>
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body use="literal"/>
+			</wsdl:output>
+		</wsdl:operation>
+		<wsdl:operation name="changePasswordSms">
+			<soap:operation soapAction="http://www.sky.com/SmsSkyWs/changePasswordSms"/>
+			<wsdl:input>
+				<soap:body use="literal"/>
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body use="literal"/>
+			</wsdl:output>
+		</wsdl:operation>
+	</wsdl:binding>
+	<wsdl:service name="SmsSkyWs">
+		<wsdl:port binding="SmsSkyWsSOAP" name="SmsSkyWsSOAP">
+			<soap:address location="https://smsmkt.amovil.mx/wsdl/skysms/SmsSkyWsPrueba.php"/>
+		</wsdl:port>
+	</wsdl:service>
+</wsdl:definitions>

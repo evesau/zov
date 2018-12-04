@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema 
+	xmlns="http://www.w3.org/2001/XMLSchema" 
+	targetNamespace="http://airmovil.com/SmsHeader"
+	xmlns:tns="http://airmovil.com/SmsHeader" 
+	elementFormDefault="qualified">
+	<complexType name="headerRequest">
+		<sequence>
+			<element name="proveedorId" type="string" />
+			<element name="proveedor" type="string" minOccurs="0" />
+			<element name="loteId" type="int" minOccurs="1" />
+			<element name="bloques" type="int" default="500" />
+		</sequence>
+	</complexType>
+	<complexType name="headerResponse">
+		<sequence>
+			<element name="codeError" type="string" minOccurs="0" />
+			<element name="messageError" type="string" minOccurs="0" />
+		</sequence>
+	</complexType>
+</schema>

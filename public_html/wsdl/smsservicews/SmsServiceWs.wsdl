@@ -1,0 +1,149 @@
+<?xml version="1.0"?>
+<wsdl:definitions 
+	name="SmsServiceWS" 
+	targetNamespace="http://airmovil.com/SmsServiceWS/" 
+	xmlns="http://airmovil.com/SmsServiceWS/" 
+	xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" 
+	xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" 
+	xmlns:p="http://www.w3.org/2001/XMLSchema" 
+	xmlns:xsd="http://airmovil.com/SmsSend" 
+	xmlns:xsd1="http://airmovil.com/SmsStatus" 
+	xmlns:xsd2="http://airmovil.com/SmsIncoming" 
+	xmlns:xsd3="http://airmovil.com/SmsBalance" 
+	xmlns:xsd4="http://airmovil.com/SmsExchange" 
+	xmlns:xsd5="http://airmovil.com/SmsChangePassword">
+	<wsdl:types>
+		<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+			<xsd:import namespace="http://airmovil.com/SmsSend" schemaLocation="SmsSend.xsd"/>
+			<xsd:import namespace="http://airmovil.com/SmsStatus" schemaLocation="SmsStatus.xsd"/>
+			<xsd:import namespace="http://airmovil.com/SmsIncoming" schemaLocation="SmsIncoming.xsd"/>
+			<xsd:import namespace="http://airmovil.com/SmsBalance" schemaLocation="SmsBalance.xsd"/>
+			<xsd:import namespace="http://airmovil.com/SmsExchange" schemaLocation="SmsExchange.xsd"/>
+			<xsd:import namespace="http://airmovil.com/SmsChangePassword" schemaLocation="SmsChangePassword.xsd"/>
+		</xsd:schema>
+	</wsdl:types>
+	<wsdl:message name="sendSmsRequest">
+		<wsdl:part name="parameters" element="xsd:SendSmsRequest"/>
+	</wsdl:message>
+	<wsdl:message name="sendSmsResponse">
+		<wsdl:part name="parameters" element="xsd:SendSmsResponse"/>
+	</wsdl:message>
+	<wsdl:message name="statusSmsRequest">
+		<wsdl:part name="parameters" element="xsd1:StatusSmsRequest"/>
+	</wsdl:message>
+	<wsdl:message name="statusSmsResponse">
+		<wsdl:part name="parameters" element="xsd1:StatusSmsResponse"/>
+	</wsdl:message>
+	<wsdl:message name="incomingSmsRequest">
+		<wsdl:part name="parameters" element="xsd2:IncomingSmsRequest"/>
+	</wsdl:message>
+	<wsdl:message name="incomingSmsResponse">
+		<wsdl:part name="parameters" element="xsd2:IncomingSmsResponse"/>
+	</wsdl:message>
+	<wsdl:message name="balanceSmsRequest">
+		<wsdl:part name="parameters" element="xsd3:BalanceSmsRequest"/>
+	</wsdl:message>
+	<wsdl:message name="balanceSmsResponse">
+		<wsdl:part name="parameters" element="xsd3:BalanceSmsResponse"/>
+	</wsdl:message>
+	<wsdl:message name="exchangeSmsRequest">
+		<wsdl:part name="parameters" element="xsd4:ExchangeSmsRequest"/>
+	</wsdl:message>
+	<wsdl:message name="exchangeSmsResponse">
+		<wsdl:part name="parameters" element="xsd4:ExchangeSmsResponse"/>
+	</wsdl:message>
+	<wsdl:message name="changePasswordSmsRequest">
+		<wsdl:part name="parameters" element="xsd5:ChangePasswordSmsRequest"/>
+	</wsdl:message>
+	<wsdl:message name="changePasswordSmsResponse">
+		<wsdl:part name="parameters" element="xsd5:ChangePasswordSmsResponse"/>
+	</wsdl:message>
+	<wsdl:portType name="SmsServiceWS">
+		<wsdl:operation name="sendSms">
+			<wsdl:input message="sendSmsRequest"/>
+			<wsdl:output message="sendSmsResponse"/>
+		</wsdl:operation>
+		<wsdl:operation name="statusSms">
+			<wsdl:input message="statusSmsRequest"/>
+			<wsdl:output message="statusSmsResponse"/>
+		</wsdl:operation>
+		<wsdl:operation name="incomingSms">
+			<wsdl:input message="incomingSmsRequest"/>
+			<wsdl:output message="incomingSmsResponse"/>
+		</wsdl:operation>
+		<wsdl:operation name="balanceSms">
+			<wsdl:input message="balanceSmsRequest"/>
+			<wsdl:output message="balanceSmsResponse"/>
+		</wsdl:operation>
+		<wsdl:operation name="exchangeSms">
+			<wsdl:input message="exchangeSmsRequest"/>
+			<wsdl:output message="exchangeSmsResponse"/>
+		</wsdl:operation>
+		<wsdl:operation name="changePasswordSms">
+			<wsdl:input message="changePasswordSmsRequest"/>
+			<wsdl:output message="changePasswordSmsResponse"/>
+		</wsdl:operation>
+	</wsdl:portType>
+	<wsdl:binding name="SmsServiceWSSOAP" type="SmsServiceWS">
+		<soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+		<wsdl:operation name="sendSms">
+			<soap:operation soapAction="http://airmovil.com/SmsServiceWS/sendSms"/>
+			<wsdl:input>
+				<soap:body use="literal"/>
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body use="literal"/>
+			</wsdl:output>
+		</wsdl:operation>
+		<wsdl:operation name="statusSms">
+			<soap:operation soapAction="http://airmovil.com/SmsServiceWS/statusSms"/>
+			<wsdl:input>
+				<soap:body use="literal"/>
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body use="literal"/>
+			</wsdl:output>
+		</wsdl:operation>
+		<wsdl:operation name="incomingSms">
+			<soap:operation soapAction="http://airmovil.com/SmsServiceWS/incomingSms"/>
+			<wsdl:input>
+				<soap:body use="literal"/>
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body use="literal"/>
+			</wsdl:output>
+		</wsdl:operation>
+		<wsdl:operation name="balanceSms">
+			<soap:operation soapAction="http://airmovil.com/SmsServiceWS/balanceSms"/>
+			<wsdl:input>
+				<soap:body use="literal"/>
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body use="literal"/>
+			</wsdl:output>
+		</wsdl:operation>
+		<wsdl:operation name="exchangeSms">
+			<soap:operation soapAction="http://airmovil.com/SmsServiceWS/exchangeSms"/>
+			<wsdl:input>
+				<soap:body use="literal"/>
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body use="literal"/>
+			</wsdl:output>
+		</wsdl:operation>
+		<wsdl:operation name="changePasswordSms">
+			<soap:operation soapAction="http://airmovil.com/SmsServiceWS/changePasswordSms"/>
+			<wsdl:input>
+				<soap:body use="literal"/>
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body use="literal"/>
+			</wsdl:output>
+		</wsdl:operation>
+	</wsdl:binding>
+	<wsdl:service name="SmsServiceWS">
+		<wsdl:port binding="SmsServiceWSSOAP" name="SmsServiceWSSOAP">
+			<soap:address location="https://smsmkt.amovil.mx/wsdl/smsservicews/SmsServiceWS.php"/>
+		</wsdl:port>
+	</wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,13 @@
+<?php
+namespace Core;
+defined("APPPATH") OR die("Access denied");
+
+class Crontabs{
+
+	public function checkStatusMsisdnCapability(){
+		$auth = base64_encode("4dminRcS1#.m:Rs541M3s$as");
+		$context = stream_context_create(['http' => ['header' => "Authorization: Basic $auth"]]);
+		$homepage = file_get_contents("http://testrcs.amovil.mx/Apis/verifyMsisdnRcs/", false, $context );
+	}
+	
+}

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd ">
+
+   <bean
+		class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+		<property name="location">
+			<value>file:conf/database.properties</value>
+		</property>
+	</bean> 
+    
+   <!-- Initialization for data source -->
+   <bean id="dataSource" 
+      class="org.apache.commons.dbcp.BasicDataSource">
+      <property name="driverClassName" value="com.mysql.jdbc.Driver"/>
+      <property name="url" value="${jdbc.url}"/>
+      <property name="username" value="${jdbc.username}"/>
+      <property name="password" value="${jdbc.password}"/>
+      <property name="removeAbandoned" value="true"/>
+   	  <property name="initialSize" value="${jdbc.minPool}" />
+      <property name="maxActive" value="${jdbc.maxPool}" />     
+   </bean>
+
+   <bean id="carrierConnectionDao" 
+      class="com.smpp.sms.dao.CarrierConnectionDao">
+      <property name="dataSource"  ref="dataSource" />    
+   </bean>
+   
+   
+   <bean id="deferredSmsDao" 
+      class="com.smpp.sms.dao.DeferredSmsDao">
+      <property name="dataSource"  ref="dataSource" />    
+   </bean>
+   
+   <bean id="blackListDao" 
+      class="com.smpp.sms.dao.BlackListDao">
+      <property name="dataSource"  ref="dataSource" />    
+   </bean>
+   
+   <bean id="smsDao" 
+      class="com.smpp.sms.dao.SmsDao">
+      <property name="dataSource"  ref="dataSource" />    
+   </bean>
+   
+   <bean id="whiteListDao" 
+      class="com.smpp.sms.dao.WhiteListDao">
+      <property name="dataSource"  ref="dataSource" />    
+   </bean>
+   
+   <bean id="configDao" 
+      class="com.smpp.sms.dao.ConfigDao">
+      <property name="dataSource"  ref="dataSource" />    
+   </bean>
+   
+   <bean id="ifetelDao" 
+      class="com.smpp.sms.dao.IfetelDao">
+      <property name="dataSource"  ref="dataSource" />    
+   </bean>
+ 
+<!--   
+   <bean id="deferredSmsJsmppJDBCTemplate" 
+      class="com.airmovil.smpp.dao.DeferredSmsJsmppJDBCTemplate">
+      <property name="dataSource"  ref="dataSource" />    
+   </bean>
+   
+   <bean id="smsJDBCTemplate" 
+      class="com.airmovil.smpp.dao.SmsJDBCTemplate">
+      <property name="dataSource"  ref="dataSource" />    
+   </bean>
+   
+   <bean id="configuracionJsmppJDBCTempplate" 
+      class="com.airmovil.smpp.dao.ConfiguracionJsmppJDBCTempplate">
+      <property name="dataSource"  ref="dataSource" />    
+   </bean>
+   
+   <bean id="configurationConnectionJDBCTemplate" 
+      class="com.airmovil.smpp.dao.ConfigurationConnectionJDBCTemplate">
+      <property name="dataSource"  ref="dataSource" />    
+   </bean>
+ --> 
+</beans>

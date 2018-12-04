@@ -1,0 +1,644 @@
+<?php
+namespace App\models;
+defined("APPPATH") OR die("Access denied");
+
+use \Core\Database;
+use \App\interfaces\Crud;
+
+class ReportesmtCamp implements Crud{
+
+	public static function insert($msisdn){}
+    public static function getById($param){}
+    public static function getAll(){}
+    public static function update($param){}
+    public static function delete($param){}
+
+    public static function getMTFull($data){
+        $params = array( ':customer_id' => $data->customer_id);
+
+        $params[':fecha_inicio'] .= $data->fecha_inicio;
+        $params[':fecha_fin'] .= $data->fecha_fin;
+        $params[':source'] .= 24766;//$data->source;
+
+        
+
+        $mysqli = Database::getInstance();
+
+        $query =<<<sql
+SELECT
+  (SELECT 
+    (CASE 
+      WHEN entry_time is null THEN sc.ctime
+      WHEN entry_time!='' THEN delivery_date
+      ELSE entry_time
+    END) AS time
+  FROM sms WHERE customer_id = :customer_id AND sms.content = sc.content AND
+  (entry_time >= :fecha_inicio AND entry_time <= :fecha_fin) AND source LIKE :source 
+  AND destination = msisdn_log AND delivery_time >=sc.ctime GROUP BY destination) AS FECHA,
+  (SELECT 
+    (CASE
+      WHEN carrier_id = 1 THEN 'telcel'
+      WHEN carrier_id = 2 THEN 'movistar'                            
+      WHEN carrier_id = 3 THEN 'att'                            
+      ELSE 'multicarrier'
+    END) AS carriers
+  FROM msisdn WHERE msisdn = msisdn_log) AS CARRIER,
+  msisdn_log AS DESTINATION,
+  short_code_log AS SHORTCODE,
+  content as CONTENT,
+  (SELECT 
+    IF(status_dlr='','delivered',status_dlr) AS statussms
+  FROM sms 
+  WHERE customer_id = :customer_id AND sms.content = sc.content 
+  AND (entry_time >= :fecha_inicio AND entry_time <= :fecha_fin) 
+  AND source LIKE :source AND destination = msisdn_log AND delivery_time >=sc.ctime 
+  GROUP BY destination) AS ESTATUSSMS,
+  sc.loteId AS LOTEID,
+  sc.loteDetalleId AS LOTEDETALLEID
+FROM sms_campaign as sc 
+WHERE (sc.ctime >= :fecha_inicio AND sc.ctime <= :fecha_fin) 
+AND sc.short_code_log LIKE :source AND customer_id = :customer_id
+ORDER BY sc.ctime DESC
+sql;
+
+
+        return $mysqli->queryAll($query, $params);
+    }
+
+
+    public static function getMTFullList($data, $start, $length){
+        $params = array( ':customer_id' => $data->customer_id);
+
+        $params[':fecha_inicio'] .= $data->fecha_inicio;
+        $params[':fecha_fin'] .= $data->fecha_fin;
+        $params[':source'] .= 24766;//$data->source;
+
+        
+
+        $mysqli = Database::getInstance();
+
+        $query =<<<sql
+SELECT
+  (SELECT 
+    (CASE 
+      WHEN entry_time is null THEN sc.ctime
+      WHEN entry_time!='' THEN delivery_date
+      ELSE entry_time
+    END) AS time
+  FROM sms WHERE customer_id = :customer_id AND sms.content = sc.content AND
+  (entry_time >= :fecha_inicio AND entry_time <= :fecha_fin) AND source LIKE :source 
+  AND destination = msisdn_log AND delivery_time >=sc.ctime GROUP BY destination) AS FECHA,
+  (SELECT 
+    (CASE
+      WHEN carrier_id = 1 THEN 'telcel'
+      WHEN carrier_id = 2 THEN 'movistar'                            
+      WHEN carrier_id = 3 THEN 'att'                            
+      ELSE 'multicarrier'
+    END) AS carriers
+  FROM msisdn WHERE msisdn = msisdn_log) AS CARRIER,
+  msisdn_log AS DESTINATION,
+  short_code_log AS SHORTCODE,
+  content as CONTENT,
+  (SELECT 
+    IF(status_dlr='','delivered',status_dlr) AS statussms
+  FROM sms 
+  WHERE customer_id = :customer_id AND sms.content = sc.content 
+  AND (entry_time >= :fecha_inicio AND entry_time <= :fecha_fin) 
+  AND source LIKE :source AND destination = msisdn_log AND delivery_time >=sc.ctime 
+  GROUP BY destination) AS ESTATUSSMS,
+  sc.loteId AS LOTEID,
+  sc.loteDetalleId AS LOTEDETALLEID
+FROM sms_campaign as sc 
+WHERE (sc.ctime >= :fecha_inicio AND sc.ctime <= :fecha_fin) 
+AND sc.short_code_log LIKE :source AND customer_id = :customer_id
+ORDER BY sc.ctime DESC
+LIMIT $start, $length
+sql;
+
+
+        return $mysqli->queryAll($query, $params);
+    }
+
+    public static function getMTAll($data){
+
+    	$params = array( ':customer_id'	=> $data->customer_id);
+
+    	$whereCampaign = '';
+    	$masWhere = '';
+    	$fechasWhere = '';
+
+    	if (empty($data->campaign_id)) {
+    		$params[':fecha_inicio'] .= $data->fecha_inicio;
+    		$params[':fecha_fin'] .= $data->fecha_fin;
+    		$fechasWhere = " AND sms.delivery_time>=sc.ctime
+                             AND ((sc.ctime >= :fecha_inicio AND sc.ctime <= :fecha_fin)
+                             AND (sms.entry_time >= :fecha_inicio AND sms.entry_time <= :fecha_fin))";
+
+            if(empty($data->source)){
+
+                $queryShortCode =<<<sql
+SELECT DISTINCT(sc.short_code)  FROM custome_carrier_connection_short_code AS cccsc
+INNER JOIN carrier_connection_short_code AS ccsc ON (ccsc.carrier_connection_short_code_id=cccsc.carrier_connection_short_code_id)
+INNER JOIN short_code AS sc ON(sc.short_code_id=ccsc.short_code_id)
+WHERE cccsc.customer_id =:customer_id
+sql;
+// AND YEAR(ctime) <= YEAR(:fecha_fin)
+                $paramsShort = array(':customer_id'=>$data->customer_id);
+                $mysqliS = Database::getInstance();
+                $shortcodes = $mysqliS->queryAll($queryShortCode,$paramsShort);
+                //mail('esau.espinoza@airmovil.com','shortcodes',print_r($shortcodes,1).print_r($paramsShort,1)."\n $queryShortCode");
+                $ss = '';
+                $ss1 = '';
+
+                foreach ($shortcodes as $key => $value) {
+
+                    if ($value['short_code'] > 0 ) {
+                        $ss .= "scd.short_code LIKE '{$value['short_code']}' OR ";
+                        $ss1 .= "sms.source LIKE '{$value['short_code']}' OR ";
+                    
+                    }
+                
+                }
+
+                $sourceWhere = " AND ( ".trim($ss, "OR ")." ) AND (".trim($ss1, "OR ")." )";
+
+            }
+
+    	} else {
+    		$whereCampaign = " AND cc.campaign_id = :campaign_id";
+    		$params[':campaign_id'] .= $data->campaign_id;
+    	}
+
+        if ($data->estatus == 'delivered') {
+            $estatusSms = " sms.status=:estatus AND sms.status_dlr ='' ";
+        } else {
+            $estatusSms = " sms.status_dlr=:estatus";
+        }
+
+    	if (empty($data->carrier) && empty($data->destination) && empty($data->source) && empty($data->estatus)) {
+    		$masWhere = '';
+    	} elseif (empty($data->carrier) && empty($data->destination) && empty($data->source) && !empty($data->estatus)) {
+    		$masWhere = " AND ( IF(sms.status is null, sce.estatus=:estatus, $estatusSms ) )";
+    		$params[':estatus'] .= $data->estatus;
+    	} elseif (empty($data->carrier) && empty($data->destination) && !empty($data->source) && empty($data->estatus)) {
+    		$masWhere = " AND scd.short_code LIKE :source AND sms.source LIKE :source";
+    		$params[':source'] .= $data->source;
+    	} elseif (empty($data->carrier) && empty($data->destination) && !empty($data->source) && !empty($data->estatus)) {
+    		$masWhere = " AND ( IF(sms.status is null, sce.estatus=:estatus, $estatusSms ) )
+    					  AND scd.short_code LIKE :source AND sms.source LIKE :source";
+    		$params[':estatus'] .= $data->estatus;
+    		$params[':source'] .= $data->source;
+    	} elseif (empty($data->carrier) && !empty($data->destination) && empty($data->source) && empty($data->estatus)) {
+    		$masWhere = " AND ( IF(sms.destination is null, sc.msisdn_log=:destination, sms.destination=:destination))";
+    		$params[':destination'] .= $data->destination;
+    	} elseif (empty($data->carrier) && !empty($data->destination) && empty($data->source) && !empty($data->estatus)) {
+    		$masWhere = " AND ( IF(sms.destination is null, sc.msisdn_log=:destination, sms.destination=:destination))
+    					  AND ( IF(sms.status is null, sce.estatus=:estatus, $estatusSms ) )";
+    		$params[':destination'] .= $data->destination;
+    		$params[':estatus'] .= $data->estatus;
+    	} elseif (empty($data->carrier) && !empty($data->destination) && !empty($data->source) && empty($data->estatus)) {
+    		$masWhere = " AND ( IF(sms.destination is null, sc.msisdn_log=:destination, sms.destination=:destination))
+    					  AND scd.short_code LIKE :source AND sms.source LIKE :source";
+    		$params[':destination'] .= $data->destination;
+    		$params[':source'] .= $data->source;
+    	} elseif (empty($data->carrier) && !empty($data->destination) && !empty($data->source) && !empty($data->estatus)) {
+    		$masWhere = " AND ( IF(sms.destination is null, sc.msisdn_log=:destination, sms.destination=:destination))
+    					  AND scd.short_code LIKE :source AND sms.source LIKE :source
+    					  AND ( IF(sms.status is null, sce.estatus=:estatus, $estatusSms ) )";
+    		$params[':destination'] .= $data->destination;
+    		$params[':source'] .= $data->source;
+    		$params[':estatus'] .= $data->estatus;
+    	} elseif (!empty($data->carrier) && empty($data->destination) && empty($data->source) && empty($data->estatus)) {
+    		if ($data->carrier=='null') {
+    			$masWhere = " AND ca.name is null";
+    		} else {
+    			$masWhere = " AND (sms.carrier=:carrier OR ca.name=:carrier)";
+    		}
+    		$params[':carrier'] .= $data->carrier;
+    	} elseif (!empty($data->carrier) && empty($data->destination) && empty($data->source) && !empty($data->estatus)) {
+    		if ($data->carrier=='null') {
+    			$masWhere = " AND ca.name is null
+    						  AND ( IF(sms.status is null, sce.estatus=:estatus, $estatusSms ) )";
+    		} else {
+    			$masWhere = " AND (sms.carrier=:carrier OR ca.name=:carrier)
+    						  AND ( IF(sms.status is null, sce.estatus=:estatus, $estatusSms ) )";
+    		}
+    		$params[':carrier'] .= $data->carrier;
+    		$params[':estatus'] .= $data->estatus;
+    	} elseif (!empty($data->carrier) && empty($data->destination) && !empty($data->source) && empty($data->estatus)) {
+    		if ($data->carrier=='null') {
+    			$masWhere = " AND ca.name is null
+    						  AND scd.short_code LIKE :source AND sms.source LIKE :source";
+    		} else {
+    			$masWhere = " AND (sms.carrier=:carrier OR ca.name=:carrier)
+    						  AND scd.short_code LIKE :source AND sms.source LIKE :source";
+    		}
+    		$params[':carrier'] .= $data->carrier;
+    		$params[':source'] .= $data->source;
+    	} elseif (!empty($data->carrier) && empty($data->destination) && !empty($data->source) && !empty($data->estatus)) {
+    		if ($data->carrier=='null') {
+    			$masWhere = " AND ca.name is null
+    						  AND scd.short_code LIKE :source AND sms.source LIKE :source
+    						  AND ( IF(sms.status is null, sce.estatus=:estatus, $estatusSms ) )";
+    		} else {
+    			$masWhere = " AND (sms.carrier=:carrier OR ca.name=:carrier)
+    						  AND scd.short_code LIKE :source AND sms.source LIKE :source
+    						  AND ( IF(sms.status is null, sce.estatus=:estatus, $estatusSms ) )";
+    		}
+    		$params[':carrier'] .= $data->carrier;
+    		$params[':source'] .= $data->source;
+    		$params[':estatus'] .= $data->estatus;
+    	} elseif (!empty($data->carrier) && !empty($data->destination) && empty($data->source) && empty($data->estatus)) {
+    		if ($data->carrier=='null') {
+    			$masWhere = " AND ca.name is null
+    						  AND ( IF(sms.destination is null, sc.msisdn_log=:destination, sms.destination=:destination))";
+    		} else {
+    			$masWhere = " AND (sms.carrier=:carrier OR ca.name=:carrier)
+    						  AND ( IF(sms.destination is null, sc.msisdn_log=:destination, sms.destination=:destination))";
+    		}
+    		$params[':carrier'] .= $data->carrier;
+    		$params[':destination'] .= $data->destination;
+    	} elseif (!empty($data->carrier) && !empty($data->destination) && empty($data->source) && !empty($data->estatus)) {
+    		if ($data->carrier=='null') {
+    			$masWhere = " AND ca.name is null
+    						  AND ( IF(sms.destination is null, sc.msisdn_log=:destination, sms.destination=:destination))
+    						  AND ( IF(sms.status is null, sce.estatus=:estatus, $estatusSms ) )";
+    		} else {
+    			$masWhere = " AND (sms.carrier=:carrier OR ca.name=:carrier)
+    						  AND ( IF(sms.destination is null, sc.msisdn_log=:destination, sms.destination=:destination))
+    						  AND ( IF(sms.status is null, sce.estatus=:estatus, $estatusSms ) )";
+    		}
+    		$params[':carrier'] .= $data->carrier;
+    		$params[':destination'] .= $data->destination;
+    		$params[':estatus'] .= $data->estatus;
+    	} elseif (!empty($data->carrier) && !empty($data->destination) && !empty($data->source) && empty($data->estatus)) {
+    		if ($data->carrier=='null') {
+    			$masWhere = " AND ca.name is null
+    						  AND ( IF(sms.destination is null, sc.msisdn_log=:destination, sms.destination=:destination))
+    						  AND scd.short_code LIKE :source AND sms.source LIKE :source";
+    		} else {
+    			$masWhere = " AND (sms.carrier=:carrier OR ca.name=:carrier)
+    						  AND ( IF(sms.destination is null, sc.msisdn_log=:destination, sms.destination=:destination))
+    						  AND scd.short_code LIKE :source AND sms.source LIKE :source";
+    		}
+    		$params[':carrier'] .= $data->carrier;
+    		$params[':destination'] .= $data->destination;
+    		$params[':source'] .= $data->source;
+    	} elseif (!empty($data->carrier) && !empty($data->destination) && !empty($data->source) && !empty($data->estatus)) {
+    		if ($data->carrier=='null') {
+    			$masWhere = " AND ca.name is null
+    						  AND ( IF(sms.destination is null, sc.msisdn_log=:destination, sms.destination=:destination))
+    						  AND scd.short_code LIKE :source AND sms.source LIKE :source
+    						  AND ( IF(sms.status is null, sce.estatus=:estatus, $estatusSms ) )";
+    		} else {
+    			$masWhere = " AND (sms.carrier=:carrier OR ca.name=:carrier)
+    						  AND ( IF(sms.destination is null, sc.msisdn_log=:destination, sms.destination=:destination))
+    						  AND scd.short_code LIKE :source AND sms.source LIKE :source
+    						  AND ( IF(sms.status is null, sce.estatus=:estatus, $estatusSms ) )";
+    		}
+    		$params[':carrier'] .= $data->carrier;
+    		$params[':destination'] .= $data->destination;
+    		$params[':source'] .= $data->source;
+    		$params[':estatus'] .= $data->estatus;
+    	}
+
+    	$query =<<<sql
+SELECT 
+    (IF(sms.entry_time IS NULL, sc.ctime, sms.delivery_time)) AS FECHA,
+    (CASE
+        WHEN ca.name IS NULL THEN "Sin Carrier"
+        WHEN sms.carrier IS NULL THEN ca.name
+        WHEN sms.carrier="" THEN ca.name
+        ELSE sms.carrier
+     END) AS CARRIER,
+     (IF(sms.destination IS NULL, sc.msisdn_log, sms.destination)) AS DESTINATION,
+     (IF(sms.source IS NULL, scd.short_code, sms.source)) AS SHORTCODE,
+     (IF(sms.content IS NULL, sc.content, sms.content)) AS CONTENT,
+     (
+      CASE
+        WHEN sms.status is null THEN sce.estatus
+        WHEN sms.status_dlr ='' THEN sms.status
+        ELSE sms.status_dlr
+      END) AS ESTATUSSMS
+FROM sms_campaign as sc
+LEFT JOIN sms as sms ON (sc.secuencia='' AND sms.campaign_id=sc.campaign_id AND sms.destination=sc.msisdn_log AND sms.content=sc.content )
+LEFT JOIN sms_campaign_estatus as sce ON (sce.sms_campaign_estatus_id=sc.sms_campaign_estatus_id)
+LEFT JOIN carrier_connection_short_code as ccsc ON (ccsc.carrier_connection_short_code_id=sc.carrier_connection_short_code_id)
+LEFT JOIN carrier as ca ON (ca.carrier_id=ccsc.carrier_id)
+LEFT JOIN short_code as scd ON (scd.short_code_id=ccsc.short_code_id )
+INNER JOIN campaign_customer as cc ON (cc.campaign_id=sc.campaign_id)
+WHERE sms.direction ='MT' AND cc.customer_id=:customer_id $whereCampaign 
+$fechasWhere
+$sourceWhere
+$masWhere
+GROUP BY sc.sms_campaign_id
+ORDER BY sms.delivery_time DESC
+sql;
+
+    	//mail('esau.espinoza@airmovil.com','new query all', json_encode($params).print_r($query,1));
+
+    	$mysqli = Database::getInstance();
+
+    	return $mysqli->queryAll($query, $params);
+
+    }
+
+    public static function getMTList($data, $start, $length){
+
+    	$params = array( ':customer_id'	=> $data->customer_id);
+
+    	$whereCampaign = '';
+    	$masWhere = '';
+    	$fechasWhere = '';
+
+    	if (empty($data->campaign_id)) {
+    		$params[':fecha_inicio'] .= $data->fecha_inicio;
+    		$params[':fecha_fin'] .= $data->fecha_fin;
+    		$fechasWhere = " AND sms.delivery_time>=sc.ctime
+                             AND ((sc.ctime >= :fecha_inicio AND sc.ctime <= :fecha_fin)
+                             AND (sms.entry_time >= :fecha_inicio AND sms.entry_time <= :fecha_fin))";
+
+            if(empty($data->source)){
+
+                $queryShortCode =<<<sql
+SELECT DISTINCT(sc.short_code)  FROM custome_carrier_connection_short_code AS cccsc
+INNER JOIN carrier_connection_short_code AS ccsc ON (ccsc.carrier_connection_short_code_id=cccsc.carrier_connection_short_code_id)
+INNER JOIN short_code AS sc ON(sc.short_code_id=ccsc.short_code_id)
+WHERE cccsc.customer_id =:customer_id
+sql;
+// AND YEAR(ctime) <= YEAR(:fecha_fin)
+                $paramsShort = array(':customer_id'=>$data->customer_id);
+                $mysqliS = Database::getInstance();
+                $shortcodes = $mysqliS->queryAll($queryShortCode,$paramsShort);
+            
+                $ss = '';
+                $ss1 = '';
+                foreach ($shortcodes as $key => $value) {
+
+                    if ($value['short_code'] > 0 ) {
+                        $ss .= "scd.short_code LIKE '{$value['short_code']}' OR ";
+                        $ss1 .= "sms.source LIKE '{$value['short_code']}' OR ";
+                    
+                    }
+                
+                }
+
+                $sourceWhere = " AND ( ".trim($ss, "OR ")." ) AND (".trim($ss1, "OR ")." )";
+
+            }
+
+    	} else {
+    		$whereCampaign = " AND cc.campaign_id = :campaign_id";
+    		$params[':campaign_id'] .= $data->campaign_id;
+    	}
+
+        if ($data->estatus == 'delivered') {
+            $estatusSms = " sms.status=:estatus AND sms.status_dlr ='' ";
+        } else {
+            $estatusSms = " sms.status_dlr=:estatus";
+        }
+
+    	if (empty($data->carrier) && empty($data->destination) && empty($data->source) && empty($data->estatus)) {
+    		$masWhere = '';
+    	} elseif (empty($data->carrier) && empty($data->destination) && empty($data->source) && !empty($data->estatus)) {
+    		$masWhere = " AND ( IF(sms.status is null, sce.estatus=:estatus, $estatusSms ) )";
+    		$params[':estatus'] .= $data->estatus;
+    	} elseif (empty($data->carrier) && empty($data->destination) && !empty($data->source) && empty($data->estatus)) {
+    		$masWhere = " AND scd.short_code LIKE :source AND sms.source LIKE :source";
+    		$params[':source'] .= $data->source;
+    	} elseif (empty($data->carrier) && empty($data->destination) && !empty($data->source) && !empty($data->estatus)) {
+    		$masWhere = " AND ( IF(sms.status is null, sce.estatus=:estatus, $estatusSms ) )
+    					  AND scd.short_code LIKE :source AND sms.source LIKE :source";
+    		$params[':estatus'] .= $data->estatus;
+    		$params[':source'] .= $data->source;
+    	} elseif (empty($data->carrier) && !empty($data->destination) && empty($data->source) && empty($data->estatus)) {
+    		$masWhere = " AND ( IF(sms.destination is null, sc.msisdn_log=:destination, sms.destination=:destination))";
+    		$params[':destination'] .= $data->destination;
+    	} elseif (empty($data->carrier) && !empty($data->destination) && empty($data->source) && !empty($data->estatus)) {
+    		$masWhere = " AND ( IF(sms.destination is null, sc.msisdn_log=:destination, sms.destination=:destination))
+    					  AND ( IF(sms.status is null, sce.estatus=:estatus, $estatusSms ) )";
+    		$params[':destination'] .= $data->destination;
+    		$params[':estatus'] .= $data->estatus;
+    	} elseif (empty($data->carrier) && !empty($data->destination) && !empty($data->source) && empty($data->estatus)) {
+    		$masWhere = " AND ( IF(sms.destination is null, sc.msisdn_log=:destination, sms.destination=:destination))
+    					  AND scd.short_code LIKE :source AND sms.source LIKE :source";
+    		$params[':destination'] .= $data->destination;
+    		$params[':source'] .= $data->source;
+    	} elseif (empty($data->carrier) && !empty($data->destination) && !empty($data->source) && !empty($data->estatus)) {
+    		$masWhere = " AND ( IF(sms.destination is null, sc.msisdn_log=:destination, sms.destination=:destination))
+    					  AND scd.short_code LIKE :source AND sms.source LIKE :source
+    					  AND ( IF(sms.status is null, sce.estatus=:estatus, $estatusSms ) )";
+    		$params[':destination'] .= $data->destination;
+    		$params[':source'] .= $data->source;
+    		$params[':estatus'] .= $data->estatus;
+    	} elseif (!empty($data->carrier) && empty($data->destination) && empty($data->source) && empty($data->estatus)) {
+    		if ($data->carrier=='null') {
+    			$masWhere = " AND ca.name is null";
+    		} else {
+    			$masWhere = " AND (sms.carrier=:carrier OR ca.name=:carrier)";
+    		}
+    		$params[':carrier'] .= $data->carrier;
+    	} elseif (!empty($data->carrier) && empty($data->destination) && empty($data->source) && !empty($data->estatus)) {
+    		if ($data->carrier=='null') {
+    			$masWhere = " AND ca.name is null
+    						  AND ( IF(sms.status is null, sce.estatus=:estatus, $estatusSms ) )";
+    		} else {
+    			$masWhere = " AND (sms.carrier=:carrier OR ca.name=:carrier)
+    						  AND ( IF(sms.status is null, sce.estatus=:estatus, $estatusSms ) )";
+    		}
+    		$params[':carrier'] .= $data->carrier;
+    		$params[':estatus'] .= $data->estatus;
+    	} elseif (!empty($data->carrier) && empty($data->destination) && !empty($data->source) && empty($data->estatus)) {
+    		if ($data->carrier=='null') {
+    			$masWhere = " AND ca.name is null
+    						  AND scd.short_code LIKE :source AND sms.source LIKE :source";
+    		} else {
+    			$masWhere = " AND (sms.carrier=:carrier OR ca.name=:carrier)
+    						  AND scd.short_code LIKE :source AND sms.source LIKE :source";
+    		}
+    		$params[':carrier'] .= $data->carrier;
+    		$params[':source'] .= $data->source;
+    	} elseif (!empty($data->carrier) && empty($data->destination) && !empty($data->source) && !empty($data->estatus)) {
+    		if ($data->carrier=='null') {
+    			$masWhere = " AND ca.name is null
+    						  AND scd.short_code LIKE :source AND sms.source LIKE :source
+    						  AND ( IF(sms.status is null, sce.estatus=:estatus, $estatusSms ) )";
+    		} else {
+    			$masWhere = " AND (sms.carrier=:carrier OR ca.name=:carrier)
+    						  AND scd.short_code LIKE :source AND sms.source LIKE :source
+    						  AND ( IF(sms.status is null, sce.estatus=:estatus, $estatusSms ) )";
+    		}
+    		$params[':carrier'] .= $data->carrier;
+    		$params[':source'] .= $data->source;
+    		$params[':estatus'] .= $data->estatus;
+    	} elseif (!empty($data->carrier) && !empty($data->destination) && empty($data->source) && empty($data->estatus)) {
+    		if ($data->carrier=='null') {
+    			$masWhere = " AND ca.name is null
+    						  AND ( IF(sms.destination is null, sc.msisdn_log=:destination, sms.destination=:destination))";
+    		} else {
+    			$masWhere = " AND (sms.carrier=:carrier OR ca.name=:carrier)
+    						  AND ( IF(sms.destination is null, sc.msisdn_log=:destination, sms.destination=:destination))";
+    		}
+    		$params[':carrier'] .= $data->carrier;
+    		$params[':destination'] .= $data->destination;
+    	} elseif (!empty($data->carrier) && !empty($data->destination) && empty($data->source) && !empty($data->estatus)) {
+    		if ($data->carrier=='null') {
+    			$masWhere = " AND ca.name is null
+    						  AND ( IF(sms.destination is null, sc.msisdn_log=:destination, sms.destination=:destination))
+    						  AND ( IF(sms.status is null, sce.estatus=:estatus, $estatusSms ) )";
+    		} else {
+    			$masWhere = " AND (sms.carrier=:carrier OR ca.name=:carrier)
+    						  AND ( IF(sms.destination is null, sc.msisdn_log=:destination, sms.destination=:destination))
+    						  AND ( IF(sms.status is null, sce.estatus=:estatus, $estatusSms ) )";
+    		}
+    		$params[':carrier'] .= $data->carrier;
+    		$params[':destination'] .= $data->destination;
+    		$params[':estatus'] .= $data->estatus;
+    	} elseif (!empty($data->carrier) && !empty($data->destination) && !empty($data->source) && empty($data->estatus)) {
+    		if ($data->carrier=='null') {
+    			$masWhere = " AND ca.name is null
+    						  AND ( IF(sms.destination is null, sc.msisdn_log=:destination, sms.destination=:destination))
+    						  AND scd.short_code LIKE :source AND sms.source LIKE :source";
+    		} else {
+    			$masWhere = " AND (sms.carrier=:carrier OR ca.name=:carrier)
+    						  AND ( IF(sms.destination is null, sc.msisdn_log=:destination, sms.destination=:destination))
+    						  AND scd.short_code LIKE :source AND sms.source LIKE :source";
+    		}
+    		$params[':carrier'] .= $data->carrier;
+    		$params[':destination'] .= $data->destination;
+    		$params[':source'] .= $data->source;
+    	} elseif (!empty($data->carrier) && !empty($data->destination) && !empty($data->source) && !empty($data->estatus)) {
+    		if ($data->carrier=='null') {
+    			$masWhere = " AND ca.name is null
+    						  AND ( IF(sms.destination is null, sc.msisdn_log=:destination, sms.destination=:destination))
+    						  AND scd.short_code LIKE :source AND sms.source LIKE :source
+    						  AND ( IF(sms.status is null, sce.estatus=:estatus, $estatusSms ) )";
+    		} else {
+    			$masWhere = " AND (sms.carrier=:carrier OR ca.name=:carrier)
+    						  AND ( IF(sms.destination is null, sc.msisdn_log=:destination, sms.destination=:destination))
+    						  AND scd.short_code LIKE :source AND sms.source LIKE :source
+    						  AND ( IF(sms.status is null, sce.estatus=:estatus, $estatusSms ) )";
+    		}
+    		$params[':carrier'] .= $data->carrier;
+    		$params[':destination'] .= $data->destination;
+    		$params[':source'] .= $data->source;
+    		$params[':estatus'] .= $data->estatus;
+    	}
+
+    	$query =<<<sql
+SELECT 
+    (IF(sms.entry_time IS NULL, sc.ctime, sms.delivery_time)) AS FECHA,
+    (CASE
+        WHEN ca.name IS NULL THEN "Sin Carrier"
+        WHEN sms.carrier IS NULL THEN ca.name
+        WHEN sms.carrier="" THEN ca.name
+        ELSE sms.carrier
+     END) AS CARRIER,
+     (IF(sms.destination IS NULL, sc.msisdn_log, sms.destination)) AS DESTINATION,
+     (IF(sms.source IS NULL, scd.short_code, sms.source)) AS SHORTCODE,
+     (IF(sms.content IS NULL, sc.content, sms.content)) AS CONTENT,
+     (
+      CASE
+        WHEN sms.status is null THEN sce.estatus
+        WHEN sms.status_dlr ='' THEN sms.status
+        ELSE sms.status_dlr
+      END) AS ESTATUSSMS
+FROM sms_campaign as sc
+LEFT JOIN sms as sms ON (sc.secuencia='' AND sms.campaign_id=sc.campaign_id AND sms.destination=sc.msisdn_log AND sms.content=sc.content )
+LEFT JOIN sms_campaign_estatus as sce ON (sce.sms_campaign_estatus_id=sc.sms_campaign_estatus_id)
+LEFT JOIN carrier_connection_short_code as ccsc ON (ccsc.carrier_connection_short_code_id=sc.carrier_connection_short_code_id)
+LEFT JOIN carrier as ca ON (ca.carrier_id=ccsc.carrier_id)
+LEFT JOIN short_code as scd ON (scd.short_code_id=ccsc.short_code_id )
+INNER JOIN campaign_customer as cc ON (cc.campaign_id=sc.campaign_id)
+WHERE sms.direction ='MT' AND cc.customer_id=:customer_id $whereCampaign
+$fechasWhere
+$sourceWhere
+$masWhere
+GROUP BY sc.sms_campaign_id
+ORDER BY sms.delivery_time DESC
+LIMIT $start, $length
+sql;
+
+    	//mail('esau.espinoza@airmovil.com','new query list', json_encode($params).print_r($query,1));
+    	
+    	$mysqli = Database::getInstance();
+
+    	return $mysqli->queryAll($query, $params);
+
+    }
+
+
+	public static function getAllCampaignMT($id){
+		$mysqli = Database::getInstance();
+		$query =<<<sql
+SELECT c.campaign_id, c.name AS name_campaign, c.delivery_date, sc.short_code
+FROM campaign c
+LEFT JOIN campaign_api_web
+USING ( campaign_id )
+INNER JOIN campaign_customer cc
+USING ( campaign_id )
+INNER JOIN customer cu ON ( cc.customer_id = cu.customer_id )
+INNER JOIN carrier_connection_short_code_campaign ccscc
+USING ( campaign_id )
+INNER JOIN carrier_connection_short_code ccsc ON ( ccscc.carrier_connection_short_code_id = ccsc.carrier_connection_short_code_id )
+INNER JOIN short_code sc ON ( sc.short_code_id = ccsc.short_code_id )
+INNER JOIN campaign_status cs ON ( cs.campaign_status_id = c.campaign_status_id )
+WHERE cu.customer_id = $id
+
+
+AND cs.campaign_status_id NOT
+IN ( 4, 5 )
+GROUP BY c.campaign_id
+sql;
+		return $mysqli->queryAll($query);
+
+		//AND MONTH( c.delivery_date ) = MONTH( CURDATE( ) )
+		// AND campaign_api_web_id IS NULL
+	}
+
+
+  public static function getShortCodes($data){
+    $mysqli = Database::getInstance();
+    $query =<<<sql
+SELECT DISTINCT(sc.short_code)  FROM custome_carrier_connection_short_code AS cccsc
+INNER JOIN carrier_connection_short_code AS ccsc ON (ccsc.carrier_connection_short_code_id=cccsc.carrier_connection_short_code_id)
+INNER JOIN short_code AS sc ON(sc.short_code_id=ccsc.short_code_id)
+WHERE cccsc.customer_id =:customer_id
+sql;
+
+    $params = array(':customer_id' => $data->customer_id);
+
+    return $mysqli->queryAll($query, $params);
+
+  }
+
+
+  public static function registroUsuario($registro){
+        $mysqli = Database::getInstance();
+        $query=<<<sql
+INSERT INTO user_registro(ctime, user_id, nickname, name_customer, script, ip, modulo,accion) VALUES (now(),:id_user,:nickname,:name_customer,:script,:ip,:modulo,:accion);
+sql;
+        $params = array(
+            ':id_user'          => $registro->_id_usuario,
+            ':nickname'         => $registro->_nickname,
+            ':name_customer'    => $registro->_customer,
+            ':script'           => $registro->_script,
+            ':ip'               => $registro->_ip,
+            ':modulo'           => $registro->_modulo,
+            ':accion'           => $registro->_accion
+        );
+
+        return $mysqli->insert($query, $params);
+    }
+
+}
+
+
+
+
+
+
+
+
+
+

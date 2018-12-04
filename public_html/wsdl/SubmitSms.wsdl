@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+<definitions name="AritmeticaServicio" 
+    targetNamespace="urn:Aritmetica"
+     xmlns:tns="urn:Aritmetica"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+     xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+     xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/"
+     xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
+     xmlns="http://schemas.xmlsoap.org/wsdl/">
+ 
+  <message name="AritmeticaPeticion">
+    <part name="operando1" type="xsd:float" />
+    <part name="operando2" type="xsd:float" />
+  </message>
+ 
+  <message name="AritmeticaRespuesta">
+    <part name="respuesta" type="xsd:float" />
+  </message>
+ 
+  <portType name="AritmeticaPort">
+    <operation name="sumar">
+      <input message="tns:AritmeticaPeticion" />
+      <output message="tns:AritmeticaRespuesta" />
+    </operation>
+    <operation name="restar">
+      <input message="tns:AritmeticaPeticion" />
+      <output message="tns:AritmeticaRespuesta" />
+    </operation>
+  </portType>
+ 
+  <binding name="AritmeticaBinding" type="tns:AritmeticaPort">
+    <soap:binding style="rpc" transport="http://schemas.xmlsoap.org/soap/http" />
+    <operation name="sumar">
+        <soap:operation soapAction="urn:Aritmetica#sumar" />
+        <input>
+          <soap:body use="encoded" namespace="urn:Aritmetica"
+                     encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+        </input>
+        <output>
+          <soap:body use="encoded" namespace="urn:Aritmetica"
+                     encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+        </output>
+    </operation>
+    <operation name="restar">
+        <soap:operation soapAction="urn:Aritmetica#restar" />
+        <input>
+          <soap:body use="encoded" namespace="urn:Aritmetica"
+                     encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />       
+        </input>
+        <output>
+          <soap:body use="encoded" namespace="urn:Aritmetica"
+                     encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />       
+        </output>
+    </operation>
+  </binding>
+ 
+  <service name="AritmeticaServicio">
+    <port name="AritmeticaPort" binding="tns:AritmeticaBinding">
+      <soap:address location="https://smppvier.amovil.mx/wsdl/serverEsau.php" />
+    </port>
+  </service>
+</definitions>

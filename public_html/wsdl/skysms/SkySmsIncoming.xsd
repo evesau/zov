@@ -1,0 +1,37 @@
+<schema targetNamespace="http://www.sky.com/SkySmsIncoming" elementFormDefault="qualified" xmlns="http://www.w3.org/2001/XMLSchema" xmlns:xsd="http://www.sky.com/SkySmsIncoming" xmlns:tns="http://www.sky.com/SkySmsIncoming" xmlns:head="http://www.sky.com/SkySmsHeader">
+	<import namespace="http://www.sky.com/SkySmsHeader" schemaLocation="Common/SkySmsHeader.xsd"/>
+	<element name="IncomingSmsRequest">
+		<complexType>
+			<sequence>
+				<element name="headerRequest" type="head:headerRequest"/>
+				<element name="idMessage" type="string"/>
+				<element name="from" type="string"/>
+				<element name="to" type="string"/>
+			</sequence>
+		</complexType>
+	</element>
+	<element name="IncomingSmsResponse">
+		<complexType>
+			<sequence>
+				<element name="headerResponse" type="head:headerResponse"/>
+				<element name="status" type="double"/>
+				<element name="description" type="string"/>
+				<element name="messages" type="string"/>
+				<element name="listMessages">
+					<complexType>
+						<sequence>
+							<element name="message" type="xsd:message" maxOccurs="unbounded"/>
+						</sequence>
+					</complexType>
+				</element>
+			</sequence>
+		</complexType>
+	</element>
+	<complexType name="message">
+		<sequence>
+			<element name="answerDate" type="string"/>
+			<element name="phoneNumber" type="string"/>
+			<element name="message" type="string"/>
+		</sequence>
+	</complexType>
+</schema>

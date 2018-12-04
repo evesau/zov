@@ -1,0 +1,39 @@
+<?php
+namespace App\controllers;
+defined("APPPATH") OR die("Access denied");
+
+use \Core\View;
+use \Core\MasterDom;
+
+class ApiPin{
+
+	public function ImagePIN(){
+		header("Content-Type: image/png");
+		$image = imagecreatetruecolor(200, 50) or die("Cannot Initialize new GD image stream");
+		$background_color = imagecolorallocate($image, 42, 74,133);
+		$text_color = imagecolorallocate($image, 255, 255, 255);
+		$line_color = imagecolorallocate($image, 42, 72, 142);
+		$pixel_color = imagecolorallocate($image, 40, 60, 130);
+		imagefilledrectangle($image, 0, 0, 200, 50, $background_color);
+		for ($i = 0; $i < 3; $i++) {
+			imageline($image, 0, rand(0, 255) % 50, 200, rand(0, 255) % 50, $line_color);
+    	}
+		for ($i = 0; $i < 1000; $i++) {
+			imagesetpixel($image, rand() % 200, rand() % 50, $pixel_color);
+		}
+		$letters = '1234567890';
+		$len = strlen($letters);
+		$letter = $letters[rand(0, $len - 1)];
+		# $text_color = imagecolorallocate($image, 0, 0, 0);
+		$word = "";
+		for ($i = 0; $i < 4; $i++) {
+			$letter = "1234";//$letters[rand(0, $len - 1)];
+			$word .= "1234";//$letter;
+		}
+		imagestring($image, 7, 73, 20, "1 2 3 4", $text_color);
+		//$_SESSION['solution'] = $word;
+		imagepng($image);
+		imagedestroy($image);
+	}
+
+}

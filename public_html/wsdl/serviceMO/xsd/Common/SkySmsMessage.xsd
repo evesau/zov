@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.sky.com/SkySmsMessage"
+	xmlns:tns="http://www.sky.com/SkySmsMessage" elementFormDefault="qualified">
+	<complexType name="message">
+		<sequence>
+			<element name="phoneNumber" type="string" />
+			<element name="message" type="string" />
+			<element name="loteDetalleId" type="decimal" />
+		</sequence>
+	</complexType>
+</schema>

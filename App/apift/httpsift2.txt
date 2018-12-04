@@ -1,0 +1,129 @@
+tion"><![CDATA[<span id="FORM_myform:TXT_Population" class="ui-autocomplete"><input id="FORM_myform:TXT_Population_input" name="FORM_myform:TXT_Population_input" type="text" class="ui-autocomplete-input ui-inputfield ui-widget ui-state-default ui-corner-all ui-state-disabled" autocomplete="off" aria-labelledby="FORM_myform:j_idt805" disabled="disabled" /><div id="FORM_myform:TXT_Population_panel" class="ui-autocomplete-panel ui-widget-content ui-corner-all ui-helper-hidden ui-shadow"></div></span><script id="FORM_myform:TXT_Population_s" type="text/javascript">$(function(){PrimeFaces.cw("AutoComplete","widget_FORM_myform_TXT_Population",{id:"FORM_myform:TXT_Population",minLength:4,delay:300,forceSelection:true,effect:"fade",effectDuration:400,behaviors:{itemSelect:function(ext,event) {PrimeFaces.ab({s:"FORM_myform:TXT_Population",e:"itemSelect",p:"FORM_myform:TXT_Population",u:"FORM_myform:P_containerConsulta FORM_myform:P_containerpoblaciones",g:false},ext);}}});});</script>]]></update><update id="FORM_myform:TXT_LocalNumber"><![CDATA[<input id="FORM_myform:TXT_LocalNumber" name="FORM_myform:TXT_LocalNumber" type="tel" value="" autocomplete="off" maxlength="8" onkeyup="PrimeFaces.ab({s:&quot;FORM_myform:TXT_LocalNumber&quot;,e:&quot;keyup&quot;,p:&quot;FORM_myform:TXT_LocalNumber&quot;,u:&quot;FORM_myform:BTN_publicSearch FORM_myform:TXT_Nir FORM_myform:TXT_Population FORM_myform:TXT_NationalNumber&quot;,g:false});" disabled="disabled" class="ui-inputfield ui-inputtext ui-widget ui-state-default ui-corner-all ui-state-disabled" /><script id="FORM_myform:TXT_LocalNumber_s" type="text/javascript">PrimeFaces.cw("InputText","widget_FORM_myform_TXT_LocalNumber",{id:"FORM_myform:TXT_LocalNumber"});</script>]]></update><update id="FORM_myform:TXT_Nir"><![CDATA[<input id="FORM_myform:TXT_Nir" name="FORM_myform:TXT_Nir" type="text" value="" autocomplete="off" maxlength="3" onkeyup="PrimeFaces.ab({s:&quot;FORM_myform:TXT_Nir&quot;,e:&quot;keyup&quot;,p:&quot;FORM_myform:TXT_Nir&quot;,u:&quot;FORM_myform:BTN_publicSearch FORM_myform:TXT_LocalNumber FORM_myform:TXT_Population FORM_myform:TXT_NationalNumber&quot;,g:false});" disabled="disabled" class="ui-inputfield ui-inputtext ui-widget ui-state-default ui-corner-all ui-state-disabled" /><script id="FORM_myform:TXT_Nir_s" type="text/javascript">PrimeFaces.cw("InputText","widget_FORM_myform_TXT_Nir",{id:"FORM_myform:TXT_Nir"});</script>]]></update><update id="FORM_myform:BTN_publicSearch"><![CDATA[<button id="FORM_myform:BTN_publicSearch" name="FORM_myform:BTN_publicSearch" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-icon-left sombreado" onclick="PrimeFaces.ab({s:&quot;FORM_myform:BTN_publicSearch&quot;,u:&quot;FORM_myform:P_containerConsulta FORM_myform:P_containerpoblaciones FORM_myform:P_containernumeracion FORM_myform:P_containerinfo FORM_myform:P_containerLocal FORM_myform:P_containerDesplegable&quot;});return false;" style="width: auto; height: auto; font-size: 13px;" type="submit"><span class="ui-button-icon-left ui-icon ui-c ui-icon-search"></span><span class="ui-button-text ui-c">Buscar</span></button><script id="FORM_myform:BTN_publicSearch_s" type="text/javascript">PrimeFaces.cw("CommandButton","widget_FORM_myform_BTN_publicSearch",{id:"FORM_myform:BTN_publicSearch"});</script>]]></update><update id="javax.faces.ViewState"><![CDATA[7365881550537336471:-6160183206566459097]]></update></changes></partial-response>HTTP/1.1 200 OK
+Date: Mon, 23 Oct 2017 14:53:15 GMT
+Server: Apache
+X-Frame-Options: DENY
+Strict-Transport-Security: max-age=63072000; includeSubdomains; preload
+Cache-Control: no-cache
+X-Powered-By: Servlet/3.0 JSP/2.2
+X-Powered-By: JSF/2.0
+Keep-Alive: timeout=20, max=147
+Connection: Keep-Alive
+Transfer-Encoding: chunked
+Content-Type: text/xml; charset=UTF-8
+
+5a2
+<?xml version='1.0' encoding='UTF-8'?>
+<partial-response><changes><update id="FORM_myform:P_containerConsulta"><![CDATA[<div id="FORM_myform:P_containerConsulta" class="ui-panel ui-widget ui-widget-content ui-corner-all mycustompanel" data-widget="widget_FORM_myform_P_containerConsulta"><div id="FORM_myform:P_containerConsulta_content" class="ui-panel-content ui-widget-content"><div id="FORM_myform:MSG_ConsultaFront" class="ui-messages ui-messages-noicon ui-widget" aria-live="polite"></div><div id="FORM_myform:consultapublicaformulario" class="ui-panelgrid ui-widget mycustomgrid"><div class="ui-panelgrid-header ui-widget-header">
+		            Consulta de Marcación y  Números Identificadores de Región
+		            </div><div id="FORM_myform:consultapublicaformulario_content" class="ui-panelgrid-content ui-widget-content ui-grid ui-grid-responsive"><div class="ui-grid-row"><div class="ui-panelgrid-cell ui-grid-col-3"><table>
+<tbody>
+<tr>
+<td><label id="FORM_myform:j_idt805" class="ui-outputlabel ui-widget" for="FORM_myform:TXT_Population_input">Consulta la Marcación a una Ciudad Determinada:</label></td>
+</tr>
+<tr>
+<td><span id="FORM_myform:TXT_Population" class="ui-autocomplete"><input id="FORM_myform:TXT_Population_input" name="FORM_myform:TXT_Population_input" type="text" class="ui-autocomplete-input ui-inputfield ui-widget ui-state-default ui-corner-all ui-state-disabled" autocomplete="off" aria-labelledby="FOR
+5a8
+M_myform:j_idt805" disabled="disabled" /><div id="FORM_myform:TXT_Population_panel" class="ui-autocomplete-panel ui-widget-content ui-corner-all ui-helper-hidden ui-shadow"></div></span><script id="FORM_myform:TXT_Population_s" type="text/javascript">$(function(){PrimeFaces.cw("AutoComplete","widget_FORM_myform_TXT_Population",{id:"FORM_myform:TXT_Population",minLength:4,delay:300,forceSelection:true,effect:"fade",effectDuration:400,behaviors:{itemSelect:function(ext,event) {PrimeFaces.ab({s:"FORM_myform:TXT_Population",e:"itemSelect",p:"FORM_myform:TXT_Population",u:"FORM_myform:P_containerConsulta FORM_myform:P_containerpoblaciones",g:false},ext);}}});});</script></td>
+</tr>
+</tbody>
+</table>
+</div><div class="ui-panelgrid-cell ui-grid-col-3"><table>
+<tbody>
+<tr>
+<td><label id="FORM_myform:j_idt807" class="ui-outputlabel ui-widget" for="FORM_myform:TXT_NationalNumber">Número Nacional:</label></td>
+</tr>
+<tr>
+<td><input id="FORM_myform:TXT_NationalNumber" name="FORM_myform:TXT_NationalNumber" type="tel" value="7471406668" autocomplete="off" maxlength="10" onkeyup="PrimeFaces.ab({s:&quot;FORM_myform:TXT_NationalNumber&quot;,e:&quot;keyup&quot;,p:&quot;FORM_myform:TXT_NationalNumber&quot;,u:&quot;FORM_myform:BTN_publicSearch FORM_myform:TXT_LocalNumber FORM_myform:TXT_Nir FORM_myform:TXT_Population&quot;,g:false});" disabled="disabled" class="ui-inputfield ui-inputtext ui-widget ui-state-default ui-corner-all ui-state-disabl
+49e
+ed" /><script id="FORM_myform:TXT_NationalNumber_s" type="text/javascript">PrimeFaces.cw("InputText","widget_FORM_myform_TXT_NationalNumber",{id:"FORM_myform:TXT_NationalNumber"});</script></td>
+</tr>
+<tr>
+<td>
+								<p style="font-size: 11px">Si se conocen los 10 dígitos de
+									número nacional (No incluir los prefijos 01 ó 044)</p></td>
+</tr>
+</tbody>
+</table>
+</div><div class="ui-panelgrid-cell ui-grid-col-3"><table>
+<tbody>
+<tr>
+<td><label id="FORM_myform:j_idt810" class="ui-outputlabel ui-widget" for="FORM_myform:TXT_LocalNumber">Número Local:</label></td>
+</tr>
+<tr>
+<td><input id="FORM_myform:TXT_LocalNumber" name="FORM_myform:TXT_LocalNumber" type="tel" value="" autocomplete="off" maxlength="8" onkeyup="PrimeFaces.ab({s:&quot;FORM_myform:TXT_LocalNumber&quot;,e:&quot;keyup&quot;,p:&quot;FORM_myform:TXT_LocalNumber&quot;,u:&quot;FORM_myform:BTN_publicSearch FORM_myform:TXT_Nir FORM_myform:TXT_Population FORM_myform:TXT_NationalNumber&quot;,g:false});" disabled="disabled" class="ui-inputfield ui-inputtext ui-widget ui-state-default ui-corner-all ui-state-disabled" /><script id="FORM_myform:TXT_LocalNumber_s" type="text/javascript">PrimeFaces.cw("Inp
+102
+utText","widget_FORM_myform_TXT_LocalNumber",{id:"FORM_myform:TXT_LocalNumber"});</script></td>
+</tr>
+<tr>
+<td>
+								<p style="font-size: 11px">Si se conoce el número local de 7
+									ú 8 dígitos. (8 para México, Guadalajara y Monterrey; 7 para el
+
+5a8
+									resto de ciudades del país)</p></td>
+</tr>
+</tbody>
+</table>
+</div><div class="ui-panelgrid-cell ui-grid-col-3"><table>
+<tbody>
+<tr>
+<td><label id="FORM_myform:j_idt813" class="ui-outputlabel ui-widget" for="FORM_myform:TXT_Nir">Número Identificador de Región (Clave de larga distancia):</label></td>
+</tr>
+<tr>
+<td><input id="FORM_myform:TXT_Nir" name="FORM_myform:TXT_Nir" type="text" value="" autocomplete="off" maxlength="3" onkeyup="PrimeFaces.ab({s:&quot;FORM_myform:TXT_Nir&quot;,e:&quot;keyup&quot;,p:&quot;FORM_myform:TXT_Nir&quot;,u:&quot;FORM_myform:BTN_publicSearch FORM_myform:TXT_LocalNumber FORM_myform:TXT_Population FORM_myform:TXT_NationalNumber&quot;,g:false});" disabled="disabled" class="ui-inputfield ui-inputtext ui-widget ui-state-default ui-corner-all ui-state-disabled" /><script id="FORM_myform:TXT_Nir_s" type="text/javascript">PrimeFaces.cw("InputText","widget_FORM_myform_TXT_Nir",{id:"FORM_myform:TXT_Nir"});</script></td>
+</tr>
+<tr>
+<td>
+								<p style="font-size: 11px">Si sólo se requiere información
+									de un número identificador de región.</p></td>
+</tr>
+</tbody>
+</table>
+</div></div></div></div>
+
+						<p style="font-size: 13px">*Para obtener información de algún
+							número telefónico o de un número identificador de región, es
+							posible utilizar cualquiera de los cuatro métodos de búsqueda
+							mostrados</p>
+
+						<button id="FORM_myform:BTN_publicSearch" name="
+5a8
+FORM_myform:BTN_publicSearch" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-icon-left ui-state-disabled sombreado" style="width: auto; height: auto; font-size: 13px;" type="submit" disabled="disabled"><span class="ui-button-icon-left ui-icon ui-c ui-icon-search"></span><span class="ui-button-text ui-c">Buscar</span></button><script id="FORM_myform:BTN_publicSearch_s" type="text/javascript">PrimeFaces.cw("CommandButton","widget_FORM_myform_BTN_publicSearch",{id:"FORM_myform:BTN_publicSearch"});</script><button id="FORM_myform:LINK_CLEAR" name="FORM_myform:LINK_CLEAR" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-icon-left sombreado" onclick="PrimeFaces.ab({s:&quot;FORM_myform:LINK_CLEAR&quot;,u:&quot;FORM_myform:P_containerConsulta FORM_myform:P_containerpoblaciones FORM_myform:P_containernumeracion FORM_myform:P_containerinfo FORM_myform:P_containerLocal FORM_myform:P_containerDesplegable FORM_myform:P_containerinfoMunicipio FORM_myform:P_containerinfopobNoNir&quot;});return false;" style="width: auto; height: auto; font-size: 13px; " type="submit"><span class="ui-button-icon-left ui-icon ui-c ui-icon-arrowrefresh-1-e"></span><span class="ui-button-text ui-c">Limpiar</span></button><script id="FORM_myform:LINK_CLEAR_s" type="text/javascript">PrimeFaces.cw("CommandButton","widget_FORM_myform_LINK_CLEAR",{id:"FORM_myform:LINK_CLEAR"});</script>
+
+						<br />
+						<br /></d
+396
+iv></div><script id="FORM_myform:P_containerConsulta_s" type="text/javascript">PrimeFaces.cw("Panel","widget_FORM_myform_P_containerConsulta",{id:"FORM_myform:P_containerConsulta"});</script>]]></update><update id="FORM_myform:P_containerDesplegable"><![CDATA[<div id="FORM_myform:P_containerDesplegable" class="ui-panel ui-widget ui-widget-content ui-corner-all mycustompanel" data-widget="widget_FORM_myform_P_containerDesplegable"><div id="FORM_myform:P_containerDesplegable_content" class="ui-panel-content ui-widget-content">
+						
+						<br /></div></div><script id="FORM_myform:P_containerDesplegable_s" type="text/javascript">PrimeFaces.cw("Panel","widget_FORM_myform_P_containerDesplegable",{id:"FORM_myform:P_containerDesplegable"});</script>]]></update><update id="FORM_myform:P_containerpoblaciones"><![CDATA[<div id="FORM_myform:P_containerpoblaciones" class="ui-panel ui-widget ui-widget-content ui-corn
+20a
+er-all mycustompanel" data-widget="widget_FORM_myform_P_containerpoblaciones"><div id="FORM_myform:P_containerpoblaciones_content" class="ui-panel-content ui-widget-content">
+
+					</div></div><script id="FORM_myform:P_containerpoblaciones_s" type="text/javascript">PrimeFaces.cw("Panel","widget_FORM_myform_P_containerpoblaciones",{id:"FORM_myform:P_containerpoblaciones"});</script>]]></update><update id="FORM_myform:P_containernumeracion"><![CDATA[<div id="FORM_myform:P_containernumeracion" class="ui-panel ui-widget 
+b50
+ui-widget-content ui-corner-all mycustompanel" data-widget="widget_FORM_myform_P_containernumeracion"><div id="FORM_myform:P_containernumeracion_content" class="ui-panel-content ui-widget-content">
+
+					<div id="FORM_myform:TBL_numberInfoTable" class="ui-panelgrid ui-widget mycustomtablesa"><div class="ui-panelgrid-header ui-widget-header">
+           		INFORMACIÓN DEL NÚMERO CONSULTADO
+       			</div><div id="FORM_myform:TBL_numberInfoTable_content" class="ui-panelgrid-content ui-widget-content ui-grid ui-grid-responsive"><div class="ui-grid-row"><div class="ui-panelgrid-cell ui-grid-col-6">Número/s Identificador de región (Claves de larga distancia):</div><div class="ui-panelgrid-cell ui-grid-col-6">747</div></div><div class="ui-grid-row"><div class="ui-panelgrid-cell ui-grid-col-6">Tipo de red y modalidad</div><div class="ui-panelgrid-cell ui-grid-col-6">Móvil-CPP</div></div><div class="ui-grid-row"><div class="ui-panelgrid-cell ui-grid-col-6">Ciudad a la que pertenece</div><div class="ui-panelgrid-cell ui-grid-col-6">CHILPANCINGO DE LOS BRAVO</div></div><div class="ui-grid-row"><div class="ui-panelgrid-cell ui-grid-col-6">Marcación local (desde un fijo)</div><div class="ui-panelgrid-cell ui-grid-col-6"><span style="display:block;"><span class="greenText">A fijo: </span>7471406668</span><span style="display:block;"><span class="greenText">A móvil (el que llama paga CPP): </span>044 + 7471406668</span><span style="display:block;"><span class="greenText">A móvil (el que recibe paga MPP): </span>7471406668</span></div></div><div class="ui-grid-row"><div class="ui-panelgrid-cell ui-grid-col-6">Marcación local (desde un móvil)</div><div class="ui-panelgrid-cell ui-grid-col-6"><span style="display:block;"><span class="greenText">A fijo: </span>7471406668</span><span style="display:block;"><span class="greenText">A móvil (el que llama paga CPP): </span>044 +7471406668</span><span style="display:block;"><span class="greenText">A móvil (el que recibe paga MPP): </span>7471406668</span></div></div><div class="ui-grid-row"><div class="ui-panelgrid-cell ui-grid-col-6">Marcación nacional (desde un fijo)</div><div class="ui-panelgrid-cell ui-grid-col-6"><span style="display:block;"><span class="greenText">A fijo: </span>01+ 7471406668</span><span style="display:block;"><span class="greenText">A móvil (el que llama paga CPP): </span>045+ 7471406668</span><span style="display:block;"><span class="greenText">A móvil (el que recibe paga MPP): </span>01+ 7471406668</span></div></div><div class="ui-grid-row"><div class="ui-panelgrid-cell ui-grid-col-6">Marcación nacional (desde un móvil)</div><div class="ui-panelgrid-cell ui-grid-col-6"><span style="display:block;"><span class="greenText">A fijo: </span>01+ 7471406668</span><span style="display:block;"><span class="greenText">A móvil (el que llama paga CPP): </span>045+ 7471406668</span><spa
+28e
+n style="display:block;"><span class="greenText">A móvil (el que recibe paga MPP): </span>01+ 7471406668</span></div></div><div class="ui-grid-row"><div class="ui-panelgrid-cell ui-grid-col-6">Marcación desde los Estados Unidos</div><div class="ui-panelgrid-cell ui-grid-col-6">011 52 7471406668</div></div><div class="ui-grid-row"><div class="ui-panelgrid-cell ui-grid-col-6">Marcación desde el resto del Mundo</div><div class="ui-panelgrid-cell ui-grid-col-6">+52 7471406668</div></div><div class="ui-grid-row"><div class="ui-panelgrid-cell ui-grid-col-6">Proveedor de telefonía que atiende el número</div><div class="ui-panelgrid-cell ui-grid-col
+33
+-6">TELCEL</div></div><div class="ui-grid-row"><div
+5a2
+ class="ui-panelgrid-cell ui-grid-col-6">Dirección del Proveedor de Telefónia y datos numeración</div><div class="ui-panelgrid-cell ui-grid-col-6"><a id="FORM_myform:j_idt934" href="#" class="ui-commandlink ui-widget" onclick="PrimeFaces.ab({s:&quot;FORM_myform:j_idt934&quot;,u:&quot;datosnumeracion&quot;,onco:function(xhr,status,args){PF('datosnumeracion').show();;}});return false;"> (Consultar)</a></div></div></div></div></div></div><script id="FORM_myform:P_containernumeracion_s" type="text/javascript">PrimeFaces.cw("Panel","widget_FORM_myform_P_containernumeracion",{id:"FORM_myform:P_containernumeracion"});</script>]]></update><update id="FORM_myform:P_containerinfo"><![CDATA[<div id="FORM_myform:P_containerinfo" class="ui-panel ui-widget ui-widget-content ui-corner-all mycustompanel" data-widget="widget_FORM_myform_P_containerinfo"><div id="FORM_myform:P_containerinfo_content" class="ui-panel-content ui-widget-content"><div id="FORM_myform:TBL_mexicoInfoTable" class="ui-panelgrid ui-widget mycustomtablesa"><div class="ui-panelgrid-header ui-widget-header">
+           			INFORMACIÓN BÁSICA DE CHILPANCINGO DE LOS BRAVO</div><div id="FORM_myform:TBL_mexicoInfoTable_content" class="ui-panelgrid-content ui-widget-content ui-grid ui-grid-responsive"><div class="ui-grid-row"><div class="ui-panelgrid-cell ui-grid-col-6">Número/s Identificador de región (Claves de larga distancia):</div><div class="ui-panelgrid-cell
+5a8
+ ui-grid-col-6">747
+								<br /></div></div><div class="ui-grid-row"><div class="ui-panelgrid-cell ui-grid-col-6">Proveedores de telefonía que prestan servicio en esta ciudad</div><div class="ui-panelgrid-cell ui-grid-col-6"><a id="FORM_myform:j_idt948" href="#" class="ui-commandlink ui-widget" onclick="PrimeFaces.ab({s:&quot;FORM_myform:j_idt948&quot;,u:&quot;FORM_myform:P_containerConsulta paginated-results FORM_concesionarioSL&quot;,onco:function(xhr,status,args){PF('listadoProveedor').show();;}});return false;">22 </a></div></div><div class="ui-grid-row"><div class="ui-panelgrid-cell ui-grid-col-6">Numeración asignada (no representa líneas en servicio)</div><div class="ui-panelgrid-cell ui-grid-col-6">1,367,843</div></div><div class="ui-grid-row"><div class="ui-panelgrid-cell ui-grid-col-6">Clave Inegi</div><div class="ui-panelgrid-cell ui-grid-col-6">120290001</div></div></div></div></div></div><script id="FORM_myform:P_containerinfo_s" type="text/javascript">PrimeFaces.cw("Panel","widget_FORM_myform_P_containerinfo",{id:"FORM_myform:P_containerinfo"});</script>]]></update><update id="FORM_myform:P_containerLocal"><![CDATA[<div id="FORM_myform:P_containerLocal" class="ui-panel ui-widget ui-widget-content ui-corner-all mycustompanel" data-widget="widget_FORM_myform_P_containerLocal"><div id="FORM_myform:P_containerLocal_content" class="ui-panel-content ui-widget-content"><div id="FORM_myform:TBL_localServiceTable" c
+49e
+lass="ui-panelgrid ui-widget mycustomtablesa"><div class="ui-panelgrid-header ui-widget-header">
+						
+           			INFORMACIÓN DE ÁREA DE NUMERACIÓN GEOGRÁFICA
+       			</div><div id="FORM_myform:TBL_localServiceTable_content" class="ui-panelgrid-content ui-widget-content ui-grid ui-grid-responsive"><div class="ui-grid-row"><div class="ui-panelgrid-cell ui-grid-col-6">Número/s Identificador de región (Claves de larga distancia):</div><div class="ui-panelgrid-cell ui-grid-col-6">747</div></div><div class="ui-grid-row"><div class="ui-panelgrid-cell ui-grid-col-6">Longitud del número local</div><div class="ui-panelgrid-cell ui-grid-col-6">7 dígitos</div></div><div class="ui-grid-row"><div class="ui-panelgrid-cell ui-grid-col-6">Marcación local (desde un fijo)</div><div class="ui-panelgrid-cell ui-grid-col-6"><span style="display:block;"><span class="greenText">A fijo:  </span>Número local (7 dígitos)</span><span style="display:block;"><span class="greenText">A móvil (el que llama paga CPP):  </span>044 + 747 + Número local (7 dígitos)</span><span style="display:block;"><span class="greenText">A móvil (el que recibe paga MPP):  </span>Número local 
+fe8
+(7 dígitos)</span></div></div><div class="ui-grid-row"><div class="ui-panelgrid-cell ui-grid-col-6">Marcación local (desde un móvil)</div><div class="ui-panelgrid-cell ui-grid-col-6"><span style="display:block;"><span class="greenText">A fijo: </span>Número local (7 dígitos)</span><span style="display:block;"><span class="greenText">A móvil (el que llama paga CPP):  </span>747 + Número local (7 dígitos) ó 044 + 747 + Número local (7 dígitos)</span><span style="display:block;"><span class="greenText">A móvil (el que recibe paga MPP):  </span>Número local (7 dígitos)</span></div></div><div class="ui-grid-row"><div class="ui-panelgrid-cell ui-grid-col-6">Marcación nacional (desde un fijo)</div><div class="ui-panelgrid-cell ui-grid-col-6"><span style="display:block;"><span class="greenText">A fijo: </span>01 + 747 + Número local (7 dígitos)</span><span style="display:block;"><span class="greenText">A móvil (el que llama paga CPP):  </span>045 + 747 + Número local (7 dígitos)</span><span style="display:block;"><span class="greenText">A móvil (el que recibe paga MPP):  </span>01 + 747 + Número local (7 dígitos)</span></div></div><div class="ui-grid-row"><div class="ui-panelgrid-cell ui-grid-col-6">Marcación nacional (desde un móvil)</div><div class="ui-panelgrid-cell ui-grid-col-6"><span style="display:block;"><span class="greenText">A fijo:  </span>01 + 747 + Número local (7 dígitos)</span><span style="display:block;"><span class="greenText">A móvil (el que llama paga CPP):  </span>045 + 747 + Número local (7 dígitos)</span><span style="display:block;"><span class="greenText">A móvil (el que recibe paga MPP):  </span>01 + 747 + Número local (7 dígitos)</span></div></div><div class="ui-grid-row"><div class="ui-panelgrid-cell ui-grid-col-6">Marcación desde los Estados Unidos</div><div class="ui-panelgrid-cell ui-grid-col-6">011 52 + Número local (7 dígitos)</div></div><div class="ui-grid-row"><div class="ui-panelgrid-cell ui-grid-col-6">Marcación desde el resto del Mundo</div><div class="ui-panelgrid-cell ui-grid-col-6">+52 + Número local (7 dígitos)</div></div><div class="ui-grid-row"><div class="ui-panelgrid-cell ui-grid-col-6">Ciudad con mayor cantidad de numeración asignada</div><div class="ui-panelgrid-cell ui-grid-col-6">CHILPANCINGO DE LOS BRAVO</div></div><div class="ui-grid-row"><div class="ui-panelgrid-cell ui-grid-col-6">Poblaciones con numeración asignada</div><div class="ui-panelgrid-cell ui-grid-col-6"><a id="FORM_myform:j_idt1033" href="#" class="ui-commandlink ui-widget" onclick="PrimeFaces.ab({s:&quot;FORM_myform:j_idt1033&quot;,u:&quot;DLG_detallePoblacionMunicipioProveedor&quot;,onco:function(xhr,status,args){PF('detallePoblacionMunicipioProveedor').show();;}});return false;">15</a></div></div><div class="ui-grid-row"><div class="ui-panelgrid-cell ui-grid-col-6">Municipios que forman el área</div><div class="ui-panelgrid-cell ui-grid-col-6"><a id="FORM_myform:j_idt1038" href="#" class="ui-commandlink ui-widget" onclick="PrimeFaces.ab({s:&quot;FORM_myform:j_idt1038&quot;,u:&quot;DLG_detallePoblacionMunicipioProveedor&quot;,onco:function(xhr,status,args){PF('detallePoblacionMunicipioProveedor').show();;}});return false;">3</a></div></div><div class="ui-grid-row"><div class="ui-panelgrid-cell ui-grid-col-6">Proveedores de telefonía que prestan el servicio dentro del área geográfica de numeración</div><div class="ui-panelgrid-cell ui-grid-col-6"><a id="FORM_myform:j_idt1043" href="#" class="ui-commandlink ui-widget" onclick="PrimeFaces.ab({s:&quot;FORM_myform:j_idt1043&quot;,u:&quot;DLG_detallePoblacionMunicipioProveedor&quot;,onco:function(xhr,status,args){PF('detallePoblacionMunicipioProveedor').show();;}});return false;">22</a></div></div><div class="ui-grid-row"><div class="ui-panelgrid-cell ui-grid-col-6">Presuscripción de larga distancia</div><div class="ui-panelgrid-cell ui-grid-col-6">Sí</div></div><div class="ui-grid-row"><div class="ui-panelgrid-cell ui-grid-col-6">Numeración asignada (no representa líneas en servicio)</div><div c
+18a
+lass="ui-panelgrid-cell ui-grid-col-6">1,392,545</div></div></div></div></div></div><script id="FORM_myform:P_containerLocal_s" type="text/javascript">PrimeFaces.cw("Panel","widget_FORM_myform_P_containerLocal",{id:"FORM_myform:P_containerLocal"});</script>]]></update><update id="javax.faces.ViewState"><![CDATA[7365881550537336471:-6160183206566459097]]></update></changes></partial-response>
+0
+

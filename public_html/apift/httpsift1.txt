@@ -1,0 +1,55 @@
+ch-icon.png" />
+		<link rel="apple-touch-icon" sizes="57x57" href="/sns-frontend/apple-touch-icon-57x57.png" />
+		<link rel="apple-touch-icon" sizes="72x72" href="/sns-frontend/apple-touch-icon-72x72.png" />
+		<link rel="apple-touch-icon" sizes="114x114" href="/sns-frontend/apple-touch-icon-114x114.png" />
+		<link rel="apple-touch-icon" sizes="144x144" href="/sns-frontend/apple-touch-icon-144x144.png" />
+		<link rel="apple-touch-icon" sizes="60x60" href="/sns-frontend/apple-touch-icon-60x60.png" />
+		<link rel="apple-touch-icon" sizes="120x120" href="/sns-frontend/apple-touch-icon-120x120.png" />
+		<link rel="apple-touch-icon" sizes="76x76" href="/sns-frontend/apple-touch-icon-76x76.png" />
+		<link rel="apple-touch-icon" sizes="152x152" href="/sns-frontend/apple-touch-icon-152x152.png" />
+		<meta name="msapplication-square70x70logo" content="/sns-frontend/smalltile.png" />
+		<meta name="msapplication-square150x150logo" content="/sns-frontend/mediumtile.png" />
+		<meta name="msapplication-wide310x150logo" content="/sns-frontend/widetile.png" />
+		<meta name="msapplication-square310x310logo" content="/sns-frontend/largetile.png" />
+		<link type="text/css" rel="stylesheet" href="/sns-frontend/css/interfazNew.css" /></head><body id="fullbody" style="    background-color:#FFF;     height:100%;     width:100%;     padding:0px;    margin-left:0px;     font-size:12px;    text-align:center">
+		<div id="header" style="    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.5);    background:white;    position: fixed;     left: 0px;     top: 0px;     width: 100%;     z-index: 1;">
+
+			<html xmlns="http://www.w3.org/1999/xhtml"><head id="j_idt7"><link type="text/css" rel="stylesheet" href="/sns-frontend/javax.faces.resource/theme.css.xhtml?ln=primefaces-sns-frontend-tema" /><script type="text/javascript">if(window.PrimeFaces){PrimeFaces.settings.locale='es';}</script>
+
+	<style type="text/css">
+.icon-salir {
+	background-image: url(/sns-frontend/img/ico_salir.png)
+		!important;
+}
+
+
+</style></head><body><div id="cabeceraView:cablogo" class="ui-panel ui-widget ui-widget-content ui-corner-all logo" data-widget="widget_cabeceraView_cablogo"><div id="cabeceraView:cablogo_content" class="ui-panel-content ui-widget-content"><img id="cabeceraView:j_idt10" src="/sns-frontend/img/logoIFT.png?pfdrid_c=true" alt="Instituto Federal de Telecomunicaciones" /></div></div><script id="cabeceraView:cablogo_s" type="text/javascript">PrimeFaces.cw("Panel","widget_cabeceraView_cablogo",{id:"cabeceraView:cablogo"});</script><div id="cabeceraView:cabtitulo" class="ui-panel ui-widget ui-widget-content ui-corner-all tituloPagina" data-widget="widget_cabeceraView_cabtitulo"><div id="cabeceraView:cabtitulo_content" class="ui-panel-content ui-widget-content">
+
+			<h1>MARCACIÓN Y NÚMEROS IDENTIFICADORES DE REGIÓN</h1></div></div><script id="cabeceraView:cabtitulo_s" type="text/javascript">PrimeFaces.cw("Panel","widget_cabeceraView_cabtitulo",{id:"cabeceraView:cabtitulo"});</script><div id="cabeceraView:j_idt12" class="ui-panel ui-widget ui-widget-content ui-corner-all zonaUsuario" data-widget="widget_cabeceraView_j_idt12"><div id="cabeceraView:j_idt12_content" class="ui-panel-content ui-widget-content"><div id="cabeceraView:cabusuario" class="ui-panel ui-widget ui-widget-content ui-corner-all" style="text-align:right;display:table-cell;" data-widget="widget_cabeceraView_cabusuario"><div id="cabeceraView:cabusuario_content" class="ui-panel-content ui-widget-content"></div></div><script id="cabeceraView:cabusuario_s" type="text/javascript">PrimeFaces.cw("Panel","widget_cabeceraView_cabusuario",{id:"cabeceraView:cabusuario"});</script></div></div><script id="cabeceraView:j_idt12_s" type="text/javascript">PrimeFaces.cw("Panel","widget_cabeceraView_j_idt12",{id:"cabeceraView:j_idt12"});</script></body>
+</html>
+
+			<div id="menuPpal" class="ui-panel ui-widget ui-widget-content ui-corner-all" style="     text-align:left;     border-bottom:3px solid #7ac142;      width:99.9%" data-widget="widget_menuPpal"><div id="menuPpal_content" class="ui-panel-content ui-widget-content">
+<form id="j_idt21" name="j_idt21" method="post" action="/sns-frontend/index.xhtml" enctype="application/x-www-form-urlencoded">
+<input type="hidden" name="j_idt21" value="j_idt21" />
+<div id="j_idt21:j_idt22" class="ui-menu ui-menubar ui-widget ui-widget-content ui-corner-all ui-helper-clearfix" style="border-left: 1px solid #989898" role="menubar"><div tabindex="0" class="ui-helper-hidden-accessible"></div><ul class="ui-menu-list ui-helper-reset"><li class="ui-widget ui-menuitem ui-corner-all ui-menu-parent withoutArrow" role="menuitem" aria-haspopup="true"><a href="#" class="ui-menuitem-link ui-submenu-link ui-corner-all" tabindex="-1"><span class="ui-menuitem-icon ui-icon ico-geog"></span><span class="ui-menuitem-text">Consultas de Numeración</span><span class="ui-icon ui-icon-triangle-1-s"></span></a><ul class="ui-widget-content ui-menu-list ui-corner-all ui-helper-clearfix ui-menu-child ui-shadow" role="menu"><li class="ui-menuitem ui-widget ui-corner-all" role="menuitem"><a tabindex="-1" class="ui-menuitem-link ui-corner-all withoutArrow" href="#" onclick="PrimeFaces.addSubmitParam('j_idt21',{'j_idt21:j_idt24':'j_idt21:j_idt24'}).submit('j_idt21');return false;"><span class="ui-menuitem-text">Consulta Numeración Geográfica</span></a></li><li class="ui-menuitem ui-widget ui-corner-all" role="menuitem"><a tabindex="-1" class="ui-menuitem-link ui-corner-all withoutArrow" href="#" onclick="PrimeFaces.addSubmitParam('j_idt21',{'j_idt21:j_idt25':'j_idt21:j_idt25'}).submit('j_idt21');return false;"><span class="ui-menuitem-text">Consulta de Numeración No Geográfica</span></a></li></ul></li><li class="ui-menuitem ui-widget ui-corner-all" role="menuitem"><a tabindex="-1" class="ui-menuitem-link ui-corner-all withoutArrow" href="#" onclick="PrimeFaces.addSubmitParam('j_idt21',{'j_idt21:j_idt26':'j_idt21:j_idt26'}).submit('j_idt21');return false;"><span class="ui-menuitem-icon ui-icon ico-cpsn"></span><span class="ui-menuitem-text">Mapas de Áreas Geográficas de Numeración</span></a></li><li class="ui-widget ui-menuitem ui-corner-all ui-menu-parent withoutArrow" role="menuitem" aria-haspopup="true"><a href="#" class="ui-menuitem-link ui-submenu-link ui-corner-all" tabindex="-1"><span class="ui-menuitem-icon ui-icon ico-cpsi"></span><span class="ui-menuitem-text">Plan Nacional de Numeración</span><span class="ui-icon ui-icon-triangle-1-s"></span></a><ul class="ui-widget-content ui-menu-list ui-corner-all ui-helper-clearfix ui-menu-child ui-shadow" role="menu"><li class="ui-menuitem ui-widget ui-corner-all" role="menuitem"><a tabindex="-1" class="ui-menuitem-link ui-corner-all withoutArrow" href="#" onclick="PrimeFaces.addSubmitParam('j_idt21',{'j_idt21:j_idt28':'j_idt21:j_idt28'}).submit('j_idt21');return false;"><span class="ui-menuitem-text">Acceso a Proveedores de Servicios de Telecomunicaciones</span></a></li><li class="ui-menuitem ui-widget ui-corner-all" role="menuitem"><a tabindex="-1" class="ui-menuitem-link ui-corner-all withoutArrow" href="#" onclick="PrimeFaces.addSubmitParam('j_idt21',{'j_idt21:j_idt29':'j_idt21:j_idt29'}).submit('j_idt21');return false;"><span class="ui-menuitem-text">Acceso a Descarga Pública</span></a></li></ul></li><li class="ui-menuitem ui-widget ui-corner-all" role="menuitem"><a tabindex="-1" class="ui-menuitem-link ui-corner-all withoutArrow" href="#" onclick="PrimeFaces.addSubmitParam('j_idt21',{'j_idt21:j_idt30':'j_idt21:j_idt30'}).submit('j_idt21');return false;"><span class="ui-menuitem-icon ui-icon ico-cpsi"></span><span class="ui-menuitem-text">Descarga de Numeración No Geográfica</span></a></li></ul></div><script id="j_idt21:j_idt22_s" type="text/javascript">PrimeFaces.cw("Menubar","widget_j_idt21_j_idt22",{id:"j_idt21:j_idt22",autoDisplay:true});</script>
+</form></div></div><script id="menuPpal_s" type="text/javascript">PrimeFaces.cw("Panel","widget_menuPpal",{id:"menuPpal"});</script>
+		</div>
+		
+		<div id="j_idt32" class="ui-panel ui-widget ui-widget-content ui-corner-all" style="    min-height:90%;     font-size: 1.3em;     text-align: center;    padding-top:102px;    vertical-align: middle;    background-image: url(/sns-frontend/img/fondo_sns_1.png);     background-size: 100% 100%;     min-height:500px;    height:100%" data-widget="widget_j_idt32"><div id="j_idt32_content" class="ui-panel-content ui-widget-content"></div></div><script id="j_idt32_s" type="text/javascript">PrimeFaces.cw("Panel","widget_j_idt32",{id:"j_idt32"});</script><div id="j_idt33" class="ui-panel ui-widget ui-widget-content ui-corner-all" style="    text-align:center;     border-top:2px solid #333;    background-color:#FFF;     font-size:.9em;     height:20px;    position:fixed;       left:0px;       bottom:0px;       width:100%;" data-widget="widget_j_idt33"><div id="j_idt33_content" class="ui-panel-content ui-widget-content"><html xmlns="http://www.w3.org/1999/xhtml"><body><a href="/sns-frontend/index.xhtml" class="ui-link ui-widget">Copyright © Sistema de Numeración y Señalización v 0.4.2 server_1</a></body>
+</html></div></div><script id="j_idt33_s" type="text/javascript">PrimeFaces.cw("Panel","widget_j_idt33",{id:"j_idt33"});</script></body>
+</html>]]></update><update id="javax.faces.ViewState"><![CDATA[3305393042018910117:810205293864900433]]></update></changes></partial-response>HTTP/1.1 200 OK
+Date: Tue, 24 Oct 2017 21:03:48 GMT
+Server: Apache
+X-Frame-Options: DENY
+Strict-Transport-Security: max-age=63072000; includeSubdomains; preload
+Cache-Control: no-cache
+Content-Length: 10852
+Set-Cookie: FRONTAPPID=48dQNMreq_9oF57mWKOj0zo2faIx4uZnZeYy4DU_sErM8Yp0Esfh!-753779475!1095991080; path=/; secure; HttpOnly
+X-Powered-By: Servlet/3.0 JSP/2.2
+X-Powered-By: JSF/2.0
+Keep-Alive: timeout=20, max=148
+Connection: Keep-Alive
+Content-Type: text/xml; charset=UTF-8
+
+<?xml version='1.0' encoding='UTF-8'?>
+<partial-response><changes><update id="javax.faces.ViewRoot">

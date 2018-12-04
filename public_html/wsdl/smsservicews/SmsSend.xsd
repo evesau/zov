@@ -1,0 +1,28 @@
+<schema 
+	targetNamespace="http://airmovil.com/SmsSend" 
+	elementFormDefault="qualified" 
+	xmlns="http://www.w3.org/2001/XMLSchema" 
+	xmlns:tns="http://airmovil.com/SmsSend" 
+	xmlns:head="http://airmovil.com/SmsHeader" 
+	xmlns:msg="http://airmovil.com/SmsMessage">
+	<import namespace="http://airmovil.com/SmsHeader" schemaLocation="Common/SmsHeader.xsd"/>
+	<import namespace="http://airmovil.com/SmsMessage" schemaLocation="Common/SmsMessage.xsd"/>
+	<element name="SendSmsRequest" type="tns:request"/>
+	<complexType name="request">
+		<sequence>
+			<element name="headerRequest" type="head:headerRequest"/>
+			<element name="message" type="msg:message" minOccurs="0" maxOccurs="unbounded"/>
+		</sequence>
+	</complexType>
+	<element name="SendSmsResponse" type="tns:response"/>
+	<complexType name="response">
+		<sequence>
+			<element name="headerResponse" type="head:headerResponse"/>
+			<element name="idMessage" type="string"/>
+			<element name="success" type="string"/>
+			<element name="code" type="int"/>
+			<element name="description" type="string"/>
+			<element name="operator" type="string"/>
+		</sequence>
+	</complexType>
+</schema>

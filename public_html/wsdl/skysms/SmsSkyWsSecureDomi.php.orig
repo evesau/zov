@@ -1,0 +1,230 @@
+<?php
+$soap = file_get_contents("php://input");
+$idSoap = uniqid();
+$fechaSoap = date('Y-m-d H:i:s');
+//@mail("tecnico@airmovil.com","TESTING Secure.php","SOAP: $soap\n SERVER:".print_r($_SERVER,1));
+
+//@mail("tecnico@airmovil.com","SOAP SKY INICIO id:$idSoap fecha:$fechaSoap",print_r($_SERVER,1),$soap);
+
+if(trim($soap) == ''){
+    header("Content-Type: application/xml; charset=utf-8");
+    $xml=<<<XML
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+    <SOAP-ENV:Body>
+        <SOAP-ENV:Fault>
+            <faultcode>SOAP-ENV:Client</faultcode>
+            <faultstring>Empty Request</faultstring>
+        </SOAP-ENV:Fault>
+    </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
+XML;
+    echo $xml;
+    @mail("tecnico@airmovil.com","SOAP Empty SecureDomi.php","SOAP: $soap\n SERVER:".print_r($_SERVER,1));
+    exit();
+}
+
+
+// Notificar todos los errores de PHP (ver el registro de cambios)
+error_reporting(E_ALL);
+// Notificar todos los errores de PHP
+error_reporting(-1);
+
+include 'model/ApiSmsSkyWs.php'; // Regresa Objetos
+
+if(!extension_loaded("soap")){
+      dl("php_soap.dll");
+}
+ 
+ini_set("soap.wsdl_cache_enabled","0");
+$server = new SoapServer("https://smsmkt.amovil.mx/wsdl/skysms/SmsSkyWsSecureDomi.wsdl");
+
+
+
+
+$valida = false;
+
+$usuarioGlobal = '';
+
+$server->addFunction("Security");
+$server->addFunction("balanceSms");
+$server->handle();
+
+
+function balanceSms($params) // Funcionando OK
+{
+	global $valida;
+	
+
+	header("Content-Type: application/xml; charset=utf-8");
+	$response =<<<html
+	<SOAP-ENV:Envelope
+		xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"
+		xmlns:ns1="http://www.sky.com/SkySmsHeader"
+		xmlns:ns2="http://www.sky.com/SkySmsBalance">
+		<SOAP-ENV:Body>
+			<ns2:BalanceSmsResponse>
+				<ns2:netBalance>1000</ns2:netBalance>
+				<ns2:usedBalance>10</ns2:usedBalance>
+				<ns2:balance>900</ns2:balance>
+				<ns2:dateQuery>2018-08-22 18:00:00</ns2:dateQuery>
+				<ns2:description>Balance sms ok</ns2:description>
+				<ns2:code>1</ns2:code>
+			</ns2:BalanceSmsResponse>
+		</SOAP-ENV:Body>
+	</SOAP-ENV:Envelope>
+html;
+
+	echo $response;
+	//mail("$tecnico","Response balanceSms multi",print_r($response,1));
+	//$fechaSoap = date('Y-m-d H:i:s');
+	//mail("tecnico@airmovil.com","SOAP SKY FIN en balanceSms id:$idSoap fecha:$fechaSoap",print_r($_SERVER,1));
+	exit;
+}
+
+
+
+
+
+
+
+function getFecha()
+{
+	date_default_timezone_set('America/Mexico_City');
+	$fechaA = getdate();
+	if (strlen($fechaA['mon'])>1) {
+		$mes = $fechaA['mon'];
+	}else{
+		$mes = "0".$fechaA['mon'];
+	}
+
+	if (strlen($fechaA['seconds'])>1) {
+		$segundos = $fechaA['seconds'];
+	}else{
+		$segundos = "0".$fechaA['seconds'];
+	}
+
+	$fecha = $fechaA['year']."-".$mes."-".$fechaA['mday']." ".$fechaA['hours'].":".$fechaA['minutes'].":".$segundos;
+
+	return $fecha;
+}
+
+function fechaInicial($fechaI){
+	$fecha = $fechaI." 00:00:00";
+	return $fecha;
+}
+
+function fechaFinal($fechaF){
+	$fecha = $fechaF." 23:59:59";
+	return $fecha;
+}
+
+
+function dateTimeOk($created) {
+
+	date_default_timezone_set('UTC');
+
+	$fechaSistema = date('Y-m-d')."T".date('H:i:s')."Z";
+
+	//$fecha = strtotime('2018-05-08T23:38:30Z');
+
+	$fechaUno = strtotime($fechaSistema);
+	$fechaDos = strtotime($created);
+
+	$dif = $fechaUno - $fechaDos;
+	//mail("tecnico@airmovil.com", "Diferencia de horarios en server multi", "Hora smppvier: $fechaSistema --- Hora peticion recibida: $created ---$fechaUno-$fechaDos-->$dif");
+	if (abs($dif) <= 900 ) {
+		return true;
+	}
+	else {
+		return false;
+	}
+	//return true;
+	//mail("$tecnico", "fecha...", "fechaRequest: u: $fechaUno, d: $fechaDos ");
+
+}
+
+function eliminarAcentos($text){
+ 
+    $text = htmlentities($text, ENT_QUOTES, 'UTF-8');
+        $text = strtolower($text);
+
+        $patron = array (
+            // Espacios, puntos y comas por guion
+            //'/[\., ]+/' => ' ',
+ 
+            // Vocales
+            '/\+/' => '',
+            '/&agrave;/' => 'a',
+            '/&egrave;/' => 'e',
+            '/&igrave;/' => 'i',
+            '/&ograve;/' => 'o',
+            '/&ugrave;/' => 'u',
+ 
+            '/&aacute;/' => 'a',
+            '/&eacute;/' => 'e',
+            '/&iacute;/' => 'i',
+            '/&oacute;/' => 'o',
+            '/&uacute;/' => 'u',
+ 
+            '/&acirc;/' => 'a',
+            '/&ecirc;/' => 'e',
+            '/&icirc;/' => 'i',
+            '/&ocirc;/' => 'o',
+            '/&ucirc;/' => 'u',
+ 
+            '/&atilde;/' => 'a',
+            '/&etilde;/' => 'e',
+            '/&itilde;/' => 'i',
+            '/&otilde;/' => 'o',
+            '/&utilde;/' => 'u',
+ 
+            '/&auml;/' => 'a',
+            '/&euml;/' => 'e',
+            '/&iuml;/' => 'i',
+            '/&ouml;/' => 'o',
+            '/&uuml;/' => 'u',
+ 
+            '/&auml;/' => 'a',
+            '/&euml;/' => 'e',
+            '/&iuml;/' => 'i',
+            '/&ouml;/' => 'o',
+            '/&uuml;/' => 'u',
+ 
+            // Otras letras y caracteres especiales
+            '/&aring;/' => 'a',
+            '/&ntilde;/' => 'n',
+            '/&iexcl;/'	=> '',
+ 
+            // Agregar aqui mas caracteres si es necesario
+ 
+        );
+ 
+        $texto = preg_replace(array_keys($patron),array_values($patron),$text);
+
+        if ($texto != $text) {
+        	//mail("tecnico@airmovil.com", "acentos y caracteres invalidos ws-multi", "mensaje new: ".$texto ."\nmensaje recibido: ". $text);
+        	return false;
+        } else {
+        	return true;
+        }
+
+
+}
+
+
+
+
+function Security($data){
+
+	global $valida;
+	global $usuarioGlobal;
+
+	$valida = true;
+
+
+}
+
+ 
+
+

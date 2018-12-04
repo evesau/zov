@@ -1,0 +1,22 @@
+<schema targetNamespace="http://www.sky.com/SkySmsSend" elementFormDefault="qualified" xmlns="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://www.sky.com/SkySmsSend" xmlns:head="http://www.sky.com/SkySmsHeader" xmlns:msg="http://www.sky.com/SkySmsMessage">
+	<import namespace="http://www.sky.com/SkySmsHeader" schemaLocation="Common/SkySmsHeader.xsd"/>
+	<import namespace="http://www.sky.com/SkySmsMessage" schemaLocation="Common/SkySmsMessage.xsd"/>
+	<element name="SendSmsRequest" type="tns:request"/>
+	<complexType name="request">
+		<sequence>
+			<element name="headerRequest" type="head:headerRequest"/>
+			<element name="message" type="msg:message" minOccurs="0" maxOccurs="unbounded"/>
+		</sequence>
+	</complexType>
+	<element name="SendSmsResponse" type="tns:response"/>
+	<complexType name="response">
+		<sequence>
+			<element name="headerResponse" type="head:headerResponse"/>
+			<element name="idMessage" type="string"/>
+			<element name="success" type="string"/>
+			<element name="code" type="int"/>
+			<element name="description" type="string"/>
+			<element name="operator" type="string"/>
+		</sequence>
+	</complexType>
+</schema>

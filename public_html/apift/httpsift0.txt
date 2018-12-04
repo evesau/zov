@@ -1,0 +1,555 @@
+HTTP/1.1 200 OK
+Date: Tue, 24 Oct 2017 21:03:47 GMT
+Server: Apache
+X-Frame-Options: DENY
+Strict-Transport-Security: max-age=63072000; includeSubdomains; preload
+Set-Cookie: FRONTAPPID=pytQNMYCfplLfpwDq9U_1LXwyA2kJWRzotaWJwQzElj6mCWs8CM7!-753779475!1095991080; path=/; secure; HttpOnly
+X-Powered-By: Servlet/3.0 JSP/2.2
+X-Powered-By: JSF/2.0
+Keep-Alive: timeout=20, max=150
+Connection: Keep-Alive
+Transfer-Encoding: chunked
+Content-Type: text/html; charset=UTF-8
+
+5a2
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head id="j_idt2">
+			<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+			<meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+			<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+			<title>SNS</title><link type="text/css" rel="stylesheet" href="/sns-frontend/javax.faces.resource/theme.css.xhtml?ln=primefaces-sns-frontend-tema" /><link type="text/css" rel="stylesheet" href="/sns-frontend/javax.faces.resource/components.css.xhtml?ln=primefaces&amp;v=6.0" /><script type="text/javascript" src="/sns-frontend/javax.faces.resource/jquery/jquery.js.xhtml?ln=primefaces&amp;v=6.0"></script><script type="text/javascript" src="/sns-frontend/javax.faces.resource/jquery/jquery-plugins.js.xhtml?ln=primefaces&amp;v=6.0"></script><script type="text/javascript" src="/sns-frontend/javax.faces.resource/core.js.xhtml?ln=primefaces&amp;v=6.0"></script><script type="text/javascript" src="/sns-frontend/javax.faces.resource/components.js.xhtml?ln=primefaces&amp;v=6.0"></script><script type="text/javascript">if(window.PrimeFaces){PrimeFaces.settings.locale='es';}</script>
+		<link rel="icon" href="/sns-frontend/img/favicon.ico" type="image/x-icon" />
+		
+5a8
+<link rel="apple-touch-icon" href="/sns-frontend/apple-touch-icon.png" />
+		<link rel="apple-touch-icon" sizes="57x57" href="/sns-frontend/apple-touch-icon-57x57.png" />
+		<link rel="apple-touch-icon" sizes="72x72" href="/sns-frontend/apple-touch-icon-72x72.png" />
+		<link rel="apple-touch-icon" sizes="114x114" href="/sns-frontend/apple-touch-icon-114x114.png" />
+		<link rel="apple-touch-icon" sizes="144x144" href="/sns-frontend/apple-touch-icon-144x144.png" />
+		<link rel="apple-touch-icon" sizes="60x60" href="/sns-frontend/apple-touch-icon-60x60.png" />
+		<link rel="apple-touch-icon" sizes="120x120" href="/sns-frontend/apple-touch-icon-120x120.png" />
+		<link rel="apple-touch-icon" sizes="76x76" href="/sns-frontend/apple-touch-icon-76x76.png" />
+		<link rel="apple-touch-icon" sizes="152x152" href="/sns-frontend/apple-touch-icon-152x152.png" />
+		<meta name="msapplication-square70x70logo" content="/sns-frontend/smalltile.png" />
+		<meta name="msapplication-square150x150logo" content="/sns-frontend/mediumtile.png" />
+		<meta name="msapplication-wide310x150logo" content="/sns-frontend/widetile.png" />
+		<meta name="msapplication-square310x310logo" content="/sns-frontend/largetile.png" />
+		<link type="text/css" rel="stylesheet" href="/sns-frontend/css/interfazNew.css" /></head><body id="fullbody" style="    background-color:#FFF;     height:100%;     width:100%;     padding:0px;    margin-left:0px;     font-size:12px;    text
+49e
+-align:center">
+		<div id="header" style="    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.5);    background:white;    position: fixed;     left: 0px;     top: 0px;     width: 100%;     z-index: 1;">
+
+			<!-- Cabecera --><html xmlns="http://www.w3.org/1999/xhtml"><head id="j_idt7"><link type="text/css" rel="stylesheet" href="/sns-frontend/javax.faces.resource/theme.css.xhtml?ln=primefaces-sns-frontend-tema" /><script type="text/javascript">if(window.PrimeFaces){PrimeFaces.settings.locale='es';}</script>
+
+	<style type="text/css">
+.icon-salir {
+	background-image: url(/sns-frontend/img/ico_salir.png)
+		!important;
+}
+
+
+</style></head><body><div id="cabeceraView:cablogo" class="ui-panel ui-widget ui-widget-content ui-corner-all logo" data-widget="widget_cabeceraView_cablogo"><div id="cabeceraView:cablogo_content" class="ui-panel-content ui-widget-content"><img id="cabeceraView:j_idt10" src="/sns-frontend/img/logoIFT.png?pfdrid_c=true" alt="Instituto Federal de Telecomunicaciones" /></div></div><script id="cabeceraView:cablogo_s" type="text/javascript">PrimeFaces.cw("Panel","widget_cabeceraView_cablogo",{id:"cabeceraView:cablogo"});</script><div id="cabeceraView:cabtitulo" c
+102
+lass="ui-panel ui-widget ui-widget-content ui-corner-all tituloPagina" data-widget="widget_cabeceraView_cabtitulo"><div id="cabeceraView:cabtitulo_content" class="ui-panel-content ui-widget-content">
+
+			<h1>MARCACIÓN Y NÚMEROS IDENTIFICADORES DE REGIÓN</
+5a8
+h1></div></div><script id="cabeceraView:cabtitulo_s" type="text/javascript">PrimeFaces.cw("Panel","widget_cabeceraView_cabtitulo",{id:"cabeceraView:cabtitulo"});</script><div id="cabeceraView:j_idt12" class="ui-panel ui-widget ui-widget-content ui-corner-all zonaUsuario" data-widget="widget_cabeceraView_j_idt12"><div id="cabeceraView:j_idt12_content" class="ui-panel-content ui-widget-content"><div id="cabeceraView:cabusuario" class="ui-panel ui-widget ui-widget-content ui-corner-all" style="text-align:right;display:table-cell;" data-widget="widget_cabeceraView_cabusuario"><div id="cabeceraView:cabusuario_content" class="ui-panel-content ui-widget-content"></div></div><script id="cabeceraView:cabusuario_s" type="text/javascript">PrimeFaces.cw("Panel","widget_cabeceraView_cabusuario",{id:"cabeceraView:cabusuario"});</script></div></div><script id="cabeceraView:j_idt12_s" type="text/javascript">PrimeFaces.cw("Panel","widget_cabeceraView_j_idt12",{id:"cabeceraView:j_idt12"});</script></body>
+</html>
+
+			<!-- Men&uacute; --><div id="menuPpal" class="ui-panel ui-widget ui-widget-content ui-corner-all" style="     text-align:left;     border-bottom:3px solid #7ac142;      width:99.9%" data-widget="widget_menuPpal"><div id="menuPpal_content" class="ui-panel-content ui-widget-content">
+<form id="j_idt21" name="j_idt21" method="post" action="/sns-frontend/consulta-numeracion/numeracion-geografica.xhtml" enctype="application/x-www-form
+5a8
+-urlencoded">
+<input type="hidden" name="j_idt21" value="j_idt21" />
+<div id="j_idt21:j_idt22" class="ui-menu ui-menubar ui-widget ui-widget-content ui-corner-all ui-helper-clearfix" style="border-left: 1px solid #989898" role="menubar"><div tabindex="0" class="ui-helper-hidden-accessible"></div><ul class="ui-menu-list ui-helper-reset"><li class="ui-widget ui-menuitem ui-corner-all ui-menu-parent withoutArrow" role="menuitem" aria-haspopup="true"><a href="#" class="ui-menuitem-link ui-submenu-link ui-corner-all" tabindex="-1"><span class="ui-menuitem-icon ui-icon ico-geog"></span><span class="ui-menuitem-text">Consultas de Numeración</span><span class="ui-icon ui-icon-triangle-1-s"></span></a><ul class="ui-widget-content ui-menu-list ui-corner-all ui-helper-clearfix ui-menu-child ui-shadow" role="menu"><li class="ui-menuitem ui-widget ui-corner-all" role="menuitem"><a tabindex="-1" class="ui-menuitem-link ui-corner-all withoutArrow" href="#" onclick="PrimeFaces.addSubmitParam('j_idt21',{'j_idt21:j_idt24':'j_idt21:j_idt24'}).submit('j_idt21');return false;"><span class="ui-menuitem-text">Consulta Numeración Geográfica</span></a></li><li class="ui-menuitem ui-widget ui-corner-all" role="menuitem"><a tabindex="-1" class="ui-menuitem-link ui-corner-all withoutArrow" href="#" onclick="PrimeFaces.addSubmitParam('j_idt21',{'j_idt21:j_idt25':'j_idt21:j_idt25'}).submit('j_idt21');return false;"><span class="ui-menuitem-text">Consu
+396
+lta de Numeración No Geográfica</span></a></li></ul></li><li class="ui-menuitem ui-widget ui-corner-all" role="menuitem"><a tabindex="-1" class="ui-menuitem-link ui-corner-all withoutArrow" href="#" onclick="PrimeFaces.addSubmitParam('j_idt21',{'j_idt21:j_idt26':'j_idt21:j_idt26'}).submit('j_idt21');return false;"><span class="ui-menuitem-icon ui-icon ico-cpsn"></span><span class="ui-menuitem-text">Mapas de Áreas Geográficas de Numeración</span></a></li><li class="ui-widget ui-menuitem ui-corner-all ui-menu-parent withoutArrow" role="menuitem" aria-haspopup="true"><a href="#" class="ui-menuitem-link ui-submenu-link ui-corner-all" tabindex="-1"><span class="ui-menuitem-icon ui-icon ico-cpsi"></span><span class="ui-menuitem-text">Plan Nacional de Numeración</span><span class="ui-icon ui-icon-triangle-1-s"></span></a><ul class="ui-widget-content ui-menu-list ui-corner-all ui-helper-clearfix ui-menu-chi
+20a
+ld ui-shadow" role="menu"><li class="ui-menuitem ui-widget ui-corner-all" role="menuitem"><a tabindex="-1" class="ui-menuitem-link ui-corner-all withoutArrow" href="#" onclick="PrimeFaces.addSubmitParam('j_idt21',{'j_idt21:j_idt28':'j_idt21:j_idt28'}).submit('j_idt21');return false;"><span class="ui-menuitem-text">Acceso a Proveedores de Servicios de Telecomunicaciones</span></a></li><li class="ui-menuitem ui-widget ui-corner-all" role="menuitem"><a tabindex="-1" class="ui-menuitem-link ui-corner-all withoutArrow" hr
+5a8
+ef="#" onclick="PrimeFaces.addSubmitParam('j_idt21',{'j_idt21:j_idt29':'j_idt21:j_idt29'}).submit('j_idt21');return false;"><span class="ui-menuitem-text">Acceso a Descarga Pública</span></a></li></ul></li><li class="ui-menuitem ui-widget ui-corner-all" role="menuitem"><a tabindex="-1" class="ui-menuitem-link ui-corner-all withoutArrow" href="#" onclick="PrimeFaces.addSubmitParam('j_idt21',{'j_idt21:j_idt30':'j_idt21:j_idt30'}).submit('j_idt21');return false;"><span class="ui-menuitem-icon ui-icon ico-cpsi"></span><span class="ui-menuitem-text">Descarga de Numeración No Geográfica</span></a></li></ul></div><script id="j_idt21:j_idt22_s" type="text/javascript">PrimeFaces.cw("Menubar","widget_j_idt21_j_idt22",{id:"j_idt21:j_idt22",autoDisplay:true});</script><input type="hidden" name="javax.faces.ViewState" id="javax.faces.ViewState" value="8429644658921863384:2292441491873702291" autocomplete="off" />
+</form></div></div><script id="menuPpal_s" type="text/javascript">PrimeFaces.cw("Panel","widget_menuPpal",{id:"menuPpal"});</script>
+		</div>
+		
+		<!-- Cuerpo --><div id="j_idt32" class="ui-panel ui-widget ui-widget-content ui-corner-all" style="    min-height:90%;     font-size: 1.3em;     text-align: center;    padding-top:102px;    vertical-align: middle;    background-image: url(/sns-frontend/img/fondo_sns_1.png);     background-size: 100% 100%;     min-height:500px;    height:100%" data-widget="widget_j_idt32"><div id="j
+5a8
+_idt32_content" class="ui-panel-content ui-widget-content"><div id="P_containerInclude" class="ui-panel ui-widget ui-widget-content ui-corner-all mycustompanel" data-widget="widget_P_containerInclude"><div id="P_containerInclude_content" class="ui-panel-content ui-widget-content"><html xmlns="http://www.w3.org/1999/xhtml"><div id="P_containerMap" class="ui-panel ui-widget ui-widget-content ui-corner-all mycustompanel" data-widget="widget_P_containerMap"><div id="P_containerMap_content" class="ui-panel-content ui-widget-content">
+	<map name="mapNir">
+	</map></div></div><script id="P_containerMap_s" type="text/javascript">PrimeFaces.cw("Panel","widget_P_containerMap",{id:"P_containerMap"});</script>
+<form id="FORM_areas1" name="FORM_areas1" method="post" action="/sns-frontend/consulta-numeracion/numeracion-geografica.xhtml" enctype="application/x-www-form-urlencoded">
+<input type="hidden" name="FORM_areas1" value="FORM_areas1" />
+
+	<!-- Vista 2 NIR/estado --><div id="FORM_areas1:P_containerVista2" class="ui-panel ui-widget ui-widget-content ui-corner-all mycustompanel" data-widget="widget_FORM_areas1_P_containerVista2"><div id="FORM_areas1:P_containerVista2_content" class="ui-panel-content ui-widget-content"></div></div><script id="FORM_areas1:P_containerVista2_s" type="text/javascript">PrimeFaces.cw("Panel","widget_FORM_areas1_P_containerVista2",{id:"FORM_areas1:P_containerVista2"});</script>
+	<br /><input type="hidden" name=
+28e
+"javax.faces.ViewState" id="javax.faces.ViewState" value="8429644658921863384:2292441491873702291" autocomplete="off" />
+</form>
+
+
+<!-- Modal 'municipio info' --><div id="MDL_infomunicipio" class="ui-dialog ui-widget ui-widget-content ui-corner-all ui-shadow ui-hidden-container"><div class="ui-dialog-titlebar ui-widget-header ui-helper-clearfix ui-corner-top"><span id="MDL_infomunicipio_title" class="ui-dialog-title"></span><a href="#" class="ui-dialog-titlebar-icon ui-dialog-titlebar-close ui-corner-all" aria-label="Close"><span class="ui-icon ui-icon-closethick"></span></a></div><div class="ui-dialog-content ui-widget-content"><html xmlns="http
+1ea
+://www.w3.org/1999/xhtml">
+<!-- Vista 1 municipios -->
+
+<!-- &lt;p:ajaxStatus id=&quot;FORM_abninfo_AS&quot;
+	onstart=&quot;PF('FORM_abninfo_BUI').show()&quot;
+	onsuccess=&quot;PF('FORM_abninfo_BUI').hide()&quot;&gt;
+&lt;/p:ajaxStatus&gt;
+
+&lt;p:blockUI block=&quot;FORM_abninfo&quot; widgetVar=&quot;FORM_abninfo_BUI&quot;&gt;
+	&lt;ui:include src=&quot;/componentes/loader.xhtml&quot; /&gt;
+&lt;/p:blockUI&gt; -->
+<form id="FORM_abninfo" name="FORM_abninfo" method="post" action="/sns-fron
+120
+tend/consulta-numeracion/numeracion-geografica.xhtml" enctype="application/x-www-form-urlencoded">
+<input type="hidden" name="FORM_abninfo" value="FORM_abninfo" />
+<div id="FORM_abninfo:P_containerInfoAbn" class="ui-panel ui-widget ui-widget-content ui-corner-all" data-widget="widget_FOR
+ec8
+M_abninfo_P_containerInfoAbn"><div id="FORM_abninfo:P_containerInfoAbn_content" class="ui-panel-content ui-widget-content">
+
+		<!-- Tabla de resultado consulta en b&uacute;squeda por municipio -->
+		<!-- Vista 2 &aacute;rea de servicio local -->
+		<!-- Tabla de consulta de b&uacute;squeda por mapa nir -->
+		<!-- Vista 2 &aacute;rea de servicio local --></div></div><script id="FORM_abninfo:P_containerInfoAbn_s" type="text/javascript">PrimeFaces.cw("Panel","widget_FORM_abninfo_P_containerInfoAbn",{id:"FORM_abninfo:P_containerInfoAbn"});</script><input type="hidden" name="javax.faces.ViewState" id="javax.faces.ViewState" value="8429644658921863384:2292441491873702291" autocomplete="off" />
+</form>
+<!-- Modal 'poblacionAbn info' --><div id="MDL_infoPoblacion" class="ui-dialog ui-widget ui-widget-content ui-corner-all ui-shadow ui-hidden-container"><div class="ui-dialog-titlebar ui-widget-header ui-helper-clearfix ui-corner-top"><span id="MDL_infoPoblacion_title" class="ui-dialog-title">RESULTADOS DE LA CONSULTA</span><a href="#" class="ui-dialog-titlebar-icon ui-dialog-titlebar-close ui-corner-all" aria-label="Close"><span class="ui-icon ui-icon-closethick"></span></a></div><div class="ui-dialog-content ui-widget-content"><html xmlns="http://www.w3.org/1999/xhtml">
+
+
+	<!-- Tabla dialog poblaciones/Nir --><div id="TBL_pobNir" class="ui-datatable ui-widget mycustomtable"><div class="ui-datatable-header ui-widget-header ui-corner-top">CIUDADES Y POBLACIONES CON SERVICIO LOCAL</div><div class="ui-datatable-tablewrapper"><table role="grid"><thead id="TBL_pobNir_head"><tr><th id="TBL_pobNir:j_idt421" class="ui-state-default ui-sortable-column" role="columnheader" aria-label="NOMBRE"><span class="ui-column-title">NOMBRE</span><span class="ui-sortable-column-icon ui-icon ui-icon-carat-2-n-s"></span></th><th id="TBL_pobNir:j_idt422" class="ui-state-default ui-sortable-column" role="columnheader" aria-label="CLAVE INGEGI"><span class="ui-column-title">CLAVE INGEGI</span><span class="ui-sortable-column-icon ui-icon ui-icon-carat-2-n-s"></span></th></tr></thead><tbody id="TBL_pobNir_data" class="ui-datatable-data ui-widget-content"><tr class="ui-widget-content ui-datatable-empty-message"><td colspan="2">No records found.</td></tr></tbody></table></div><div id="TBL_pobNir_paginator_bottom" class="ui-paginator ui-paginator-bottom ui-widget-header ui-corner-bottom" role="navigation" aria-label="Pagination"><span class="ui-paginator-current">(1 of 1)</span> <a href="#" class="ui-paginator-first ui-state-default ui-corner-all ui-state-disabled" aria-label="First Page"><span class="ui-icon ui-icon-seek-first">p</span></a><a href="#" class="ui-paginator-prev ui-state-default ui-corner-all ui-state-disabled" aria-label="Previous Page"><span class="ui-icon ui-icon-seek-prev">p</span></a><span class="ui-paginator-pages"></span><a href="#" class="ui-paginator-next ui-state-default ui-corner-all ui-state-disabled" aria-label="Next Page"><span class="ui-icon ui-icon-seek-next">p</span></a><a href="#" class="ui-paginator-last ui-state-default ui-corner-all ui-state-disabled" aria-label="Last Page"><span class="ui-icon ui-icon-seek-end">p</span></a><label id="TBL_pobNir_rppLabel" for="TBL_pobNir:j_id2" class="ui-paginator-rpp-label ui-helper-hidden">Rows Per Page</label><select id="TBL_pobNir:j_id2" name="TBL_pobNir_rppDD" aria-labelledby="TBL_pobNir_rppLabel" class="ui-paginator-rpp-options ui-widget ui-state-default ui-corner-left" value="0" autocomplete="off"><option value="5">5</option><option value="10">10</option><option value="15">15</option><option value="20">20</option><option value="25">25</option></select></div></div><script id="TBL_pobNir_s" type="text/javascript">$(function(){PrimeFaces.cw("DataTable","widget_TBL_pobNir",{id:"TBL_po
+130
+bNir",paginator:{id:['TBL_pobNir_paginator_bottom'],rows:0,rowCount:0,page:0,currentPageTemplate:'({currentPage} of {totalPages})'}});});</script>
+		
+				
+
+
+</html></div></div><script id="MDL_infoPoblacion_s" type="text/javascript">$(function(){PrimeFaces.cw("Dialog","infoPoblacion",{id:"MDL_infoPoblaci
+eb8
+on",resizable:false,modal:true,width:"95%",height:"500",appendTo:"@(body)"});});</script>
+<!-- Modal 'poblacionMunicipio info' --><div id="MDL_infoPoblacionM" class="ui-dialog ui-widget ui-widget-content ui-corner-all ui-shadow ui-hidden-container"><div class="ui-dialog-titlebar ui-widget-header ui-helper-clearfix ui-corner-top"><span id="MDL_infoPoblacionM_title" class="ui-dialog-title">RESULTADOS DE LA CONSULTA</span><a href="#" class="ui-dialog-titlebar-icon ui-dialog-titlebar-close ui-corner-all" aria-label="Close"><span class="ui-icon ui-icon-closethick"></span></a></div><div class="ui-dialog-content ui-widget-content"><html xmlns="http://www.w3.org/1999/xhtml">
+
+				<!-- Tabla dialog poblaciones/municipio --><div id="TBL_pobM" class="ui-datatable ui-widget mycustomtable"><div class="ui-datatable-header ui-widget-header ui-corner-top">CIUDADES Y POBLACIONES CON SERVICIO LOCAL</div><div class="ui-datatable-tablewrapper"><table role="grid"><thead id="TBL_pobM_head"><tr><th id="TBL_pobM:j_idt434" class="ui-state-default ui-sortable-column" role="columnheader" aria-label="NOMBRE"><span class="ui-column-title">NOMBRE</span><span class="ui-sortable-column-icon ui-icon ui-icon-carat-2-n-s"></span></th><th id="TBL_pobM:j_idt435" class="ui-state-default ui-sortable-column" role="columnheader" aria-label="CLAVE INGEGI"><span class="ui-column-title">CLAVE INGEGI</span><span class="ui-sortable-column-icon ui-icon ui-icon-carat-2-n-s"></span></th></tr></thead><tbody id="TBL_pobM_data" class="ui-datatable-data ui-widget-content"><tr class="ui-widget-content ui-datatable-empty-message"><td colspan="2">No records found.</td></tr></tbody></table></div><div id="TBL_pobM_paginator_bottom" class="ui-paginator ui-paginator-bottom ui-widget-header ui-corner-bottom" role="navigation" aria-label="Pagination"><span class="ui-paginator-current">(1 of 1)</span> <a href="#" class="ui-paginator-first ui-state-default ui-corner-all ui-state-disabled" aria-label="First Page"><span class="ui-icon ui-icon-seek-first">p</span></a><a href="#" class="ui-paginator-prev ui-state-default ui-corner-all ui-state-disabled" aria-label="Previous Page"><span class="ui-icon ui-icon-seek-prev">p</span></a><span class="ui-paginator-pages"></span><a href="#" class="ui-paginator-next ui-state-default ui-corner-all ui-state-disabled" aria-label="Next Page"><span class="ui-icon ui-icon-seek-next">p</span></a><a href="#" class="ui-paginator-last ui-state-default ui-corner-all ui-state-disabled" aria-label="Last Page"><span class="ui-icon ui-icon-seek-end">p</span></a><label id="TBL_pobM_rppLabel" for="TBL_pobM:j_id3" class="ui-paginator-rpp-label ui-helper-hidden">Rows Per Page</label><select id="TBL_pobM:j_id3" name="TBL_pobM_rppDD" aria-labelledby="TBL_pobM_rppLabel" class="ui-paginator-rpp-options ui-widget ui-state-default ui-corner-left" value="0" autocomplete="off"><option value="5">5</option><option value="10">10</option><option value="15">15</option><option value="20">20</option><option value="25">25</option></select></div></div><script id="TBL_pobM_s" type="text/javascript">$(function(){PrimeFaces.cw("DataTable","widget_TBL_pobM",{id:"TBL_pobM",paginator:{id:['TBL_pobM_paginator_bottom'],rows:0,rowCount:0,page:0,currentPageTemplate:'({currentPage} of {totalPages})'}});});</script>
+</html></div></div><script id="MDL_infoPoblacionM_s" type="text/javascript">$(function(){PrimeFaces.cw("Dialog","infoPoblacionM",{id:"MDL_infoPoblacionM",resizable:false,modal:true,width:"95%",height:"500",appendTo:"@(body)"});});</script>
+<!-- Modal 'municipio info' --><div id="MDL_infoMunicipio" class="ui-dialog ui-widget ui-widget-content ui-corner-all ui-shadow ui-hidden-container"><div class="ui-dialog-titlebar ui-widget-header ui-helper-clearfix ui-corner
+140
+-top"><span id="MDL_infoMunicipio_title" class="ui-dialog-title">RESULTADOS DE LA CONSULTA</span><a href="#" class="ui-dialog-titlebar-icon ui-dialog-titlebar-close ui-corner-all" aria-label="Close"><span class="ui-icon ui-icon-closethick"></span></a></div><div class="ui-dialog-content ui-widget-content"><html xmlns="h
+ea8
+ttp://www.w3.org/1999/xhtml">
+
+
+	<!-- Tabla dialog municipios/Nir --><div id="TBL_municipiosNir" class="ui-datatable ui-widget mycustomtable"><div class="ui-datatable-header ui-widget-header ui-corner-top">MUNICIPIOS CON SERVICIO LOCAL</div><div class="ui-datatable-tablewrapper"><table role="grid"><thead id="TBL_municipiosNir_head"><tr><th id="TBL_municipiosNir:j_idt447" class="ui-state-default ui-sortable-column" role="columnheader" aria-label="NOMBRE"><span class="ui-column-title">NOMBRE</span><span class="ui-sortable-column-icon ui-icon ui-icon-carat-2-n-s"></span></th><th id="TBL_municipiosNir:j_idt448" class="ui-state-default ui-sortable-column" role="columnheader" aria-label="INEGI"><span class="ui-column-title">INEGI</span><span class="ui-sortable-column-icon ui-icon ui-icon-carat-2-n-s"></span></th></tr></thead><tbody id="TBL_municipiosNir_data" class="ui-datatable-data ui-widget-content"><tr class="ui-widget-content ui-datatable-empty-message"><td colspan="2">No records found.</td></tr></tbody></table></div><div id="TBL_municipiosNir_paginator_bottom" class="ui-paginator ui-paginator-bottom ui-widget-header ui-corner-bottom" role="navigation" aria-label="Pagination"><span class="ui-paginator-current">(1 of 1)</span> <a href="#" class="ui-paginator-first ui-state-default ui-corner-all ui-state-disabled" aria-label="First Page"><span class="ui-icon ui-icon-seek-first">p</span></a><a href="#" class="ui-paginator-prev ui-state-default ui-corner-all ui-state-disabled" aria-label="Previous Page"><span class="ui-icon ui-icon-seek-prev">p</span></a><span class="ui-paginator-pages"></span><a href="#" class="ui-paginator-next ui-state-default ui-corner-all ui-state-disabled" aria-label="Next Page"><span class="ui-icon ui-icon-seek-next">p</span></a><a href="#" class="ui-paginator-last ui-state-default ui-corner-all ui-state-disabled" aria-label="Last Page"><span class="ui-icon ui-icon-seek-end">p</span></a><label id="TBL_municipiosNir_rppLabel" for="TBL_municipiosNir:j_id4" class="ui-paginator-rpp-label ui-helper-hidden">Rows Per Page</label><select id="TBL_municipiosNir:j_id4" name="TBL_municipiosNir_rppDD" aria-labelledby="TBL_municipiosNir_rppLabel" class="ui-paginator-rpp-options ui-widget ui-state-default ui-corner-left" value="0" autocomplete="off"><option value="5">5</option><option value="10">10</option><option value="15">15</option><option value="20">20</option><option value="25">25</option></select></div></div><script id="TBL_municipiosNir_s" type="text/javascript">$(function(){PrimeFaces.cw("DataTable","widget_TBL_municipiosNir",{id:"TBL_municipiosNir",paginator:{id:['TBL_municipiosNir_paginator_bottom'],rows:0,rowCount:0,page:0,currentPageTemplate:'({currentPage} of {totalPages})'}});});</script>
+</html></div></div><script id="MDL_infoMunicipio_s" type="text/javascript">$(function(){PrimeFaces.cw("Dialog","infoMunicipio",{id:"MDL_infoMunicipio",resizable:false,modal:true,width:"95%",height:"500",appendTo:"@(body)"});});</script>
+
+
+</html></div></div><script id="MDL_infomunicipio_s" type="text/javascript">$(function(){PrimeFaces.cw("Dialog","infomunicipio",{id:"MDL_infomunicipio",resizable:false,modal:true,width:"95%",height:"500",appendTo:"@(body)"});});</script>
+<!-- Modal 'municipio info' --><div id="MDL_infoProveedor" class="ui-dialog ui-widget ui-widget-content ui-corner-all ui-shadow ui-hidden-container"><div class="ui-dialog-titlebar ui-widget-header ui-helper-clearfix ui-corner-top"><span id="MDL_infoProveedor_title" class="ui-dialog-title"></span><a href="#" class="ui-dialog-titlebar-icon ui-dialog-titlebar-close ui-corner-all" aria-label="Close"><span class="ui-icon ui-icon-closethick"></span></a></div><div class="ui-dialog-content ui-widget-content"><html xmlns="
+1f
+http://www.w3.org/1999/xhtml">
+
+129
+	<!-- Tabla dialog proveedores/estado -->
+
+	<!-- Tabla dialog proveedoresABN -->
+	<!-- Tabla dialog proveedoresMunicipio -->
+
+
+</html></div></div><script id="MDL_infoProveedor_s" type="text/javascript">$(function(){PrimeFaces.cw("Dialog","infoProveedor",{id:"MDL_infoProveedor",resizable:false,mod
+ebf
+al:true,width:"95%",height:"500",appendTo:"@(body)"});});</script>
+<!-- Modal 'poblacion Estado info' --><div id="MDL_infoPoblacionEstado" class="ui-dialog ui-widget ui-widget-content ui-corner-all ui-shadow ui-hidden-container"><div class="ui-dialog-titlebar ui-widget-header ui-helper-clearfix ui-corner-top"><span id="MDL_infoPoblacionEstado_title" class="ui-dialog-title"></span><a href="#" class="ui-dialog-titlebar-icon ui-dialog-titlebar-close ui-corner-all" aria-label="Close"><span class="ui-icon ui-icon-closethick"></span></a></div><div class="ui-dialog-content ui-widget-content"><html xmlns="http://www.w3.org/1999/xhtml">
+
+<!-- &lt;p:ajaxStatus id=&quot;FORM_pobEstado_AS&quot;
+	onstart=&quot;PF('FORM_pobEstado_BUI').show()&quot;
+	onsuccess=&quot;PF('FORM_pobEstado_BUI').hide()&quot;&gt;
+&lt;/p:ajaxStatus&gt;
+
+&lt;p:blockUI block=&quot;FORM_pobEstado&quot; widgetVar=&quot;FORM_pobEstado_BUI&quot;&gt;
+	&lt;ui:include src=&quot;/componentes/loader.xhtml&quot; /&gt;
+&lt;/p:blockUI&gt; -->
+<form id="FORM_pobEstado" name="FORM_pobEstado" method="post" action="/sns-frontend/consulta-numeracion/numeracion-geografica.xhtml" enctype="application/x-www-form-urlencoded">
+<input type="hidden" name="FORM_pobEstado" value="FORM_pobEstado" />
+
+
+	<!-- Tabla dialog poblaciones/Abn --><div id="FORM_pobEstado:TBL_pobEst" class="ui-datatable ui-widget mycustomtable"><div class="ui-datatable-header ui-widget-header ui-corner-top">CIUDADES Y POBLACIÓN CON SERVICIO DE TELEFONÍA LOCAL EN EL ESTADO DE </div><div class="ui-datatable-tablewrapper"><table role="grid"><thead id="FORM_pobEstado:TBL_pobEst_head"><tr><th id="FORM_pobEstado:TBL_pobEst:j_idt491" class="ui-state-default ui-sortable-column" role="columnheader" aria-label="NOMBRE"><span class="ui-column-title">NOMBRE</span><span class="ui-sortable-column-icon ui-icon ui-icon-carat-2-n-s"></span></th><th id="FORM_pobEstado:TBL_pobEst:j_idt492" class="ui-state-default" role="columnheader" aria-label="NIR"><span class="ui-column-title">NIR</span></th><th id="FORM_pobEstado:TBL_pobEst:j_idt493" class="ui-state-default ui-sortable-column" role="columnheader" aria-label="CLAVE INEGI"><span class="ui-column-title">CLAVE INEGI</span><span class="ui-sortable-column-icon ui-icon ui-icon-carat-2-n-s"></span></th></tr></thead><tbody id="FORM_pobEstado:TBL_pobEst_data" class="ui-datatable-data ui-widget-content"><tr class="ui-widget-content ui-datatable-empty-message"><td colspan="3">No records found.</td></tr></tbody></table></div><div id="FORM_pobEstado:TBL_pobEst_paginator_bottom" class="ui-paginator ui-paginator-bottom ui-widget-header ui-corner-bottom" role="navigation" aria-label="Pagination"><span class="ui-paginator-current">(1 of 1)</span> <a href="#" class="ui-paginator-first ui-state-default ui-corner-all ui-state-disabled" aria-label="First Page"><span class="ui-icon ui-icon-seek-first">p</span></a><a href="#" class="ui-paginator-prev ui-state-default ui-corner-all ui-state-disabled" aria-label="Previous Page"><span class="ui-icon ui-icon-seek-prev">p</span></a><span class="ui-paginator-pages"></span><a href="#" class="ui-paginator-next ui-state-default ui-corner-all ui-state-disabled" aria-label="Next Page"><span class="ui-icon ui-icon-seek-next">p</span></a><a href="#" class="ui-paginator-last ui-state-default ui-corner-all ui-state-disabled" aria-label="Last Page"><span class="ui-icon ui-icon-seek-end">p</span></a><label id="FORM_pobEstado:TBL_pobEst_rppLabel" for="FORM_pobEstado:TBL_pobEst:j_id5" class="ui-paginator-rpp-label ui-helper-hidden">Rows Per Page</label><select id="FORM_pobEstado:TBL_pobEst:j_id5" name="FORM_pobEstado:TBL_pobEst_rppDD" aria-labelledby="FORM_pobEstado:TBL_pobEst_rppLabel" class="ui-paginator-rpp-options ui-widget ui-state-default ui-corner
+139
+-left" value="0" autocomplete="off"><option value="5">5</option><option value="10">10</option><option value="15">15</option><option value="20">20</option><option value="25">25</option></select></div></div><script id="FORM_pobEstado:TBL_pobEst_s" type="text/javascript">$(function(){PrimeFaces.cw("DataTable","widg
+eaf
+et_FORM_pobEstado_TBL_pobEst",{id:"FORM_pobEstado:TBL_pobEst",paginator:{id:['FORM_pobEstado:TBL_pobEst_paginator_bottom'],rows:0,rowCount:0,page:0,currentPageTemplate:'({currentPage} of {totalPages})'}});});</script><input type="hidden" name="javax.faces.ViewState" id="javax.faces.ViewState" value="8429644658921863384:2292441491873702291" autocomplete="off" />
+</form>
+
+
+
+</html></div></div><script id="MDL_infoPoblacionEstado_s" type="text/javascript">$(function(){PrimeFaces.cw("Dialog","infoPoblacionEstado",{id:"MDL_infoPoblacionEstado",resizable:false,modal:true,width:"95%",height:"500",appendTo:"@(body)"});});</script>
+<!-- Modal 'municipio info' --><div id="MDL_infoPobEstado" class="ui-dialog ui-widget ui-widget-content ui-corner-all ui-shadow ui-hidden-container"><div class="ui-dialog-titlebar ui-widget-header ui-helper-clearfix ui-corner-top"><span id="MDL_infoPobEstado_title" class="ui-dialog-title"></span><a href="#" class="ui-dialog-titlebar-icon ui-dialog-titlebar-close ui-corner-all" aria-label="Close"><span class="ui-icon ui-icon-closethick"></span></a></div><div class="ui-dialog-content ui-widget-content"><html xmlns="http://www.w3.org/1999/xhtml">
+
+<!-- Vista 1 municipios -->
+
+<!-- &lt;p:ajaxStatus id=&quot;FORM_infoPobEstado_AS&quot;
+	onstart=&quot;PF('FORM_infoPobEstado_BUI').show()&quot;
+	onsuccess=&quot;PF('FORM_infoPobEstado_BUI').hide()&quot;&gt;
+&lt;/p:ajaxStatus&gt;
+
+&lt;p:blockUI block=&quot;FORM_infoPobEstado&quot; widgetVar=&quot;FORM_infoPobEstado_BUI&quot;&gt;
+	&lt;ui:include src=&quot;/componentes/loader.xhtml&quot; /&gt;
+&lt;/p:blockUI&gt; -->
+<form id="FORM_infoPobEstado" name="FORM_infoPobEstado" method="post" action="/sns-frontend/consulta-numeracion/numeracion-geografica.xhtml" enctype="application/x-www-form-urlencoded">
+<input type="hidden" name="FORM_infoPobEstado" value="FORM_infoPobEstado" />
+<div id="FORM_infoPobEstado:P_containerInfoPobEstado" class="ui-panel ui-widget ui-widget-content ui-corner-all mycustompanel" data-widget="widget_FORM_infoPobEstado_P_containerInfoPobEstado"><div id="FORM_infoPobEstado:P_containerInfoPobEstado_content" class="ui-panel-content ui-widget-content"><div id="FORM_infoPobEstado:TLB_pobEstadoInfo" class="ui-panelgrid ui-widget mycustomtablesa"><div class="ui-panelgrid-header ui-widget-header">
+		            INFORMACIÓN DE </div><div id="FORM_infoPobEstado:TLB_pobEstadoInfo_content" class="ui-panelgrid-content ui-widget-content ui-grid ui-grid-responsive"><div class="ui-grid-row"><div class="ui-panelgrid-cell ui-grid-col-6">NÚMEROS IDENTIFICADORES DE REGIÓN (CLAVES DE LARGA DISTANCIA)</div><div class="ui-panelgrid-cell ui-grid-col-6"></div></div><div class="ui-grid-row"><div class="ui-panelgrid-cell ui-grid-col-6">Concesionarios que prestan servicio de telefonía local</div><div class="ui-panelgrid-cell ui-grid-col-6"></div></div><div class="ui-grid-row"><div class="ui-panelgrid-cell ui-grid-col-6">Numeración asignada (No representa líneas en servicio)</div><div class="ui-panelgrid-cell ui-grid-col-6"></div></div><div class="ui-grid-row"><div class="ui-panelgrid-cell ui-grid-col-6">Clave INEGI</div><div class="ui-panelgrid-cell ui-grid-col-6"></div></div></div></div><div id="FORM_infoPobEstado:P_containerList" class="ui-panel ui-widget ui-widget-content ui-corner-all mycustompanel" data-widget="widget_FORM_infoPobEstado_P_containerList"><div id="FORM_infoPobEstado:P_containerList_content" class="ui-panel-content ui-widget-content">
+			<br />
+
+			<br /></div></div><script id="FORM_infoPobEstado:P_containerList_s" type="text/javascript">PrimeFaces.cw("Panel","widget_FORM_infoPobEstado_P_containerList",{id:"FORM_infoPobEstado:P_containerList"});</script>
+		<!-- Vista 2 &aacute;rea de servicio local -->
+		<!-- //////////
+79
+/////////////////////////////////////// tabla dos, seleccionando en poblaci&oacute;n ////////////////////////////////-->
+
+b50
+		<!-- Vista 2 &aacute;rea de servicio local --></div></div><script id="FORM_infoPobEstado:P_containerInfoPobEstado_s" type="text/javascript">PrimeFaces.cw("Panel","widget_FORM_infoPobEstado_P_containerInfoPobEstado",{id:"FORM_infoPobEstado:P_containerInfoPobEstado"});</script><input type="hidden" name="javax.faces.ViewState" id="javax.faces.ViewState" value="8429644658921863384:2292441491873702291" autocomplete="off" />
+</form>
+
+</html></div></div><script id="MDL_infoPobEstado_s" type="text/javascript">$(function(){PrimeFaces.cw("Dialog","infoPobEstado",{id:"MDL_infoPobEstado",resizable:false,modal:true,width:"95%",height:"500",appendTo:"@(body)"});});</script>
+</html></div></div><script id="P_containerInclude_s" type="text/javascript">PrimeFaces.cw("Panel","widget_P_containerInclude",{id:"P_containerInclude"});</script><div id="FORM_myform_AS" style="position : fixed; overflow-y: scroll"></div><script id="FORM_myform_AS_s" type="text/javascript">$(function(){PrimeFaces.cw("AjaxStatus","widget_FORM_myform_AS",{id:"FORM_myform_AS",start:function(){PF('statusDialog').show()},success:function(){PF('statusDialog').hide()}});});</script><div id="j_idt795" class="ui-dialog ui-widget ui-widget-content ui-corner-all ui-shadow ui-hidden-container"><div class="ui-dialog-content ui-widget-content"><html xmlns="http://www.w3.org/1999/xhtml"><table style="vertical-align: middle; ">
+<tbody>
+<tr>
+<td><img id="j_idt798" src="/sns-frontend/img/ajax-loader.gif?pfdrid_c=true" alt="" width="80px" height="80px" /></td>
+</tr>
+</tbody>
+</table>
+
+	
+</html></div></div><script id="j_idt795_s" type="text/javascript">$(function(){PrimeFaces.cw("Dialog","statusDialog",{id:"j_idt795",draggable:false,resizable:false,modal:true});});</script>
+		<!-- &lt;p:blockUI block=&quot;FORM_myform&quot; widgetVar=&quot;FORM_myform_BUI&quot; &gt;
+			&lt;ui:include src=&quot;/componentes/loader.xhtml&quot;/&gt;
+		&lt;/p:blockUI&gt; --><div id="P_main" class="ui-panel ui-widget ui-widget-content ui-corner-all mycustompanel" data-widget="widget_P_main"><div id="P_main_content" class="ui-panel-content ui-widget-content">
+<form id="FORM_myform" name="FORM_myform" method="post" action="/sns-frontend/consulta-numeracion/numeracion-geografica.xhtml" enctype="application/x-www-form-urlencoded">
+<input type="hidden" name="FORM_myform" value="FORM_myform" />
+<div id="FORM_myform:P_mainConsulta" class="ui-panel ui-widget ui-widget-content ui-corner-all mycustompanel" data-widget="widget_FORM_myform_P_mainConsulta"><div id="FORM_myform:P_mainConsulta_content" class="ui-panel-content ui-widget-content"><div id="FORM_myform:P_containerConsulta" class="ui-panel ui-widget ui-widget-content ui-corner-all mycustompanel" data-widget="widget_FORM_myform_P_containerConsulta"><div id="FORM_myform:P_containerConsulta_content" class="ui-panel-content ui-widget-content"><div id="FORM_myform:MSG_ConsultaFront" cl
+41f
+ass="ui-messages ui-messages-noicon ui-widget" aria-live="polite"></div><div id="FORM_myform:consultapublicaformulario" class="ui-panelgrid ui-widget mycustomgrid"><div class="ui-panelgrid-header ui-widget-header">
+		            Consulta de Marcación y  Números Identificadores de Región
+		            </div><div id="FORM_myform:consultapublicaformulario_content" class="ui-panelgrid-content ui-widget-content ui-grid ui-grid-responsive"><div class="ui-grid-row"><div class="ui-panelgrid-cell ui-grid-col-3"><table>
+<tbody>
+<tr>
+<td><label id="FORM_myform:j_idt805" class="ui-outputlabel ui-widget" for="FORM_myform:TXT_Population_input">Consulta la Marcación a una Ciudad Determinada:</label></td>
+</tr>
+<tr>
+<td><span id="FORM_myform:TXT_Population" class="ui-autocomplete"><input id="FORM_myform:TXT_Population_input" name="FORM_myform:TXT_Population_input" type="text" class="ui-autocomplete-input ui-inputfield ui-widget ui-state-default ui-corner-all" autocomplete="off" aria-labelledby="FORM_myform:j_idt805" /><div id="FORM_myform:TXT_Populati
+23d
+on_panel" class="ui-autocomplete-panel ui-widget-content ui-corner-all ui-helper-hidden ui-shadow"></div></span><script id="FORM_myform:TXT_Population_s" type="text/javascript">$(function(){PrimeFaces.cw("AutoComplete","widget_FORM_myform_TXT_Population",{id:"FORM_myform:TXT_Population",minLength:4,delay:300,forceSelection:true,effect:"fade",effectDuration:400,behaviors:{itemSelect:function(ext,event) {PrimeFaces.ab({s:"FORM_myform:TXT_Population",e:"itemSelect",p:"FORM_myform:TXT_Population",u:"FORM_myform:P_containerConsulta FORM_myform:P_containerpoblaciones",g:fa
+994
+lse},ext);}}});});</script></td>
+</tr>
+</tbody>
+</table>
+</div><div class="ui-panelgrid-cell ui-grid-col-3"><table>
+<tbody>
+<tr>
+<td><label id="FORM_myform:j_idt807" class="ui-outputlabel ui-widget" for="FORM_myform:TXT_NationalNumber">Número Nacional:</label></td>
+</tr>
+<tr>
+<td><input id="FORM_myform:TXT_NationalNumber" name="FORM_myform:TXT_NationalNumber" type="tel" value="" autocomplete="off" maxlength="10" onkeyup="PrimeFaces.ab({s:&quot;FORM_myform:TXT_NationalNumber&quot;,e:&quot;keyup&quot;,p:&quot;FORM_myform:TXT_NationalNumber&quot;,u:&quot;FORM_myform:BTN_publicSearch FORM_myform:TXT_LocalNumber FORM_myform:TXT_Nir FORM_myform:TXT_Population&quot;,g:false});" class="ui-inputfield ui-inputtext ui-widget ui-state-default ui-corner-all" /><script id="FORM_myform:TXT_NationalNumber_s" type="text/javascript">PrimeFaces.cw("InputText","widget_FORM_myform_TXT_NationalNumber",{id:"FORM_myform:TXT_NationalNumber"});</script></td>
+</tr>
+<tr>
+<td>
+								<p style="font-size: 11px">Si se conocen los 10 dígitos de
+									número nacional (No incluir los prefijos 01 ó 044)</p></td>
+</tr>
+</tbody>
+</table>
+</div><div class="ui-panelgrid-cell ui-grid-col-3"><table>
+<tbody>
+<tr>
+<td><label id="FORM_myform:j_idt810" class="ui-outputlabel ui-widget" for="FORM_myform:TXT_LocalNumber">Número Local:</label></td>
+</tr>
+<tr>
+<td><input id="FORM_myform:TXT_LocalNumber" name="FORM_myform:TXT_LocalNumber" type="tel" value="" autocomplete="off" maxlength="8" onkeyup="PrimeFaces.ab({s:&quot;FORM_myform:TXT_LocalNumber&quot;,e:&quot;keyup&quot;,p:&quot;FORM_myform:TXT_LocalNumber&quot;,u:&quot;FORM_myform:BTN_publicSearch FORM_myform:TXT_Nir FORM_myform:TXT_Population FORM_myform:TXT_NationalNumber&quot;,g:false});" class="ui-inputfield ui-inputtext ui-widget ui-state-default ui-corner-all" /><script id="FORM_myform:TXT_LocalNumber_s" type="text/javascript">PrimeFaces.cw("InputText","widget_FORM_myform_TXT_LocalNumber",{id:"FORM_myform:TXT_LocalNumber"});</script></td>
+</tr>
+<tr>
+<td>
+								<p style="font-size: 11px">Si se conoce el número local de 7
+									ú 8 dígitos. (8 para México, Guadalajara y Monterrey; 7 para el
+									resto de ciudades del país)</p></td>
+</tr>
+</tbody>
+</table>
+</div><div class="ui-panelgrid-cell ui-grid-col-3"><table>
+<tbody>
+<tr>
+<td><label id="FORM_myform:j_idt813" class="ui-outputlabel ui-widget" for="FORM_myform:TXT_Nir">Número Identificador de Región (Clave de larga distancia
+f8
+):</label></td>
+</tr>
+<tr>
+<td><input id="FORM_myform:TXT_Nir" name="FORM_myform:TXT_Nir" type="text" value="" autocomplete="off" maxlength="3" onkeyup="PrimeFaces.ab({s:&quot;FORM_myform:TXT_Nir&quot;,e:&quot;keyup&quot;,p:&quot;FORM_myform:TXT_Ni
+55c
+r&quot;,u:&quot;FORM_myform:BTN_publicSearch FORM_myform:TXT_LocalNumber FORM_myform:TXT_Population FORM_myform:TXT_NationalNumber&quot;,g:false});" class="ui-inputfield ui-inputtext ui-widget ui-state-default ui-corner-all" /><script id="FORM_myform:TXT_Nir_s" type="text/javascript">PrimeFaces.cw("InputText","widget_FORM_myform_TXT_Nir",{id:"FORM_myform:TXT_Nir"});</script></td>
+</tr>
+<tr>
+<td>
+								<p style="font-size: 11px">Si sólo se requiere información
+									de un número identificador de región.</p></td>
+</tr>
+</tbody>
+</table>
+</div></div></div></div>
+
+						<p style="font-size: 13px">*Para obtener información de algún
+							número telefónico o de un número identificador de región, es
+							posible utilizar cualquiera de los cuatro métodos de búsqueda
+							mostrados</p>
+
+						<!-- Botones Guardar y Clean --><button id="FORM_myform:BTN_publicSearch" name="FORM_myform:BTN_publicSearch" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-icon-left ui-state-disabled sombreado" style="width: auto; height: auto; font-size: 13px;" type="submit" disabled="disabled"><span class="ui-button-icon-left ui-icon ui-c ui-icon-search"></span><span class="ui-button-text ui-c">Buscar</span></button><script id="FORM_myform:BTN_publicSearch_s" type="text/javascript">PrimeFaces.cw("CommandButton","widget_FORM_myform_BTN_p
+5ec
+ublicSearch",{id:"FORM_myform:BTN_publicSearch"});</script><button id="FORM_myform:LINK_CLEAR" name="FORM_myform:LINK_CLEAR" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-icon-left sombreado" onclick="PrimeFaces.ab({s:&quot;FORM_myform:LINK_CLEAR&quot;,u:&quot;FORM_myform:P_containerConsulta FORM_myform:P_containerpoblaciones FORM_myform:P_containernumeracion FORM_myform:P_containerinfo FORM_myform:P_containerLocal FORM_myform:P_containerDesplegable FORM_myform:P_containerinfoMunicipio FORM_myform:P_containerinfopobNoNir&quot;});return false;" style="width: auto; height: auto; font-size: 13px; " type="submit"><span class="ui-button-icon-left ui-icon ui-c ui-icon-arrowrefresh-1-e"></span><span class="ui-button-text ui-c">Limpiar</span></button><script id="FORM_myform:LINK_CLEAR_s" type="text/javascript">PrimeFaces.cw("CommandButton","widget_FORM_myform_LINK_CLEAR",{id:"FORM_myform:LINK_CLEAR"});</script>
+
+						<br />
+						<br /></div></div><script id="FORM_myform:P_containerConsulta_s" type="text/javascript">PrimeFaces.cw("Panel","widget_FORM_myform_P_containerConsulta",{id:"FORM_myform:P_containerConsulta"});</script><div id="FORM_myform:P_containerDesplegable" class="ui-panel ui-widget ui-widget-content ui-corner-all mycustompanel" data-widget="widget_FORM_myform_P_containerDesplegable"><div id="FORM_myform:P_containerDesplegable_content" class="ui-panel-content ui-widget-content">
+						<!-- Lista desplegable de selecci&oacute;n de NIR -->
+						<br /></div></d
+9fc
+iv><script id="FORM_myform:P_containerDesplegable_s" type="text/javascript">PrimeFaces.cw("Panel","widget_FORM_myform_P_containerDesplegable",{id:"FORM_myform:P_containerDesplegable"});</script></div></div><script id="FORM_myform:P_mainConsulta_s" type="text/javascript">PrimeFaces.cw("Panel","widget_FORM_myform_P_mainConsulta",{id:"FORM_myform:P_mainConsulta"});</script><div id="FORM_myform:P_containerpoblaciones" class="ui-panel ui-widget ui-widget-content ui-corner-all mycustompanel" data-widget="widget_FORM_myform_P_containerpoblaciones"><div id="FORM_myform:P_containerpoblaciones_content" class="ui-panel-content ui-widget-content">
+
+					<!-- Tabla resultados poblaciones --></div></div><script id="FORM_myform:P_containerpoblaciones_s" type="text/javascript">PrimeFaces.cw("Panel","widget_FORM_myform_P_containerpoblaciones",{id:"FORM_myform:P_containerpoblaciones"});</script><div id="FORM_myform:P_containernumeracion" class="ui-panel ui-widget ui-widget-content ui-corner-all mycustompanel" data-widget="widget_FORM_myform_P_containernumeracion"><div id="FORM_myform:P_containernumeracion_content" class="ui-panel-content ui-widget-content">
+
+					<!-- Panel del n&uacute;mero nacional y local consultados --></div></div><script id="FORM_myform:P_containernumeracion_s" type="text/javascript">PrimeFaces.cw("Panel","widget_FORM_myform_P_containernumeracion",{id:"FORM_myform:P_containernumeracion"});</script><div id="FORM_myform:P_containerinfo" class="ui-panel ui-widget ui-widget-content ui-corner-all mycustompanel" data-widget="widget_FORM_myform_P_containerinfo"><div id="FORM_myform:P_containerinfo_content" class="ui-panel-content ui-widget-content"></div></div><script id="FORM_myform:P_containerinfo_s" type="text/javascript">PrimeFaces.cw("Panel","widget_FORM_myform_P_containerinfo",{id:"FORM_myform:P_containerinfo"});</script><div id="FORM_myform:P_containerLocal" class="ui-panel ui-widget ui-widget-content ui-corner-all mycustompanel" data-widget="widget_FORM_myform_P_containerLocal"><div id="FORM_myform:P_containerLocal_content" class="ui-panel-content ui-widget-content"></div></div><script id="FORM_myform:P_containerLocal_s" type="text/javascript">PrimeFaces.cw("Panel","widget_FORM_myform_P_containerLocal",{id:"FORM_myform:P_containerLocal"});</script>
+
+				<!-- /////////////////////////////////////Tablas Informaci&oacute;n de muninicipio ///////////////////////////////////////////////// --><div id="FORM_myform:P_containerinfoMunicipio" class="ui-panel ui-widget ui-widget-content ui-corner-all mycustompanel" d
+5fc
+ata-widget="widget_FORM_myform_P_containerinfoMunicipio"><div id="FORM_myform:P_containerinfoMunicipio_content" class="ui-panel-content ui-widget-content"></div></div><script id="FORM_myform:P_containerinfoMunicipio_s" type="text/javascript">PrimeFaces.cw("Panel","widget_FORM_myform_P_containerinfoMunicipio",{id:"FORM_myform:P_containerinfoMunicipio"});</script>
+				<!-- ///////////////////////////////////// Informaci&oacute;n por poblaci&oacute;n y varios Nir  ///////////////////////////////////////////////// --><div id="FORM_myform:P_containerinfopobNoNir" class="ui-panel ui-widget ui-widget-content ui-corner-all mycustompanel" data-widget="widget_FORM_myform_P_containerinfopobNoNir"><div id="FORM_myform:P_containerinfopobNoNir_content" class="ui-panel-content ui-widget-content"></div></div><script id="FORM_myform:P_containerinfopobNoNir_s" type="text/javascript">PrimeFaces.cw("Panel","widget_FORM_myform_P_containerinfopobNoNir",{id:"FORM_myform:P_containerinfopobNoNir"});</script><input type="hidden" name="javax.faces.ViewState" id="javax.faces.ViewState" value="8429644658921863384:2292441491873702291" autocomplete="off" />
+</form></div></div><script id="P_main_s" type="text/javascript">PrimeFaces.cw("Panel","widget_P_main",{id:"P_main"});</script>
+
+		<!-- Modal 'poblacion info' --><div id="ML_infopoblacion" class="ui-dialog ui-widget ui-widget-content ui-corner-all ui-shadow ui-hidden-container"><div class="ui-dialog-titlebar ui-widget-header ui-helper-clearfix ui-corner-top"><span id="ML_infopoblacion_
+9ec
+title" class="ui-dialog-title">RESULTADOS DE LA CONSULTA</span><a href="#" class="ui-dialog-titlebar-icon ui-dialog-titlebar-close ui-corner-all" aria-label="Close"><span class="ui-icon ui-icon-closethick"></span></a></div><div class="ui-dialog-content ui-widget-content"><html xmlns="http://www.w3.org/1999/xhtml">
+
+<!-- &lt;p:ajaxStatus id=&quot;FORM_poblacionInfo_AS&quot;
+	onstart=&quot;PF('FORM_poblacionInfo_BUI').show()&quot;
+	onsuccess=&quot;PF('FORM_poblacionInfo_BUI').hide()&quot;&gt;
+&lt;/p:ajaxStatus&gt;
+&lt;p:blockUI block=&quot;FORM_poblacionInfo&quot; widgetVar=&quot;FORM_poblacionInfo_BUI&quot;&gt;
+	&lt;ui:include src=&quot;/componentes/loader.xhtml&quot; /&gt;
+&lt;/p:blockUI&gt;
+ -->
+<form id="FORM_poblacionInfo" name="FORM_poblacionInfo" method="post" action="/sns-frontend/consulta-numeracion/numeracion-geografica.xhtml" enctype="application/x-www-form-urlencoded">
+<input type="hidden" name="FORM_poblacionInfo" value="FORM_poblacionInfo" />
+<div id="FORM_poblacionInfo:TBL_PoblacionInfoTable" class="ui-panelgrid ui-widget mycustomtablesa"><div class="ui-panelgrid-header ui-widget-header">
+           		INFORMACIÓN BÁSICA DE</div><div id="FORM_poblacionInfo:TBL_PoblacionInfoTable_content" class="ui-panelgrid-content ui-widget-content ui-grid ui-grid-responsive"><div class="ui-grid-row"><div class="ui-panelgrid-cell ui-grid-col-6">Número Identificador de Región (Clave de Larga Distancia)</div><div class="ui-panelgrid-cell ui-grid-col-6"></div></div><div class="ui-grid-row"><div class="ui-panelgrid-cell ui-grid-col-6">Concesionarios que prestan el servicio de telefonía local</div><div class="ui-panelgrid-cell ui-grid-col-6"><a id="FORM_poblacionInfo:j_idt1310" href="#" class="ui-commandlink ui-widget" onclick="PrimeFaces.ab({s:&quot;FORM_poblacionInfo:j_idt1310&quot;,u:&quot;DLG_detallePoblacionMunicipioProveedor&quot;,g:false,onco:function(xhr,status,args){PF('detallePoblacionMunicipioProveedor').show();;}});return false;"></a></div></div><div class="ui-grid-row"><div class="ui-panelgrid-cell ui-grid-col-6">Numeración asignada (no representa líneas en servicio)</div><div class="ui-panelgrid-cell ui-grid-col-6"></div></div><div class="ui-grid-row"><div class="ui-panelgrid-cell ui-grid-col-6"> Clave INEGI</div><div class="ui-panelgrid-cell ui-grid-col-6"></div></div></div></div><div id="FORM_poblacionInfo:TBL_AbnInfoTable" class="ui-panelgrid ui-widget mycustomtablesa"><div class="ui-panelgrid-header ui-widget-header">
+           			INFORMACIÓN BÁSICA DEL ÁREA DE SERVICIO LOCAL
+9a
+
+       			</div><div id="FORM_poblacionInfo:TBL_AbnInfoTable_content" class="ui-panelgrid-content ui-widget-content ui-grid ui-grid-responsive"><div clas
+56a
+s="ui-grid-row"><div class="ui-panelgrid-cell ui-grid-col-6">Número/s Identificador de región (Claves de larga distancia)</div><div class="ui-panelgrid-cell ui-grid-col-6"></div></div><div class="ui-grid-row"><div class="ui-panelgrid-cell ui-grid-col-6">Longitud del número local</div><div class="ui-panelgrid-cell ui-grid-col-6"></div></div><div class="ui-grid-row"><div class="ui-panelgrid-cell ui-grid-col-6">Marcación local (desde un fijo)</div><div class="ui-panelgrid-cell ui-grid-col-6"><span style="display:block;"><span class="greenText">A fijo:  </span>Número local (7 ú 8 dígitos)</span><span style="display:block;"><span class="greenText">A móvil (el que llama paga CPP):  </span>044 + NIR + Número local (7 ú 8 dígitos)</span><span style="display:block;"><span class="greenText">A móvil (el que recibe paga MPP):  </span>Número local (7 ú 8 dígitos)</span></div></div><div class="ui-grid-row"><div class="ui-panelgrid-cell ui-grid-col-6">Marcación local (desde un móvil)</div><div class="ui-panelgrid-cell ui-grid-col-6"><span style="display:block;"><span class="greenText">A fijo: </span>Número local (7 ú 8 dígitos)</span><span style="display:block;"><span class="greenText">A móvil (el que llama paga CPP):  </span>NIR + Número local (7 ú 8 dígitos) ó 044 + NIR + Número local (7 ú 8 dígitos)</span><span style="display:block;"><span class="g
+a7e
+reenText">A móvil (el que recibe paga MPP):  </span>Número local (7 ú 8 dígitos)</span></div></div><div class="ui-grid-row"><div class="ui-panelgrid-cell ui-grid-col-6">Marcación nacional (desde un fijo)</div><div class="ui-panelgrid-cell ui-grid-col-6"><span style="display:block;"><span class="greenText">A fijo: </span>01 + NIR + Número local (7 ú 8 dígitos)</span><span style="display:block;"><span class="greenText">A móvil (el que llama paga CPP):  </span>045 + NIR + Número local (7 ú 8 dígitos)</span><span style="display:block;"><span class="greenText">A móvil (el que recibe paga MPP):  </span>01 + NIR + Número local (7 ú 8 dígitos)</span></div></div><div class="ui-grid-row"><div class="ui-panelgrid-cell ui-grid-col-6">Marcación nacional (desde un móvil)</div><div class="ui-panelgrid-cell ui-grid-col-6"><span style="display:block;"><span class="greenText">A fijo:  </span>01 + NIR + Número local (7 ú 8 dígitos)</span><span style="display:block;"><span class="greenText">A móvil (el que llama paga CPP):  </span>045 + NIR + Número local (7 ú 8 dígitos)</span><span style="display:block;"><span class="greenText">A móvil (el que recibe paga MPP):  </span>01 + NIR + Número local (7 ú 8 dígitos)</span></div></div><div class="ui-grid-row"><div class="ui-panelgrid-cell ui-grid-col-6">Marcación desde los Estados Unidos</div><div class="ui-panelgrid-cell ui-grid-col-6">011 52 + Número local (7 ú 8 dígitos)</div></div><div class="ui-grid-row"><div class="ui-panelgrid-cell ui-grid-col-6">Marcación desde el resto del Mundo</div><div class="ui-panelgrid-cell ui-grid-col-6">+52 + Número local (7 ú 8 dígitos)</div></div><div class="ui-grid-row"><div class="ui-panelgrid-cell ui-grid-col-6">Poblaciones con servicio de telefonía local</div><div class="ui-panelgrid-cell ui-grid-col-6"></div></div><div class="ui-grid-row"><div class="ui-panelgrid-cell ui-grid-col-6">Municipios que forman el área</div><div class="ui-panelgrid-cell ui-grid-col-6"></div></div><div class="ui-grid-row"><div class="ui-panelgrid-cell ui-grid-col-6">Concesionarios que prestan servicio de telefonía local</div><div class="ui-panelgrid-cell ui-grid-col-6"></div></div><div class="ui-grid-row"><div class="ui-panelgrid-cell ui-grid-col-6">Presuscripción de larga distancia</div><div class="ui-panelgrid-cell ui-grid-col-6"></div></div><div class="ui-grid-row"><div class="ui-panelgrid-cell ui-grid-col-6">Numeración asignada (no representa líneas en servicio)</div><div class="ui-panelgrid-cell ui-grid-col-6"></div></div></div></div><input type="hidden" name="javax.faces.ViewState" id="javax.faces.ViewState" value="8429644658921863384:22924414918737022
+57a
+91" autocomplete="off" />
+</form>
+
+
+</html></div></div><script id="ML_infopoblacion_s" type="text/javascript">$(function(){PrimeFaces.cw("Dialog","infopoblacion",{id:"ML_infopoblacion",modal:true,width:"95%",height:"500",appendTo:"@(body)"});});</script>
+		<!-- Modal 'listado proveedor' --><div id="ML_lp" class="ui-dialog ui-widget ui-widget-content ui-corner-all ui-shadow ui-hidden-container"><div class="ui-dialog-titlebar ui-widget-header ui-helper-clearfix ui-corner-top"><span id="ML_lp_title" class="ui-dialog-title">RESULTADOS DE LA CONSULTA</span><a href="#" class="ui-dialog-titlebar-icon ui-dialog-titlebar-close ui-corner-all" aria-label="Close"><span class="ui-icon ui-icon-closethick"></span></a></div><div class="ui-dialog-content ui-widget-content"><html xmlns="http://www.w3.org/1999/xhtml">
+<form id="FORM_concesionarioSL" name="FORM_concesionarioSL" method="post" action="/sns-frontend/consulta-numeracion/numeracion-geografica.xhtml" enctype="application/x-www-form-urlencoded">
+<input type="hidden" name="FORM_concesionarioSL" value="FORM_concesionarioSL" />
+<div id="FORM_concesionarioSL:DT_proceedor" class="ui-datatable ui-widget mycustomtable"><div class="ui-datatable-header ui-widget-header ui-corner-top">
+           		EMPRESAS DE TELEFONÍA LOCAL CON PRESENCIA EN EL ÁREA DE NUMERACIÓN CON NIR: </div><div class="ui-datatable-tablewrapper"><table role="grid"><thead id=
+a6e
+"FORM_concesionarioSL:DT_proceedor_head"><tr role="row"><th id="FORM_concesionarioSL:DT_proceedor:j_idt1425" class="ui-state-default ui-sortable-column" role="columnheader" aria-label="Empresas de telefonía" style="text-align:center"><span class="ui-column-title">Empresas de telefonía</span><span class="ui-sortable-column-icon ui-icon ui-icon-carat-2-n-s"></span></th></tr></thead><tbody id="FORM_concesionarioSL:DT_proceedor_data" class="ui-datatable-data ui-widget-content"><tr class="ui-widget-content ui-datatable-empty-message"><td colspan="1">No records found.</td></tr></tbody></table></div><div id="FORM_concesionarioSL:DT_proceedor_paginator_bottom" class="ui-paginator ui-paginator-bottom ui-widget-header ui-corner-bottom" role="navigation" aria-label="Pagination"><span class="ui-paginator-current">(1 of 1)</span> <a href="#" class="ui-paginator-first ui-state-default ui-corner-all ui-state-disabled" aria-label="First Page"><span class="ui-icon ui-icon-seek-first">p</span></a><a href="#" class="ui-paginator-prev ui-state-default ui-corner-all ui-state-disabled" aria-label="Previous Page"><span class="ui-icon ui-icon-seek-prev">p</span></a><span class="ui-paginator-pages"></span><a href="#" class="ui-paginator-next ui-state-default ui-corner-all ui-state-disabled" aria-label="Next Page"><span class="ui-icon ui-icon-seek-next">p</span></a><a href="#" class="ui-paginator-last ui-state-default ui-corner-all ui-state-disabled" aria-label="Last Page"><span class="ui-icon ui-icon-seek-end">p</span></a><label id="FORM_concesionarioSL:DT_proceedor_rppLabel" for="FORM_concesionarioSL:DT_proceedor:j_id6" class="ui-paginator-rpp-label ui-helper-hidden">Rows Per Page</label><select id="FORM_concesionarioSL:DT_proceedor:j_id6" name="FORM_concesionarioSL:DT_proceedor_rppDD" aria-labelledby="FORM_concesionarioSL:DT_proceedor_rppLabel" class="ui-paginator-rpp-options ui-widget ui-state-default ui-corner-left" value="0" autocomplete="off"><option value="5">5</option><option value="10">10</option><option value="15">15</option><option value="20">20</option><option value="25">25</option></select></div></div><script id="FORM_concesionarioSL:DT_proceedor_s" type="text/javascript">$(function(){PrimeFaces.cw("DataTable","widget_FORM_concesionarioSL_DT_proceedor",{id:"FORM_concesionarioSL:DT_proceedor",paginator:{id:['FORM_concesionarioSL:DT_proceedor_paginator_bottom'],rows:0,rowCount:0,page:0,currentPageTemplate:'({currentPage} of {totalPages})'}});});</script><input type="hidden" name="javax.faces.ViewState" id="javax.faces.ViewState" value="8429644658921863384:2292441491873702291" autocomplete="off" />
+</form>
+
+</html></div></div><script i
+58a
+d="ML_lp_s" type="text/javascript">$(function(){PrimeFaces.cw("Dialog","listadoProveedor",{id:"ML_lp",resizable:false,modal:true,width:"95%",height:"500",appendTo:"@(body)"});});</script>
+		<!-- Modal 'datos numeracion' --><div id="datosnumeracion" class="ui-dialog ui-widget ui-widget-content ui-corner-all ui-shadow ui-hidden-container"><div class="ui-dialog-titlebar ui-widget-header ui-helper-clearfix ui-corner-top"><span id="datosnumeracion_title" class="ui-dialog-title">RESULTADOS DE LA CONSULTA</span><a href="#" class="ui-dialog-titlebar-icon ui-dialog-titlebar-close ui-corner-all" aria-label="Close"><span class="ui-icon ui-icon-closethick"></span></a></div><div class="ui-dialog-content ui-widget-content"><html xmlns="http://www.w3.org/1999/xhtml">
+
+
+<!-- &lt;p:ajaxStatus id=&quot;FORM_datosNumeracion_AS&quot;
+	onstart=&quot;PF('FORM_datosNumeracion_BUI').show()&quot;
+	onsuccess=&quot;PF('FORM_datosNumeracion_BUI').hide()&quot;&gt;
+&lt;/p:ajaxStatus&gt;
+&lt;p:blockUI block=&quot;FORM_datosNumeracion&quot;
+	widgetVar=&quot;FORM_datosNumeracion_BUI&quot;&gt;
+	&lt;ui:include src=&quot;/componentes/loader.xhtml&quot; /&gt;
+&lt;/p:blockUI&gt; -->
+<form id="FORM_datosNumeracion" name="FORM_datosNumeracion" method="post" action="/sns-frontend/consulta-numeracion/numeracion-geografica.xhtml" enctype="application/x-www-form-urlencoded">
+<input type="hidden" name="FORM_datosNumeracion" value="FORM_dat
+a5e
+osNumeracion" />
+<div id="FORM_datosNumeracion:TBL_datosNumeracion" class="ui-panelgrid ui-widget mycustomtablesa"><div class="ui-panelgrid-header ui-widget-header">
+           		DATOS GENERALES Y RESUMEN DE ASIGNACIÓN DE NUMERACIÓN DE </div><div id="FORM_datosNumeracion:TBL_datosNumeracion_content" class="ui-panelgrid-content ui-widget-content ui-grid ui-grid-responsive"><div class="ui-grid-row"><div class="ui-panelgrid-cell ui-grid-col-6">Razon social</div><div class="ui-panelgrid-cell ui-grid-col-6"></div></div><div class="ui-grid-row"><div class="ui-panelgrid-cell ui-grid-col-6">Numeración asignada</div><div class="ui-panelgrid-cell ui-grid-col-6">0</div></div><div class="ui-grid-row"><div class="ui-panelgrid-cell ui-grid-col-6">Dirección</div><div class="ui-panelgrid-cell ui-grid-col-6">
+			<br />
+			<br /></div></div></div></div>
+
+	<br />Seleccionar el tipo de información deseada para consultar <a id="FORM_datosNumeracion:j_idt1446" href="#" class="ui-commandlink ui-widget" onclick="PrimeFaces.ab({s:&quot;FORM_datosNumeracion:j_idt1446&quot;,u:&quot;MDL_numeracionResults&quot;,onco:function(xhr,status,args){PF('numeracionResults').show();;}});return false;">estados</a>, <a id="FORM_datosNumeracion:j_idt1449" href="#" class="ui-commandlink ui-widget" onclick="PrimeFaces.ab({s:&quot;FORM_datosNumeracion:j_idt1449&quot;,u:&quot;MDL_numeracionResults&quot;,onco:function(xhr,status,args){PF('numeracionResults').show();;}});return false;">números identificadores de región</a> o las <a id="FORM_datosNumeracion:j_idt1452" href="#" class="ui-commandlink ui-widget" onclick="PrimeFaces.ab({s:&quot;FORM_datosNumeracion:j_idt1452&quot;,u:&quot;MDL_numeracionResults&quot;,onco:function(xhr,status,args){PF('numeracionResults').show();;}});return false;">ciudades y poblaciones</a> para los cuales  tiene numeración asignada <input type="hidden" name="javax.faces.ViewState" id="javax.faces.ViewState" value="8429644658921863384:2292441491873702291" autocomplete="off" />
+</form>
+
+<!-- Modal 'resultados numeracion proveedor' --><div id="MDL_numeracionResults" class="ui-dialog ui-widget ui-widget-content ui-corner-all ui-shadow ui-hidden-container"><div class="ui-dialog-titlebar ui-widget-header ui-helper-clearfix ui-corner-top"><span id="MDL_numeracionResults_title" class="ui-dialog-title">RESULTADOS DE LA CONSULTA</span><a href="#" class="ui-dialog-titlebar-icon ui-dialog-titlebar-close ui-corner-all" aria-label="Close"><span class="ui-icon ui-icon-closethick"></span></a></div><div class="ui-dialog-content ui-widget-content"><html xmlns="http://www.w3.org/1999/xhtml">
+
+<!-- &lt;p:ajaxStatus id=&quot;FORM_detallep
+171
+roveedor_AS&quot;
+	onstart=&quot;PF('FORM_detalleproveedor_BUI').show()&quot;
+	onsuccess=&quot;PF('FORM_detalleproveedor_BUI').hide()&quot;&gt;
+&lt;/p:ajaxStatus&gt;
+&lt;p:blockUI block=&quot;FORM_detalleproveedor&quot;
+	widgetVar=&quot;FORM_detalleproveedor_BUI&quot;&gt;
+	&lt;ui:include src=&quot;/componentes/loader.xhtml&quot; /&gt;
+&lt;/p:blockUI&gt; -->
+<form id=
+421
+"FORM_detalleproveedor" name="FORM_detalleproveedor" method="post" action="/sns-frontend/consulta-numeracion/numeracion-geografica.xhtml" enctype="application/x-www-form-urlencoded">
+<input type="hidden" name="FORM_detalleproveedor" value="FORM_detalleproveedor" />
+
+	<!-- tabla de poblaciones proveedor -->
+
+	<!-- tabla de estados proveedor -->
+
+	<!-- tabla de nirs proveedor --><input type="hidden" name="javax.faces.ViewState" id="javax.faces.ViewState" value="8429644658921863384:2292441491873702291" autocomplete="off" />
+</form>
+
+</html></div></div><script id="MDL_numeracionResults_s" type="text/javascript">$(function(){PrimeFaces.cw("Dialog","numeracionResults",{id:"MDL_numeracionResults",resizable:false,modal:true,width:"95%",height:"500",appendTo:"@(body)"});});</script>
+</html></div></div><script id="datosnumeracion_s" type="text/javascript">$(function(){PrimeFaces.cw("Dialog","datosnumeracion",{id:"datosnumeracion",resizable:false,modal:true,width:"95%",height:"500",appendTo:"@(body)"});});</script>
+		<!-- Modal 'Asignacion' --><div id=
+bc7
+"paginated-results" class="ui-dialog ui-widget ui-widget-content ui-corner-all ui-shadow ui-hidden-container"><div class="ui-dialog-titlebar ui-widget-header ui-helper-clearfix ui-corner-top"><span id="paginated-results_title" class="ui-dialog-title">RESULTADOS DE LA CONSULTA</span><a href="#" class="ui-dialog-titlebar-icon ui-dialog-titlebar-close ui-corner-all" aria-label="Close"><span class="ui-icon ui-icon-closethick"></span></a></div><div class="ui-dialog-content ui-widget-content"><html xmlns="http://www.w3.org/1999/xhtml">
+<!-- &lt;p:ajaxStatus id=&quot;FORM_detalleP_AS&quot;
+	onstart=&quot;PF('FORM_detalleP_BUI').show()&quot;
+	onsuccess=&quot;PF('FORM_detalleP_BUI').hide()&quot;&gt;
+&lt;/p:ajaxStatus&gt;
+&lt;p:blockUI block=&quot;FORM_detalleP&quot; widgetVar=&quot;FORM_detalleP_BUI&quot;&gt;
+	&lt;ui:include src=&quot;/componentes/loader.xhtml&quot; /&gt;
+&lt;/p:blockUI&gt; -->
+<form id="FORM_detalleP" name="FORM_detalleP" method="post" action="/sns-frontend/consulta-numeracion/numeracion-geografica.xhtml" enctype="application/x-www-form-urlencoded">
+<input type="hidden" name="FORM_detalleP" value="FORM_detalleP" />
+<input type="hidden" name="javax.faces.ViewState" id="javax.faces.ViewState" value="8429644658921863384:2292441491873702291" autocomplete="off" />
+</form>
+</html></div></div><script id="paginated-results_s" type="text/javascript">$(function(){PrimeFaces.cw("Dialog","paginatedResults",{id:"paginated-results",resizable:false,modal:true,width:"95%",height:"500",appendTo:"@(body)"});});</script>
+
+		<!-- Modal 'info num geogr&aacute;fica' --><div id="ML_infogeo" class="ui-dialog ui-widget ui-widget-content ui-corner-all ui-shadow ui-hidden-container"><div class="ui-dialog-titlebar ui-widget-header ui-helper-clearfix ui-corner-top"><span id="ML_infogeo_title" class="ui-dialog-title">RESULTADOS DE LA CONSULTA</span><a href="#" class="ui-dialog-titlebar-icon ui-dialog-titlebar-close ui-corner-all" aria-label="Close"><span class="ui-icon ui-icon-closethick"></span></a></div><div class="ui-dialog-content ui-widget-content"><html xmlns="http://www.w3.org/1999/xhtml"><div id="MSG_ConsultaFront" class="ui-messages ui-messages-noicon ui-widget" aria-live="polite"></div>
+<!-- &lt;p:ajaxStatus id=&quot;FORM_infoANir_AS&quot;
+	onstart=&quot;PF('FORM_infoANir_BUI').show()&quot;
+	onsuccess=&quot;PF('FORM_infoANir_BUI').hide()&quot;&gt;
+&lt;/p:ajaxStatus&gt;
+&lt;p:blockUI block=&quot;FORM_infoANir&quot; widgetVar=&quot;FORM_infoANir_BUI&quot;&gt;
+	&lt;ui:include src=&quot;/componentes/loader.xhtml&quot; /&gt;
+&lt;/p:blockUI&gt; -->
+<form id="FORM_infoANir" name="FORM_infoANir" method="post" action="/sns-frontend/consulta-numeracion/numeracion-geografica.xhtml" enctype="application/x-www-form-urlencoded">
+<input type="hidden" name="FORM_infoANir" value="FORM_infoANir" />
+<div id="FORM_infoANir:TBL_infoGeo" class="ui-panelgrid ui-widget mycustomtablesa"><div class="ui-panelgrid-header ui-widget-header">
+           			INFORMACIÓN DE ÁREA DE NUMERACIÓN GEOGRÁFI
+431
+CA
+       			</div><div id="FORM_infoANir:TBL_infoGeo_content" class="ui-panelgrid-content ui-widget-content ui-grid ui-grid-responsive"><div class="ui-grid-row"><div class="ui-panelgrid-cell ui-grid-col-6">Número/s Identificador de región (Claves de larga distancia)</div><div class="ui-panelgrid-cell ui-grid-col-6"></div></div><div class="ui-grid-row"><div class="ui-panelgrid-cell ui-grid-col-6">Longitud del número local</div><div class="ui-panelgrid-cell ui-grid-col-6"> dígitos</div></div><div class="ui-grid-row"><div class="ui-panelgrid-cell ui-grid-col-6">Marcación local (desde un fijo)</div><div class="ui-panelgrid-cell ui-grid-col-6"><span style="display:block;"><span class="greenText">A fijo:  </span>Número local ( dígitos)</span><span style="display:block;"><span class="greenText">A móvil (el que llama paga CPP):  </span>044 +  + Número local ( dígitos)</span><span style="display:block;"><span class="greenText">A móvil (el que recibe paga MPP):  </span>Número local ( dígitos)</span></div></div><div class="ui-grid-row"><div class="ui-pan
+bb7
+elgrid-cell ui-grid-col-6">Marcación local (desde un móvil)</div><div class="ui-panelgrid-cell ui-grid-col-6"><span style="display:block;"><span class="greenText">A fijo: </span>Número local ( dígitos)</span><span style="display:block;"><span class="greenText">A móvil (el que llama paga CPP):  </span> + Número local ( dígitos) ó 044 +  + Número local ( dígitos)</span><span style="display:block;"><span class="greenText">A móvil (el que recibe paga MPP):  </span>Número local ( dígitos)</span></div></div><div class="ui-grid-row"><div class="ui-panelgrid-cell ui-grid-col-6">Marcación nacional (desde un fijo)</div><div class="ui-panelgrid-cell ui-grid-col-6"><span style="display:block;"><span class="greenText">A fijo: </span>01 +  + Número local ( dígitos)</span><span style="display:block;"><span class="greenText">A móvil (el que llama paga CPP):  </span>045 +  + Número local ( dígitos)</span><span style="display:block;"><span class="greenText">A móvil (el que recibe paga MPP):  </span>01 +  + Número local ( dígitos)</span></div></div><div class="ui-grid-row"><div class="ui-panelgrid-cell ui-grid-col-6">Marcación nacional (desde un móvil)</div><div class="ui-panelgrid-cell ui-grid-col-6"><span style="display:block;"><span class="greenText">A fijo:  </span>01 +  + Número local ( dígitos)</span><span style="display:block;"><span class="greenText">A móvil (el que llama paga CPP):  </span>045 +  + Número local ( dígitos)</span><span style="display:block;"><span class="greenText">A móvil (el que recibe paga MPP):  </span>01 +  + Número local ( dígitos)</span></div></div><div class="ui-grid-row"><div class="ui-panelgrid-cell ui-grid-col-6">Marcación desde los Estados Unidos</div><div class="ui-panelgrid-cell ui-grid-col-6">011 52 + Número local ( dígitos)</div></div><div class="ui-grid-row"><div class="ui-panelgrid-cell ui-grid-col-6">Marcación desde el resto del Mundo</div><div class="ui-panelgrid-cell ui-grid-col-6">+52 + Número local ( dígitos)</div></div><div class="ui-grid-row"><div class="ui-panelgrid-cell ui-grid-col-6">Poblaciones con numeración asignada</div><div class="ui-panelgrid-cell ui-grid-col-6"><a id="FORM_infoANir:j_idt1614" href="#" class="ui-commandlink ui-widget" onclick="PrimeFaces.ab({s:&quot;FORM_infoANir:j_idt1614&quot;,u:&quot;DLG_detallePoblacionMunicipioProveedor&quot;,onco:function(xhr,status,args){PF('detallePoblacionMunicipioProveedor').show();;}});return false;"></a></div></div><div class="ui-grid-row"><div class="ui-panelgrid-cell ui-grid-col-6">Municipios que forman el área</div><div class="ui-panelgrid-cell ui-grid-col-6"><a id="FORM_infoANir:j_idt1617" href="#" class="ui-commandlink ui-widget" onclick="PrimeFaces.ab({s:&quot;FORM_infoANir:j_idt1617&quot;,u:&quot;DLG_detallePoblacionMunicipioProveedor&quot;,onco:function(xhr,status,args){PF('detallePoblacionMunicipioProveedor').show();;}});return false;"></a></div></div><div class="ui-grid-row"><div class="ui-panelgrid-cell ui-grid-
+441
+col-6">Empresas de telefonía que prestan el servicio dentro del área geográfica de numeración</div><div class="ui-panelgrid-cell ui-grid-col-6"><a id="FORM_infoANir:j_idt1620" href="#" class="ui-commandlink ui-widget" onclick="PrimeFaces.ab({s:&quot;FORM_infoANir:j_idt1620&quot;,u:&quot;DLG_detallePoblacionMunicipioProveedor&quot;,onco:function(xhr,status,args){PF('detallePoblacionMunicipioProveedor').show();;}});return false;"></a></div></div><div class="ui-grid-row"><div class="ui-panelgrid-cell ui-grid-col-6">Presuscripción de larga distancia</div><div class="ui-panelgrid-cell ui-grid-col-6"></div></div><div class="ui-grid-row"><div class="ui-panelgrid-cell ui-grid-col-6">Numeración asignada (no representa líneas en servicio)</div><div class="ui-panelgrid-cell ui-grid-col-6"></div></div></div></div><input type="hidden" name="javax.faces.ViewState" id="javax.faces.ViewState" value="8429644658921863384:2292441491873702291" autocomplete="off" />
+</form>
+<!-- Modal 'Asignacion' -->
+<!-- &lt;p:dialog id=&quot;paginated-results2&quot; widgetVar=&quot;paginatedResults2&
+ba7
+quot;
+	header=&quot;RESULTADOS DE LA CONSULTA&quot; modal=&quot;true&quot; scrollable=&quot;true&quot;
+	resizable=&quot;false&quot; appendTo=&quot;@(body)&quot; height=&quot;500&quot; width=&quot;95%&quot;&gt;
+	&lt;ui:include
+		src=&quot;/consulta-numeracion/detalle-numero-identificador.xhtml&quot; /&gt;
+&lt;/p:dialog&gt; -->
+</html></div></div><script id="ML_infogeo_s" type="text/javascript">$(function(){PrimeFaces.cw("Dialog","infogeo",{id:"ML_infogeo",resizable:false,modal:true,width:"95%",height:"500",appendTo:"@(body)"});});</script><div id="ML_pp" class="ui-dialog ui-widget ui-widget-content ui-corner-all ui-shadow ui-hidden-container"><div class="ui-dialog-titlebar ui-widget-header ui-helper-clearfix ui-corner-top"><span id="ML_pp_title" class="ui-dialog-title">RESULTADOS DE LA CONSULTA</span><a href="#" class="ui-dialog-titlebar-icon ui-dialog-titlebar-close ui-corner-all" aria-label="Close"><span class="ui-icon ui-icon-closethick"></span></a></div><div class="ui-dialog-content ui-widget-content"><html xmlns="http://www.w3.org/1999/xhtml">
+<form id="FORM_proveedorPoblacion" name="FORM_proveedorPoblacion" method="post" action="/sns-frontend/consulta-numeracion/numeracion-geografica.xhtml" enctype="application/x-www-form-urlencoded">
+<input type="hidden" name="FORM_proveedorPoblacion" value="FORM_proveedorPoblacion" />
+
+	<!-- tabla de poblaciones proveedor --><div id="FORM_proveedorPoblacion:TBL_poblacionesProveedor1" class="ui-datatable ui-widget mycustomtable"><div class="ui-datatable-header ui-widget-header ui-corner-top">
+           		CIUDADES Y POBLACIONES DEL PROVEEDOR
+		</div><div class="ui-datatable-tablewrapper"><table role="grid"><thead id="FORM_proveedorPoblacion:TBL_poblacionesProveedor1_head"><tr role="row"><th id="FORM_proveedorPoblacion:TBL_poblacionesProveedor1:j_idt1630" class="ui-state-default ui-sortable-column" role="columnheader" aria-label="Ciudades y Población de     con Servicio de Telefonía Ofrecido por: "><span class="ui-column-title">Ciudades y Población de     con Servicio de Telefonía Ofrecido por: </span><span class="ui-sortable-column-icon ui-icon ui-icon-carat-2-n-s"></span></th><th id="FORM_proveedorPoblacion:TBL_poblacionesProveedor1:j_idt1632" class="ui-state-default" role="columnheader" aria-label="NIR" style="text-align:center"><span class="ui-column-title">NIR</span></th><th id="FORM_proveedorPoblacion:TBL_poblacionesProveedor1:j_idt1635" class="ui-state-default" role="columnheader" aria-label="Numeración Asignada (no representa líneas en servicio)" style="text-align:center"><span class="ui-column-title">Numeración Asignada (no representa líneas en servicio)</span></th></tr></thead><tbody id="FORM_proveedorPoblacion:TBL_poblacionesProveedor1_data" class="ui-datatable-data ui-widget-content"><tr class="ui-widget-content ui-datatable-empty-message"><td colspan="3">No records found.</td></tr></tbody></table></div><div id="FORM_proveedorPoblacion:TBL_poblacionesProveedor1_paginator_
+3e6
+bottom" class="ui-paginator ui-paginator-bottom ui-widget-header ui-corner-bottom" role="navigation" aria-label="Pagination"><span class="ui-paginator-current">(1 of 1)</span> <a href="#" class="ui-paginator-first ui-state-default ui-corner-all ui-state-disabled" aria-label="First Page"><span class="ui-icon ui-icon-seek-first">p</span></a><a href="#" class="ui-paginator-prev ui-state-default ui-corner-all ui-state-disabled" aria-label="Previous Page"><span class="ui-icon ui-icon-seek-prev">p</span></a><span class="ui-paginator-pages"></span><a href="#" class="ui-paginator-next ui-state-default ui-corner-all ui-state-disabled" aria-label="Next Page"><span class="ui-icon ui-icon-seek-next">p</span></a><a href="#" class="ui-paginator-last ui-state-default ui-corner-all ui-state-disabled" aria-label="Last Page"><span class="ui-icon ui-icon-seek-end">p</span></a><label id="FORM_proveedorPoblacion:TBL_poblacionesProveedor1_rppLabel" for="FORM_proveedorPoblacion:TBL_poblacionesProveedor1:j_
+63
+id7" class="ui-paginator-rpp-label ui-helper-hidden">Rows Per Page</label><select id="FORM_proveedo
+f85
+rPoblacion:TBL_poblacionesProveedor1:j_id7" name="FORM_proveedorPoblacion:TBL_poblacionesProveedor1_rppDD" aria-labelledby="FORM_proveedorPoblacion:TBL_poblacionesProveedor1_rppLabel" class="ui-paginator-rpp-options ui-widget ui-state-default ui-corner-left" value="15" autocomplete="off"><option value="5">5</option><option value="10">10</option><option value="15" selected="selected">15</option><option value="20">20</option><option value="25">25</option></select></div></div><script id="FORM_proveedorPoblacion:TBL_poblacionesProveedor1_s" type="text/javascript">$(function(){PrimeFaces.cw("DataTable","widget_FORM_proveedorPoblacion_TBL_poblacionesProveedor1",{id:"FORM_proveedorPoblacion:TBL_poblacionesProveedor1",paginator:{id:['FORM_proveedorPoblacion:TBL_poblacionesProveedor1_paginator_bottom'],rows:15,rowCount:0,page:0,currentPageTemplate:'({currentPage} of {totalPages})'}});});</script><input type="hidden" name="javax.faces.ViewState" id="javax.faces.ViewState" value="8429644658921863384:2292441491873702291" autocomplete="off" />
+</form>
+	
+
+</html></div></div><script id="ML_pp_s" type="text/javascript">$(function(){PrimeFaces.cw("Dialog","proveedorPoblacion",{id:"ML_pp",resizable:false,modal:true,width:"95%",height:"500",appendTo:"@(body)"});});</script><div id="ML_pe" class="ui-dialog ui-widget ui-widget-content ui-corner-all ui-shadow ui-hidden-container"><div class="ui-dialog-titlebar ui-widget-header ui-helper-clearfix ui-corner-top"><span id="ML_pe_title" class="ui-dialog-title">RESULTADOS DE LA CONSULTA</span><a href="#" class="ui-dialog-titlebar-icon ui-dialog-titlebar-close ui-corner-all" aria-label="Close"><span class="ui-icon ui-icon-closethick"></span></a></div><div class="ui-dialog-content ui-widget-content"><html xmlns="http://www.w3.org/1999/xhtml">
+
+<!-- &lt;p:ajaxStatus id=&quot;FORM_proveedorPoblacionEstado_AS&quot;
+	onstart=&quot;PF('FORM_proveedorPoblacionEstado_BUI').show()&quot;
+	onsuccess=&quot;PF('FORM_proveedorPoblacionEstado_BUI').hide()&quot;&gt;
+&lt;/p:ajaxStatus&gt;
+
+&lt;p:blockUI block=&quot;FORM_proveedorPoblacionEstado&quot;
+	widgetVar=&quot;FORM_proveedorPoblacionEstado_BUI&quot;&gt;
+	&lt;ui:include src=&quot;/componentes/loader.xhtml&quot; /&gt;
+&lt;/p:blockUI&gt; -->
+<form id="FORM_proveedorPoblacionEstado" name="FORM_proveedorPoblacionEstado" method="post" action="/sns-frontend/consulta-numeracion/numeracion-geografica.xhtml" enctype="application/x-www-form-urlencoded">
+<input type="hidden" name="FORM_proveedorPoblacionEstado" value="FORM_proveedorPoblacionEstado" />
+
+	<!-- tabla de poblaciones proveedor --><div id="FORM_proveedorPoblacionEstado:TBL_poblacionesProveedorEstado" class="ui-datatable ui-widget mycustomtable"><div class="ui-datatable-header ui-widget-header ui-corner-top">
+           		CIUDADES Y POBLACIONES DEL PROVEEDOR
+		</div><div class="ui-datatable-tablewrapper"><table role="grid"><thead id="FORM_proveedorPoblacionEstado:TBL_poblacionesProveedorEstado_head"><tr role="row"><th id="FORM_proveedorPoblacionEstado:TBL_poblacionesProveedorEstado:j_idt1641" class="ui-state-default ui-sortable-column" role="columnheader" aria-label="Ciudades y Población de     con Servicio de Telefonía Ofrecido por: "><span class="ui-column-title">Ciudades y Población de     con Servicio de Telefonía Ofrecido por: </span><span class="ui-sortable-column-icon ui-icon ui-icon-carat-2-n-s"></span></th><th id="FORM_proveedorPoblacionEstado:TBL_poblacionesProveedorEstado:j_idt1644" class="ui-state-default" role="columnheader" aria-label="NIR" style="text-align:center"><span class="ui-column-title">NIR</span></th><th id="FORM_proveedorPoblacionEstado:TBL_poblacionesProveedorEstado:j_idt1648" class="ui-state-default" role="columnheader" aria-label="Numeración Asignada (no representa líneas en servicio)" style="text-align:center"><span class="ui-column-title">Numeración Asignada (no representa líneas en servicio)</span></th></tr></thead><tbody id="FORM_proveedorPoblacionEs
+73
+tado:TBL_poblacionesProveedorEstado_data" class="ui-datatable-data ui-widget-content"><tr class="ui-widget-content 
+f75
+ui-datatable-empty-message"><td colspan="3">No records found.</td></tr></tbody></table></div><div id="FORM_proveedorPoblacionEstado:TBL_poblacionesProveedorEstado_paginator_bottom" class="ui-paginator ui-paginator-bottom ui-widget-header ui-corner-bottom" role="navigation" aria-label="Pagination"><span class="ui-paginator-current">(1 of 1)</span> <a href="#" class="ui-paginator-first ui-state-default ui-corner-all ui-state-disabled" aria-label="First Page"><span class="ui-icon ui-icon-seek-first">p</span></a><a href="#" class="ui-paginator-prev ui-state-default ui-corner-all ui-state-disabled" aria-label="Previous Page"><span class="ui-icon ui-icon-seek-prev">p</span></a><span class="ui-paginator-pages"></span><a href="#" class="ui-paginator-next ui-state-default ui-corner-all ui-state-disabled" aria-label="Next Page"><span class="ui-icon ui-icon-seek-next">p</span></a><a href="#" class="ui-paginator-last ui-state-default ui-corner-all ui-state-disabled" aria-label="Last Page"><span class="ui-icon ui-icon-seek-end">p</span></a><label id="FORM_proveedorPoblacionEstado:TBL_poblacionesProveedorEstado_rppLabel" for="FORM_proveedorPoblacionEstado:TBL_poblacionesProveedorEstado:j_id8" class="ui-paginator-rpp-label ui-helper-hidden">Rows Per Page</label><select id="FORM_proveedorPoblacionEstado:TBL_poblacionesProveedorEstado:j_id8" name="FORM_proveedorPoblacionEstado:TBL_poblacionesProveedorEstado_rppDD" aria-labelledby="FORM_proveedorPoblacionEstado:TBL_poblacionesProveedorEstado_rppLabel" class="ui-paginator-rpp-options ui-widget ui-state-default ui-corner-left" value="0" autocomplete="off"><option value="5">5</option><option value="10">10</option><option value="15">15</option><option value="20">20</option><option value="25">25</option></select></div></div><script id="FORM_proveedorPoblacionEstado:TBL_poblacionesProveedorEstado_s" type="text/javascript">$(function(){PrimeFaces.cw("DataTable","widget_FORM_proveedorPoblacionEstado_TBL_poblacionesProveedorEstado",{id:"FORM_proveedorPoblacionEstado:TBL_poblacionesProveedorEstado",paginator:{id:['FORM_proveedorPoblacionEstado:TBL_poblacionesProveedorEstado_paginator_bottom'],rows:0,rowCount:0,page:0,currentPageTemplate:'({currentPage} of {totalPages})'}});});</script><input type="hidden" name="javax.faces.ViewState" id="javax.faces.ViewState" value="8429644658921863384:2292441491873702291" autocomplete="off" />
+</form>
+
+
+</html></div></div><script id="ML_pe_s" type="text/javascript">$(function(){PrimeFaces.cw("Dialog","proveedorPoblacionEstado",{id:"ML_pe",resizable:false,modal:true,width:"95%",height:"500",appendTo:"@(body)"});});</script><div id="ML_ppnir" class="ui-dialog ui-widget ui-widget-content ui-corner-all ui-shadow ui-hidden-container"><div class="ui-dialog-titlebar ui-widget-header ui-helper-clearfix ui-corner-top"><span id="ML_ppnir_title" class="ui-dialog-title">RESULTADOS DE LA CONSULTA</span><a href="#" class="ui-dialog-titlebar-icon ui-dialog-titlebar-close ui-corner-all" aria-label="Close"><span class="ui-icon ui-icon-closethick"></span></a></div><div class="ui-dialog-content ui-widget-content"><html xmlns="http://www.w3.org/1999/xhtml">
+
+<!-- &lt;p:ajaxStatus id=&quot;FORM_proveedorPoblacionNir_AS&quot;
+	onstart=&quot;PF('FORM_proveedorPoblacionNir_BUI').show()&quot;
+	onsuccess=&quot;PF('FORM_proveedorPoblacionNir_BUI').hide()&quot;&gt;
+&lt;/p:ajaxStatus&gt;
+&lt;p:blockUI block=&quot;FORM_proveedorPoblacionNir&quot;
+	widgetVar=&quot;FORM_proveedorPoblacionNir_BUI&quot;&gt;
+	&lt;ui:include src=&quot;/componentes/loader.xhtml&quot; /&gt;
+&lt;/p:blockUI&gt; -->
+<form id="FORM_proveedorPoblacionNir" name="FORM_proveedorPoblacionNir" method="post" action="/sns-frontend/consulta-numeracion/numeracion-geografica.xhtml" enctype="application/x-www-form-urlencoded">
+<input type="hidden" name="FORM_proveedorPoblacionNir" value="FORM_proveedorPoblacionNir" />
+
+	<!-- tabla de poblaciones proveedor --><div id="FORM_proveedorPoblacionNir:TB
+83
+L_poblacionesProveedorNir" class="ui-datatable ui-widget mycustomtable"><div class="ui-datatable-header ui-widget-header ui-corner-
+f65
+top">
+           		CIUDADES Y POBLACIONES DEL PROVEEDOR
+		</div><div class="ui-datatable-tablewrapper"><table role="grid"><thead id="FORM_proveedorPoblacionNir:TBL_poblacionesProveedorNir_head"><tr role="row"><th id="FORM_proveedorPoblacionNir:TBL_poblacionesProveedorNir:j_idt1654" class="ui-state-default ui-sortable-column" role="columnheader" aria-label="Ciudades y Población con numero identificador regional:     con Servicio de Telefonía Ofrecido por: "><span class="ui-column-title">Ciudades y Población con numero identificador regional:     con Servicio de Telefonía Ofrecido por: </span><span class="ui-sortable-column-icon ui-icon ui-icon-carat-2-n-s"></span></th><th id="FORM_proveedorPoblacionNir:TBL_poblacionesProveedorNir:j_idt1657" class="ui-state-default ui-sortable-column" role="columnheader" aria-label="EDO" style="text-align:center"><span class="ui-column-title">EDO</span><span class="ui-sortable-column-icon ui-icon ui-icon-carat-2-n-s"></span></th><th id="FORM_proveedorPoblacionNir:TBL_poblacionesProveedorNir:j_idt1660" class="ui-state-default" role="columnheader" aria-label="Numeración Asignada (no representa líneas en servicio)" style="text-align:center"><span class="ui-column-title">Numeración Asignada (no representa líneas en servicio)</span></th></tr></thead><tbody id="FORM_proveedorPoblacionNir:TBL_poblacionesProveedorNir_data" class="ui-datatable-data ui-widget-content"><tr class="ui-widget-content ui-datatable-empty-message"><td colspan="3">No records found.</td></tr></tbody></table></div><div id="FORM_proveedorPoblacionNir:TBL_poblacionesProveedorNir_paginator_bottom" class="ui-paginator ui-paginator-bottom ui-widget-header ui-corner-bottom" role="navigation" aria-label="Pagination"><span class="ui-paginator-current">(1 of 1)</span> <a href="#" class="ui-paginator-first ui-state-default ui-corner-all ui-state-disabled" aria-label="First Page"><span class="ui-icon ui-icon-seek-first">p</span></a><a href="#" class="ui-paginator-prev ui-state-default ui-corner-all ui-state-disabled" aria-label="Previous Page"><span class="ui-icon ui-icon-seek-prev">p</span></a><span class="ui-paginator-pages"></span><a href="#" class="ui-paginator-next ui-state-default ui-corner-all ui-state-disabled" aria-label="Next Page"><span class="ui-icon ui-icon-seek-next">p</span></a><a href="#" class="ui-paginator-last ui-state-default ui-corner-all ui-state-disabled" aria-label="Last Page"><span class="ui-icon ui-icon-seek-end">p</span></a><label id="FORM_proveedorPoblacionNir:TBL_poblacionesProveedorNir_rppLabel" for="FORM_proveedorPoblacionNir:TBL_poblacionesProveedorNir:j_id9" class="ui-paginator-rpp-label ui-helper-hidden">Rows Per Page</label><select id="FORM_proveedorPoblacionNir:TBL_poblacionesProveedorNir:j_id9" name="FORM_proveedorPoblacionNir:TBL_poblacionesProveedorNir_rppDD" aria-labelledby="FORM_proveedorPoblacionNir:TBL_poblacionesProveedorNir_rppLabel" class="ui-paginator-rpp-options ui-widget ui-state-default ui-corner-left" value="0" autocomplete="off"><option value="5">5</option><option value="10">10</option><option value="15">15</option><option value="20">20</option><option value="25">25</option></select></div></div><script id="FORM_proveedorPoblacionNir:TBL_poblacionesProveedorNir_s" type="text/javascript">$(function(){PrimeFaces.cw("DataTable","widget_FORM_proveedorPoblacionNir_TBL_poblacionesProveedorNir",{id:"FORM_proveedorPoblacionNir:TBL_poblacionesProveedorNir",paginator:{id:['FORM_proveedorPoblacionNir:TBL_poblacionesProveedorNir_paginator_bottom'],rows:0,rowCount:0,page:0,currentPageTemplate:'({currentPage} of {totalPages})'}});});</script><input type="hidden" name="javax.faces.ViewState" id="javax.faces.ViewState" value="8429644658921863384:2292441491873702291" autocomplete="off" />
+</form>
+
+
+</html></div></div><script id="ML_ppnir_s" type="text/javascript">$(function(){PrimeFaces.cw("Dialog","proveedorPoblacionNir",{id:"ML_ppnir",resiza
+93
+ble:false,modal:true,width:"95%",height:"500",appendTo:"@(body)"});});</script>
+
+		<!-- Modal 'Asignacion' --><div id="DLG_detallePoblacionMunicipi
+2cf
+oProveedor" class="ui-dialog ui-widget ui-widget-content ui-corner-all ui-shadow ui-hidden-container"><div class="ui-dialog-titlebar ui-widget-header ui-helper-clearfix ui-corner-top"><span id="DLG_detallePoblacionMunicipioProveedor_title" class="ui-dialog-title">RESULTADOS DE LA CONSULTA</span><a href="#" class="ui-dialog-titlebar-icon ui-dialog-titlebar-close ui-corner-all" aria-label="Close"><span class="ui-icon ui-icon-closethick"></span></a></div><div class="ui-dialog-content ui-widget-content"><html xmlns="http://www.w3.org/1999/xhtml">
+
+<!-- &lt;p:ajaxStatus id=&quot;FORM_detalleNIR_AS&quot;
+	onstart=&quot;PF('FORM_detalleNIR_BUI').show()&quot;
+	onsuccess=&quot;PF('FORM_detalleNIR_BUI').hide()&quot;&gt;
+75d
+
+&lt;/p:ajaxStatus&gt;
+&lt;p:blockUI block=&quot;FORM_detalleNIR&quot; widgetVar=&quot;FORM_detalleNIR_BUI&quot;&gt;
+	&lt;ui:include src=&quot;/componentes/loader.xhtml&quot; /&gt;
+&lt;/p:blockUI&gt; -->
+<form id="FORM_detalleNIR" name="FORM_detalleNIR" method="post" action="/sns-frontend/consulta-numeracion/numeracion-geografica.xhtml" enctype="application/x-www-form-urlencoded">
+<input type="hidden" name="FORM_detalleNIR" value="FORM_detalleNIR" />
+
+
+	<!-- Tabla poblaciones/nir -->
+
+	<!-- Tabla municipios/nir -->
+
+	<!-- Tabla proveedores/nir --><input type="hidden" name="javax.faces.ViewState" id="javax.faces.ViewState" value="8429644658921863384:2292441491873702291" autocomplete="off" />
+</form>
+
+</html></div></div><script id="DLG_detallePoblacionMunicipioProveedor_s" type="text/javascript">$(function(){PrimeFaces.cw("Dialog","detallePoblacionMunicipioProveedor",{id:"DLG_detallePoblacionMunicipioProveedor",resizable:false,modal:true,width:"95%",height:"500",appendTo:"@(body)"});});</script></div></div><script id="j_idt32_s" type="text/javascript">PrimeFaces.cw("Panel","widget_j_idt32",{id:"j_idt32"});</script><div id="j_idt1702" class="ui-panel ui-widget ui-widget-content ui-corner-all" style="    text-align:center;     border-top:2px solid #333;    background-color:#FFF;     font-size:.9em;     height:20px;    position:fixed;       left:0px;       bottom:0px;       width:100%;" data-widget="widget_j_idt1702"><div id="j_idt1702_content" class="ui-panel-content ui-widget-content"><html xmlns="http://www.w3.org/1999/xhtml"><body><a href="/sns-frontend/consulta-numeracion/numeracion-geografica.xhtml" class="ui-link ui-widget">Copyright © Sistema de Numeración y Señalización v 0.4.2 server_1</a></body>
+</html></div></div><script id="j_idt1702_s" type="text/javascript">PrimeFaces.cw("Panel","widget_j_idt1702",{id:"j_idt1702"});</script></body>
+</html>
+0
+

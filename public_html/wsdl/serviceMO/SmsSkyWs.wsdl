@@ -1,0 +1,73 @@
+<?xml version="1.0"?>
+<wsdl:definitions name="SmsSkyWs" targetNamespace="http://www.sky.com/SmsSkyWs/" xmlns="http://www.sky.com/SmsSkyWs/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:p="http://www.w3.org/2001/XMLSchema" 
+	xmlns:xsd2="http://www.sky.com/EndPointClient" 
+	xmlns:xsd3="http://www.sky.com/SkySmsBalance" >
+	<wsdl:types>
+		<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+			<xsd:import namespace="http://www.sky.com/EndPointClient" schemaLocation="EndPointClient.xsd"/>
+			<xsd:import namespace="http://www.sky.com/SkySmsBalance" schemaLocation="SkySmsBalance.xsd"/>
+		</xsd:schema>
+	</wsdl:types>
+	
+	<wsdl:message name="endPointClientRequest">
+		<wsdl:part name="parameters" element="xsd2:EndPointClientRequest"/>
+	</wsdl:message>
+	<wsdl:message name="endPointClientResponse">
+		<wsdl:part name="parameters" element="xsd2:EndPointClientResponse"/>
+	</wsdl:message>
+
+	<wsdl:message name="balanceSmsRequest">
+		<wsdl:part name="parameters" element="xsd3:BalanceSmsRequest"/>
+	</wsdl:message>
+	<wsdl:message name="balanceSmsResponse">
+		<wsdl:part name="parameters" element="xsd3:BalanceSmsResponse"/>
+	</wsdl:message>
+	
+	<wsdl:portType name="SmsSkyWs">
+
+		<wsdl:operation name="endPointClient">
+			<wsdl:input message="endPointClientRequest"/>
+			<wsdl:output message="endPointClientResponse"/>
+		</wsdl:operation>
+
+		<wsdl:operation name="balanceSms">
+			<wsdl:input message="balanceSmsRequest"/>
+			<wsdl:output message="balanceSmsResponse"/>
+		</wsdl:operation>
+		
+	</wsdl:portType>
+
+	<wsdl:binding name="SmsSkyWsSOAP" type="SmsSkyWs">
+		<soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+		
+		<wsdl:operation name="endPointClient">
+			<soap:operation soapAction="http://www.sky.com/SmsSkyWs/endPointClient"/>
+			<wsdl:input>
+				<soap:body use="literal"/>
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body use="literal"/>
+			</wsdl:output>
+		</wsdl:operation>
+
+		<wsdl:operation name="balanceSms">
+			<soap:operation soapAction="http://www.sky.com/SmsSkyWs/balanceSms"/>
+			<wsdl:input>
+				<soap:body use="literal"/>
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body use="literal"/>
+			</wsdl:output>
+		</wsdl:operation>
+		
+	</wsdl:binding>
+	<wsdl:service name="SmsSkyWs">
+		<wsdl:port binding="SmsSkyWsSOAP" name="SmsSkyWsSOAP">
+			<soap:address location="https://smsmkt.amovil.mx/wsdl/serviceMO/SmsSkyWs.php"/>
+		</wsdl:port>
+	</wsdl:service>
+</wsdl:definitions>
+
+
+
+

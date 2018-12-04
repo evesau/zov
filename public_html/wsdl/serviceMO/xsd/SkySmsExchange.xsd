@@ -1,0 +1,33 @@
+<schema targetNamespace="http://www.sky.com/SkySmsExchange" elementFormDefault="qualified" xmlns="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://www.sky.com/SkySmsExchange" xmlns:head="http://www.sky.com/SkySmsHeader">
+	<import namespace="http://www.sky.com/SkySmsHeader" schemaLocation="Common/SkySmsHeader.xsd"/>
+	<element name="ExchangeSmsRequest">
+		<complexType>
+			<sequence>
+				<element name="headerRequest" type="head:headerRequest"/>
+			</sequence>
+		</complexType>
+	</element>
+	<element name="ExchangeSmsResponse">
+		<complexType>
+			<sequence>
+				<element name="headerResponse" type="head:headerResponse"/>
+				<element name="code" type="string"/>
+				<element name="description" type="string"/>
+				<element name="listOrders">
+					<complexType>
+						<sequence>
+							<element name="order" type="tns:order" maxOccurs="unbounded"/>
+						</sequence>
+					</complexType>
+				</element>
+			</sequence>
+		</complexType>
+	</element>
+	<complexType name="order">
+		<sequence>
+			<element name="idPurchase" type="long"/>
+			<element name="purchaseDate" type="string"/>
+			<element name="amountMessages" type="string"/>
+		</sequence>
+	</complexType>
+</schema>
