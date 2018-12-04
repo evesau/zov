@@ -14,6 +14,7 @@ class Contenedor{
 
         if ($_SESSION['img'] == '') { $_SESSION['img'] = 'placeholder_logo.png'; }
         // comentario
+        // comentario 2
 $html=<<<html
 <!DOCTYPE html>
 <html lang="es">
