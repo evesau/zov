@@ -13,7 +13,7 @@ class Contenedor{
         MasterDom::verificaUsuario();
 
         if ($_SESSION['img'] == '') { $_SESSION['img'] = 'placeholder_logo.png'; }
-
+        // comentario
 $html=<<<html
 <!DOCTYPE html>
 <html lang="es">
